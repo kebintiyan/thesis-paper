@@ -1,0 +1,273 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 165.0,
+		"last_filter": "git push",
+		"selected_items":
+		[
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"git sttus",
+				"Git: Status"
+			],
+			[
+				"build",
+				"Build With: LaTeX - PdfLaTeX"
+			],
+			[
+				"clear",
+				"LaTeXTools: Clear current bibliography cache"
+			],
+			[
+				"clear ca",
+				"LaTeXTools: Clear cache"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"pdf",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"latextools",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"term",
+				"Terminal: Open"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 143.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/kchan/Documents/College/Thesis/ Paper"
+	],
+	"file_history":
+	[
+		"/Users/kchan/Documents/College/4th Year/1st Term/TREDFOR/Finals/Paper/preamble.tex",
+		"/Users/kchan/Documents/College/4th Year/1st Term/TREDFOR/Finals/Paper/chapter_1.tex",
+		"/Users/kchan/Documents/College/4th Year/1st Term/CMPILER/MP/A New Programming Language/Language Examples/test.rb",
+		"/Users/kchan/Documents/College/4th Year/1st Term/CMPILER/MP/A New Programming Language/Language Examples/and-or.rb",
+		"/Users/kchan/Documents/College/4th Year/1st Term/CMPILER/MP/A New Programming Language/Language Examples/numeric.rb",
+		"/Users/kchan/Documents/College/4th Year/1st Term/CMPILER/MP/A New Programming Language/Language Examples/hello_world.rb",
+		"/Users/kchan/Downloads/parser_tests/sign-in.json",
+		"/Users/kchan/Downloads/parser_tests/test1.json",
+		"/Users/kchan/Documents/College/4th Year/1st Term/GAM-DEV/Object-Pooling/README.md",
+		"/Users/kchan/Downloads/parser_tests/font-test.html",
+		"/Users/kchan/Documents/College/4th Year/1st Term/CMPILER/MP/UI_Parser/README.md",
+		"/Users/kchan/Downloads/parser_tests/test.html",
+		"/Users/kchan/Documents/College/Thesis/Notes/interview-oct-23-2017.txt",
+		"/Users/kchan/Downloads/test.json",
+		"/Users/kchan/Downloads/GAMEDEV_Reusables-master/Assets/Scripts/BallLogic/BallObject.cs",
+		"/Users/kchan/Downloads/GAMEDEV_Reusables-master/Assets/Scripts/BallLogic/BoundaryHandler.cs",
+		"/Users/kchan/Downloads/GAMEDEV_Reusables-master/Assets/Scripts/BallLogic/BallSpawner.cs",
+		"/Users/kchan/Documents/College/Thesis/Notes/meeting-oct-23-2017.txt",
+		"/Users/kchan/Documents/College/4th Year/1st Term/CMPILER/MP/UI_Designer/README.md",
+		"/Users/kchan/Documents/College/Thesis/Notes/meeting-oct-23-2017",
+		"/Users/kchan/Documents/College/4th Year/1st Term/GAM-DEV/GAM-DEV_Ball-Drop/README.md",
+		"/Users/kchan/Documents/College/4th Year/1st Term/GAM-DEV/Pressure_Test/README.md",
+		"/Users/kchan/Documents/College/4th Year/1st Term/CMPILER/MP/view.fxml",
+		"/Users/kchan/Documents/College/4th Year/1st Term/GAM-DEV/-GAM-DEV-BallDrop/.gitignore"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 132.0
+	},
+	"output.latextools":
+	{
+		"height": 132.0
+	},
+	"pinned_build_system": "",
+	"project": "thesis.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 250.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
