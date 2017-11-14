@@ -11,7 +11,7 @@
 			"file": "thesis.sublime-project",
 			"settings":
 			{
-				"buffer_size": 114,
+				"buffer_size": 158,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -50,13 +50,17 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 333.0,
+		"height": 207.0,
 		"last_filter": "git push",
 		"selected_items":
 		[
 			[
 				"git push",
 				"Git: Push"
+			],
+			[
+				"git log",
+				"Git: Log All"
 			],
 			[
 				"git commit",
@@ -135,7 +139,7 @@
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 472.0
+		"width": 496.0
 	},
 	"console":
 	{
@@ -218,7 +222,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -227,15 +231,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 114,
+						"buffer_size": 158,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								82,
-								82
+								102,
+								102
 							]
 						],
 						"settings":
@@ -248,7 +252,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -307,7 +311,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -323,12 +327,13 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								520,
+								520
 							]
 						],
 						"settings":
 						{
+							"git_gutter_is_enabled": true,
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -337,7 +342,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
