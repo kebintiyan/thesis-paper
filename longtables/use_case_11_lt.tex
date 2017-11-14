@@ -1,0 +1,47 @@
+\begin{longtable}{|X|X|}
+
+\hline
+Trigger & 
+The composer needs to create a new composition \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user is in the main menu screen
+\item Device memory is not full
+\item Name of the new composition is not taken
+\item Name of the new composition does not exceed the maximum number of characters
+\item Name of the new composition does not contain any invalid characters
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item User taps new composition option from the main menu
+\item User writes name for new composition
+\item User taps confirm
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+A new composition will be created \\
+\hline
+Success Guarantees & 
+A new blank composition will be created with preliminary musical elements in place \\
+\hline
+Quality Requirements &
+\begin{itemize}
+\item The composition will have all the musical elements setup within the composition environment already
+\item The composition will remain in the memory of the device even after Flow is terminated
+\item The composition can still be opened, viewed, and edited after Flow is relaunched
+\end{itemize} \\ 
+\hline
+
+\end{longtable}
