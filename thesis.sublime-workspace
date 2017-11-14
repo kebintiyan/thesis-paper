@@ -29,7 +29,7 @@
 			"file": "chapter_1.tex",
 			"settings":
 			{
-				"buffer_size": 29117,
+				"buffer_size": 29108,
 				"line_ending": "Unix"
 			}
 		},
@@ -43,20 +43,76 @@
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"PdfLaTeX"
+			]
+		]
 	],
-	"build_varint": "",
+	"build_varint": "PdfLaTeX",
 	"command_palette":
 	{
-		"height": 207.0,
+		"height": 333.0,
 		"last_filter": "git push",
 		"selected_items":
 		[
 			[
 				"git push",
 				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
 			],
 			[
 				"git log",
@@ -67,16 +123,8 @@
 				"Git: Commit"
 			],
 			[
-				"git add",
-				"Git: Add All"
-			],
-			[
 				"install pa",
 				"Package Control: Install Package"
-			],
-			[
-				"git comm",
-				"Git: Commit"
 			],
 			[
 				"git sttus",
@@ -139,7 +187,7 @@
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 496.0
+		"width": 472.0
 	},
 	"console":
 	{
@@ -222,7 +270,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -252,7 +300,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -289,15 +337,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 29117,
+						"buffer_size": 29108,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1424,
-								1424
+								1416,
+								1416
 							]
 						],
 						"settings":
@@ -311,7 +359,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -327,8 +375,8 @@
 						"selection":
 						[
 							[
-								520,
-								520
+								1385,
+								1385
 							]
 						],
 						"settings":
@@ -342,7 +390,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -390,6 +438,10 @@
 	"output.latextools":
 	{
 		"height": 132.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
 	},
 	"pinned_build_system": "",
 	"project": "thesis.sublime-project",
