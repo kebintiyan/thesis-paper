@@ -9,6 +9,39 @@
 	{
 		"auto_complete_selector": "source, text",
 		"spell_check":true,
-		"TEXroot": "main.tex"
+		"TEXroot": "main.tex",
+		"file_exclude_patterns":
+		[
+			"*.pyc",
+			"*.pyo",
+			"*.exe",
+			"*.dll",
+			"*.obj",
+			"*.o",
+			"*.a",
+			"*.lib",
+			"*.so",
+			"*.dylib",
+			"*.ncb",
+			"*.sdf",
+			"*.suo",
+			"*.pdb",
+			"*.idb",
+			".DS_Store",
+			"*.class",
+			"*.psd",
+			"*.db",
+			"*.sublime-workspace",
+			"*.aux",
+			"*.bbl",
+			"*.blg",
+			"*.fdb_latexmk",
+			"*.fls",
+			"*.lof",
+			"*.log",
+			"*.lot",
+			"*.synctex.gz",
+			"*.toc"
+		]
   	}
 }
