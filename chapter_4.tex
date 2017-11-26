@@ -189,7 +189,7 @@ To select multiple notes, drag diagonally upward or downward on the notes.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.28]{Selecting_Notes}
-    \label{fig:1stnote}
+    \label{fig:select-notes}
     \caption{Drag diagonally to select multiple notes.}
 \end{figure}
 
@@ -217,7 +217,7 @@ To add a note, tap on a preferred note in the menu and the note will be automati
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.28]{Adding_Notes}
-    \label{fig:1stnote}
+    \label{fig:add-note}
     \caption{Tap a note on the menu to add on the staff.}
 \end{figure}
 
@@ -241,7 +241,7 @@ To edit a note, tap a note to select it, then click on the desired note on the m
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.28]{Editing_Notes}
-    \label{fig:selectnote}
+    \label{fig:edit-notes}
     \caption{Edit note/s by tapping the desired note on the menu.}
 \end{figure}
 
@@ -263,7 +263,7 @@ To delete a note or a set of notes, tap a note or highlight a set of notes on th
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.28]{Deleting_Notes}
-    \label{fig:selectnote}
+    \label{fig:delete-notes}
     \caption{Delete note/s by tapping delete on the menu or by making a flick gesture on the selected note/s.}
 \end{figure}
 
@@ -274,7 +274,7 @@ To transpose selected notes, make a two-finger swipe up or down gesture on the g
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.28]{Transposing_Notes}
-    \label{fig:selectnote}
+    \label{fig:transpose-notes}
     \caption{Transpose notes by swiping with two fingers up or down on the gesture space.}
 \end{figure}
 
@@ -316,7 +316,7 @@ Swipe right, up, or down on the gesture space to generate notes starting from th
 This chapter will describe the user stories and use cases that will be highlighted in the testing of the application. The intended users for the application will be expert composers who have at least 7 years of experience with composing music and amateur composers who have less than a year of experience with composing music. These users should also have a basic knowledge on musical terms. The details on the testing to be conducted on these users will also be discussed in this chapter.
 
 \subsection{User Stories}
-The user stories of the system will be focused on the main functions of the application and will highlight each specific need that the user has for the system. These user stories are created with the context that the system will run on a mobile platform with the mode of interaction mainly being touch gestures. 
+The user stories of the system will be focused on the main functions of the application and will highlight each specific need that the user has for the system. These user stories came from the users, representing the tasks that they need to perform on musical composition applications. These are created with the context that the system will run on a mobile platform with the mode of interaction mainly being touch gestures. 
 
 \begin{enumerate}
 \item As a user, I want to be able to type the name of my composition, so that I can differentiate it from my other compositions
@@ -363,6 +363,8 @@ The user stories of the system will be focused on the main functions of the appl
 \end{enumerate}
 
 \subsection{Use Cases}
+
+This section defines the several actions the users can perform within the system. These use cases were derived from the needs of the users when composing. 
 
 %Trigger
 %Primary Actor
@@ -1460,22 +1462,14 @@ Quality Requirements &
 \end{tabularx}
 
 \subsection{User Test Plan}
-%Need to talk about
-%Swift
-%Invision
-%CogTool
-%Questionnaire
 
-The tests will be conducted in an environment wherein a tester would not be influenced by the researchers to ensure that their interaction with the application is as close as to a natural setting as possible. The tests will be conducted through a tablet device that can run the application. The prototypes for testing will be a mid-fidelity prototype created through the use of the Invision application, a prototyping tool, and the actual high-fidelity system developed using Swift.
+The objective of the tests will be to determine if the interaction and design of the system does not hinder the productivity of the target user. The functionality of the system will also be tested to see if there are problems that will occur while performing tasks.
 
-%The tests will be conducted in an environment wherein a tester would not be influenced by the researchers to ensure that their interaction with the application is as close as to a natural setting as possible. The tests will be conducted through a tablet device that can run the application and the third-party software which will be used to measure the cognitive load of a user during the testing. The prototypes for testing will be a mid-fidelity prototype created through the use of the Invision application, a prototyping tool, and the actual high-fidelity system developed through Swift.
+The tests will be conducted in an environment where a tester would not be influenced by the researchers to ensure that their interaction with the application is as close as to a natural setting as possible. The prototypes for testing will be a mid-fidelity prototype created through the use of the InVision application, a prototyping tool, and the actual high-fidelity system developed using Swift. These prototypes will be in a table device. 
 
-Before the starting the test, the testers are given a brief description of the system. They will also be informed of the objectives of the system. The researchers will be collecting 3 kinds of data: time, cognitive load, and quality. There will be tasks that the testers will be asked to accomplish, and during and after those tasks, data will be collected. The time it takes to finish each task will be recorded. The cognitive load will be measured by using CogTool to receive a predicted cognitive load, and identifying moments of confusion for the users. After the testing, testers are then asked to answer a questionnaire to evaluate the quality of the application.
+Before starting the test, testers will be given a consent form. If they agree with the terms and continue with the testing, the tasks indicated in Section \ref{sec:tasks} will be done for each test setup (indicated in Section \ref{sec:test-setups}) that is appropriate. Before the test setup where the tester uses the proposed system, they will be given a brief description along with the objectives of the system. 
 
-% Before the starting the test, the testers are given a brief description of the system. They will also be informed of the objectives of the system. The researchers will be collecting 3 kinds of data: time, cognitive load, and quality. There will be tasks that the testers will be asked to accomplish, and during and after those tasks, data will be collected. The time it takes to finish each task will be recorded. The cognitive load will be measured through the use of CogTool, a general purpose user interface prototyping tool. After the testing, testers are then asked to answer a questionnaire to evaluate the quality of the application during the testing through the answers of the tester.
-
-The objective of the test will be to determine if the user interface and design of the system does not hinder the productivity of the target user. The functionality of the system will also be tested to see if there are problems that will occur during the testing. 
-%Overall the system blablabla
+The researchers will be collecting 3 kinds of data: time, cognitive load, and quality. There will be tasks that the testers will be asked to accomplish, and during and after those tasks, data will be collected. The time it takes to finish each task will be recorded. The cognitive load will be measured by using CogTool to receive a predicted cognitive load, and identifying moments of confusion for the users. After the testing, testers are then asked to answer a questionnaire to evaluate the quality of the application.
 
 \subsubsection{Tasks}
 \label{sec:tasks}
@@ -1484,31 +1478,29 @@ Some tasks may be omitted in different test setups when a crucial function to ca
 
 \begin{enumerate}
 \item Add a note in the composition
-\item Add a series of notes through a swipe gesture
-\item Compose a musical piece worth 2 staffs
-\item Compose a musical piece worth 2 staffs without using gestures
-\item Free roam to use the application for 3-5 minutes
+\item Add a series of notes
+\item Change a note
+\item Compose a musical piece within 10 minutes
+\item Play the musical piece
+%\item Compose a musical piece worth 2 staffs without using gestures
+\item Free roam the application for 3-5 minutes
 \end{enumerate}
 
 \subsubsection{Test Setups}
+\label{sec:test-setups}
 
 The test setups are meant to compare existing methods of composition with composition using Flow. The tasks enumerated in Section \ref{sec:tasks} will be used in each test setup whenever possible since some tasks can only be accomplished within a specific setup. 
 
 There will be 3 different test setups to be used during user testing namely:
 
 \begin{enumerate}
-\item Tester composing using Flow
 \item Tester composing using music sheets
-\item Tester composing using Komp
+\item Tester composing using Flow
+\item Tester composing using komp
 \end{enumerate}
 
-The first setup will be focused on the composer using the developed system, Flow. During the early periods of testing, a mid-fidelity InVision prototype will be used as a substitute. Using this prototype, the only task that the composer will be able to do is to explore the application. The main goal of this is to develop and improve the interaction design of the application. One a high-fidelity prototype has been developed, all tasks will be performed in the testing.
+The first setup simulates the traditional way of musical composition. This is through music sheets and a writing instrument. Traditional music sheets will be provided by the researchers as well as a choice of using a pen or pencil for writing musical elements. The composers are free to use as much music sheets as they want for drafting and experimenting with their composition as long as the time and resources provided by the researchers allow them.
 
-The second setup simulates the traditional way of musical composition. This is through music sheets and a writing instrument. Traditional music sheets will be provided by the researchers as well as a choice of using a pen or pencil for writing musical elements. The composers are free to use as much music sheets as they want for drafting and experimenting with their composition as long as the time and resources provided by the researchers allow them.
+The second setup will be focused on the composer using the developed system, Flow. During the early periods of testing, a mid-fidelity InVision prototype will be used as a substitute. Using this prototype, the only task that the composer will be able to do is to explore the application. The main goal of this is to develop and improve the interaction design of the application. One a high-fidelity prototype has been developed, all tasks will be performed in the testing.
 
 The third setup will be through an existing mobile application for iOS platforms, komp. This setup will be done mainly to compare the performance of the user when performing certain tasks that are also available in Flow. The researchers expect this setup to have similar results with the first setup and any data collected in this setup will be used to evaluate Flow.
-
-
-
-
-
