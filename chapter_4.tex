@@ -373,7 +373,7 @@ The user stories of the system will be focused on the main functions of the appl
 
 \subsection{Use Cases}
 
-This section defines the several actions the users can perform within the system. These use cases were derived from the needs of the users when composing. 
+This section defines the several actions the users can perform within the system. These use cases were derived from the needs of the composers and the functions of Flow. The design of each use case will be based on fully dressed use cases with precision level 2 found in the book of \cite{alistair2001writing}. The headers used in each use case will be the the trigger, primary actor, supporting actors, preconditions, minimal guarantees, success guarantees, and process steps.
 
 %Trigger
 %Primary Actor
@@ -403,15 +403,15 @@ Supporting Actors &
 \item Producer
 \end{itemize} \\
 \hline
-Precondition & 
+Preconditions & 
 \begin{itemize}
-\item The user has  a composition environment open in Flow 
+\item The user has a composition environment open in Flow 
 \item The addition is valid based on musical rules
 \end{itemize} \\
 \hline
 Process Steps & 
 \begin{enumerate}
-\item User positions the indicator to a desired location along the musical staff
+\item User taps on  indicator and line/space selector to a desired location along the musical staff
 \item User taps on the desired note to add in the indicated location from the side menu
 \end{enumerate} \\
 \hline
@@ -430,12 +430,12 @@ Quality Requirements &
 \end{tabularx}
 
 %Sprint 1
-\subsubsection{Use Case 2: Edit a Single Note}
+\subsubsection{Use Case 2: Change a Single Note}
 
 \begin{tabularx}{\textwidth}{|X|X|}
 \hline
 Trigger & 
-The composer needs to delete a note \\
+The composer needs to change a note \\
 \hline
 Primary Actor & 
 Composer\\
@@ -450,24 +450,24 @@ Supporting Actors &
 Precondition & 
 \begin{itemize}
 \item The user has  a composition environment open in Flow  
-\item The edit is valid based on music rules
+\item The change is valid based on music rules
 \end{itemize} \\
 \hline
 Process Steps & 
 \begin{enumerate}
-\item User selects the note to be deleted 
-\item User taps the delete option in the side menu to confirm deletion
+\item User selects the note to be changed 
+\item User taps the desired note from the note menu to replace the selected note
 \end{enumerate} \\
 \hline
 Minimal Guarantees & 
-A note will be deleted \\
+A note will be changed \\
 \hline
 Success Guarantees & 
-The selected note will be deleted \\
+The selected note will be changed \\
 \hline
 Quality Requirements & 
 \begin{itemize}
-\item Deletion of note should not violate music rules
+\item The change should not violate music rules
 \end{itemize} \\ 
 \hline
 \end{tabularx}
