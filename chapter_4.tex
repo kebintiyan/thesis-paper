@@ -434,7 +434,7 @@ Preconditions &
 Process Steps & 
 \begin{enumerate}
 \item The user positions the indicator and line/space selector to a desired location along the musical staff
-\item The user taps on the desired note to add on the indicated location from the note menu
+\item The user taps on the desired note to add on the indicated location from the side menu
 \item Flow adds the desired note on the indicated location in the composition
 \item Flow plays the sound of the added note
 \end{enumerate} \\
@@ -442,7 +442,7 @@ Process Steps &
 Minimal Guarantees & 
 \begin{itemize}
   \item A note will be added
-  \item The note menu will return to being transparent
+  \item The side menu will return to being transparent
 \end{itemize} \\
 \hline
 Success Guarantees & 
@@ -481,14 +481,14 @@ Precondition &
 Process Steps & 
 \begin{enumerate}
 \item The user selects the note to be changed 
-\item The user taps the desired note from the note menu to replace the selected note
+\item The user taps the desired note from the side menu to replace the selected note
 \item Flow replaces the note selected with the desired note in the composition
 \end{enumerate} \\
 \hline
 Minimal Guarantees & 
 \begin{itemize}
   \item A note will be replaced
-  \item The note menu will return to being transparent
+  \item The side menu will return to being transparent
 \end{itemize} \\
 \hline
 Success Guarantees & 
@@ -500,7 +500,7 @@ Success Guarantees &
 
 
 %Sprint 1
-\subsubsection{Use Case 3: Delete a Single Note through Note Menu}
+\subsubsection{Use Case 3: Delete a Single Note through the Side Menu}
 
 \begin{tabularx}{\textwidth}{|X|X|}
 \hline
@@ -527,14 +527,14 @@ Precondition &
 Process Steps & 
 \begin{enumerate}
 \item The user selects the note to be deleted 
-\item The user taps the delete option from the note menu to confirm deletion
+\item The user taps the delete option from the side menu to confirm deletion
 \item Flow removes the selected note from the composition
 \end{enumerate} \\
 \hline
 Minimal Guarantees & 
 \begin{itemize}
   \item A note will be deleted
-  \item The note menu will return to being transparent
+  \item The side menu will return to being transparent
 \end{itemize} \\
 \hline
 Success Guarantees & 
@@ -545,7 +545,7 @@ Success Guarantees &
 \hline
 \end{tabularx}
 
-\subsubsection{Use Case 4: Delete a Single Note through Flick Gesture}
+\subsubsection{Use Case 4: Delete a Single Note through a Flick Gesture}
 
 \begin{tabularx}{\textwidth}{|X|X|}
 \hline
@@ -578,6 +578,7 @@ Process Steps &
 Minimal Guarantees & 
 \begin{itemize}
   \item A note will be deleted
+  \item The side menu will return to being transparent
 \end{itemize} \\
 \hline
 Success Guarantees & 
@@ -608,7 +609,7 @@ Supporting Actors &
 \hline
 Precondition & 
 \begin{itemize}
-\item The user has a composition environment open in Flow
+\item The user has a composition open in Flow
 \item The addition of the desired note with selected accidental mark is valid based on the set musical rules
 \end{itemize} \\
 \hline
@@ -616,7 +617,7 @@ Process Steps &
 \begin{enumerate}
 \item The user taps on an accidental mark from the top menu
 \item The user positions the indicator and line/space selector to a desired location along the musical staff
-\item The user taps on the desired note to add on the indicated location from the note menu
+\item The user taps on the desired note to add on the indicated location from the side menu
 \item Flow adds the desired note with the toggled accidental mark on the indicated location in the composition
 \item Flow plays the sound of the added note
 \end{enumerate} \\
@@ -640,7 +641,7 @@ Quality Requirements &
 \hline
 \end{tabularx}
 
-\subsubsection{Use Case 6: Change a Note to its Dotted Version}
+\subsubsection{Use Case 6: Transform a Note to its Dotted Version}
 
 \begin{tabularx}{\textwidth}{|X|X|}
 \hline
@@ -660,8 +661,8 @@ Supporting Actors &
 \hline
 Precondition & 
 \begin{itemize}
-\item The user has a composition environment open in Flow
-\item The change of the selected note into its dotted version does not violate the set musical rules
+\item The user has a composition open in Flow
+\item The transformation of the selected note into its dotted version does not violate the set musical rules
 \end{itemize} \\
 \hline
 Process Steps & 
@@ -681,52 +682,6 @@ Minimal Guarantees &
 Success Guarantees & 
 \begin{itemize}
   \item The note will transform into its selected dotted version
-  \item The sound of the dotted version of the note will be played 
-\end{itemize} \\
-\hline
-\end{tabularx}
-
-\subsubsection{Use Case 7: Perform Retrograde Inversion on a Single Note}
-
-\begin{tabularx}{\textwidth}{|X|X|}
-\hline
-Trigger & 
-The user wants to invert a note \\
-\hline
-Primary Actor & 
-Composer \\
-\hline
-Supporting Actors & 
-\begin{itemize}
-\item Listener
-\item Instrumentalist
-\item Producer
-\item Flow
-\end{itemize} \\
-\hline
-Precondition & 
-\begin{itemize}
-\item The user has a composition environment open in Flow
-\item The inversion does not violate the set musical rules
-\end{itemize} \\
-\hline
-Process Steps & 
-\begin{enumerate}
-\item This
-\item Shit
-\item To
-\item Be
-\item Continued
-\end{enumerate} \\
-\hline
-Minimal Guarantees & 
-\begin{itemize}
-  \item The pop-up menu for dotted versions of the notes will close
-\end{itemize} \\
-\hline
-Success Guarantees & 
-\begin{itemize}
-  \item The selected note will be inverted
   \item The sound of the dotted version of the note will be played 
 \end{itemize} \\
 \hline
@@ -756,21 +711,21 @@ Supporting Actors &
 \hline
 Precondition & 
 \begin{itemize}
-\item The user has a composition environment open in Flow
+\item The user has a composition open in Flow
 \item The batch deletion is valid based on the set musical rules
 \end{itemize} \\
 \hline
 Process Steps & 
 \begin{enumerate}
-\item The user highlights a group of notes
-\item The user taps the delete option in the note menu
+\item The user highlights a group of notes or rests
+\item The user taps the delete option in the side menu
 \item Flow removes the highlighted group of notes from the composition
 \end{enumerate} \\
 \hline
 Minimal Guarantees & 
 \begin{itemize}
   \item A group of notes will be deleted
-  \item The note menu will return to being transparent
+  \item The side menu will return to being transparent
 \end{itemize} \\
 \hline
 Success Guarantees & 
@@ -779,15 +734,628 @@ Success Guarantees &
   \item The space occupied by the highlighted group of notes will be freed
 \end{itemize} \\
 \hline
-Quality Requirements & 
+\end{tabularx}
+
+\subsubsection{Use Case 9: Replace a Highlighted Group of Notes or Rests with a Single Note}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The user needs to replace a group of notes or rests with a single note \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
 \begin{itemize}
-\item The deletion of the group of notes does not violate the musical rules
-\item The group of notes will be removed from the composition environment
-\end{itemize} \\ 
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The batch replacement is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user highlights a group of notes or rests
+\item The user positions the line/space selector to a desired location
+\item The user taps on the desired note from the side menu
+\item Flow replaces the highlighted group of notes or rests with the desired note in the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item A group of notes or rests will be deleted
+  \item The side menu will return to being transparent
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The highlighted group of notes or rests will be discarded
+  \item The desired note will be added to the composition
+  \item The position of the added note will be the head of the highlighted group of notes or rests and wherever the line/space selector is positioned 
+  \item The space occupied by the highlighted group of notes or rests will be freed
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+\subsubsection{Use Case 10: Replace a Highlighted Group of Notes or Rests with a Single Rest}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The user needs to replace a group of notes or rests with a single rest \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The batch replacement is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user highlights a group of notes or rests
+\item The user positions the line/space selector to a desired location
+\item The user toggles notes to rests in the side menu
+\item The user taps on the desired rest from the side menu
+\item Flow replaces the highlighted group of notes or rests with the desired rest in the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item A group of notes or rests will be deleted
+  \item The side menu will return to being transparent
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The highlighted group of notes or rests will be discarded
+  \item The desired rest will be added to the composition
+  \item The position of the added rest will be the head of the highlighted group of notes or rests and wherever the line/space selector is positioned 
+  \item The space occupied by the highlighted group of notes or rests will be freed
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+\subsubsection{Use Case 11: Single Note Transposition}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The user needs to transpose a note to set its pitch higher \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The transposition is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user performs a two finger swipe gesture upwards on the desired note
+\item Flow increases the pitch of the note
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item None
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The desired note will be transposed upwards
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+\subsubsection{Use Case 12: Multiple Note Transposition}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The user needs to transpose a group of note to set their pitch higher \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The batch transposition is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user highlights a group of notes
+\item The user performs a two finger swipe gesture upwards on the highlighted group of notes
+\item Flow increases the pitch of the highlighted group of notes
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item None
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The highlighted group of notes will be transposed upwards
+\end{itemize} \\
 \hline
 \end{tabularx}
 
 
+\subsubsection{Use Case 13: Retrograde a Collection of Notes}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The user needs to retrograde a collection of notes \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The retrograde does not violate the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user highlights a group of notes
+\item The user performs a two finger flick gesture horizontally on top of the collection of notes
+\item Flow retrogrades the collection of notes
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item None
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The collection of notes will be retrograded
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+\subsubsection{Use Case 14: Invert a Collection of Notes}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The user needs to invert a collection of notes \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The inversion does not violate the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user highlights a group of notes
+\item The user performs a two finger flick gesture vertically on top of the collection of notes
+\item Flow inverts the collection of notes
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item None
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The collection of notes will be inverted
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+\subsubsection{Use Case 15: Add a Chord}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & The composer needs to add a chord \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Preconditions & 
+\begin{itemize}
+\item The user has a composition open in Flow 
+\item The addition of the chord is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user positions the indicator and line/space selector to a desired location along the musical staff
+\item The user toggles notes to chords in the side menu
+\item The user taps on the desired chord to add on the indicated location from the side menu
+\item Flow adds the desired chord on the indicated location in the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The side menu will return to being transparent
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+\item The desired chord is added on the indicated location
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+\subsubsection{Use Case 16: Add a Single Rest}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger &
+The composer needs to add a rest \\
+\hline
+Primary Actor &
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The addition of the rest is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user positions the indicator and line/space selector to a desired location along the musical staff
+\item The user toggles notes to rests in the side menu
+\item The user taps on the desired rest to add on the indicated location from the side menu
+\item Flow adds the desired rest on the indicated location in the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item A rest will be added
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The desired rest is added to the indicated location
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+\subsubsection{Use Case 17: Change a Single Rest}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The composer needs to change a rest \\
+\hline
+Primary Actor & 
+Composer\\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow  
+\item The change of the selected rest is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user selects the rest to be changed 
+\item The user toggles notes to rests in the side menu
+\item The user taps the desired rest from the side menu to replace the selected rest
+\item Flow replaces the rest selected with the desired rest in the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item A rest will be replaced
+  \item The side menu will return to being transparent
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The selected rest will be replaced with the desired rest
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+
+%Sprint 1
+\subsubsection{Use Case 18: Delete a Single Rest through the Side Menu}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The composer needs to delete a note \\
+\hline
+Primary Actor & 
+Composer\\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow 
+\item The deletion of the selected rest is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user selects the rest to be deleted 
+\item The user taps the delete option from the side menu to confirm deletion
+\item Flow removes the selected rest from the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item A rest will be deleted
+  \item The side menu will return to being transparent
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The selected rest will be deleted
+  \item The space occupied by the selected rest will be freed
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+\subsubsection{Use Case 19: Delete a Single Rest through Flick Gesture}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The composer needs to delete a rest quickly \\
+\hline
+Primary Actor & 
+Composer\\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow 
+\item The deletion of the selected rest is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user performs a flick gesture on the rest to be deleted
+\item Flow removes the selected rest from the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item A rest will be deleted
+  \item The side menu will return to being transparent
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The selected rest will be deleted
+  \item The space occupied by the selected rest will be freed
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+\subsubsection{Use Case 20: Listen to a Single Note}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The user wants to listen to a single note \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user selects a note
+\item The user taps on the play button
+\item Flow will play the sound of the selected note
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+ \item The icon for the play button will become a pause symbol then return to a play symbol once the composition is done playing
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The selected note will be played
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+\subsubsection{Use Case 21: Listen to a Highlighted Section of the Composition}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The user only wants to hear a section of the composition \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition environment open in Flow
+\item The composition is not empty
+\item The highlighted section contains at least one note or rest
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user highlights a section of the composition
+\item The user taps the play button
+\item Flow plays the sound of each note or rest in the highlighted section
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The icon for the play button will become a pause symbol then return to a play symbol once the composition is done playing
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The highlighted section will be played correctly until the last note or rest
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+\subsubsection{Use Case 22: Listen to the Whole Composition}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The user wants to listen to the whole composition \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition environment open in Flow
+\item The composition is not empty
+\item The user has no notes selected or highlighted
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user taps on the play button
+\item Flow will play the whole composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The icon for the play button will become a pause symbol then return to a play symbol once the composition is done playing
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The whole composition will be played correctly until the last note or rest
+\end{itemize} \\
+\hline
+\end{tabularx}
 
 \subsubsection{Use Case 27: Copy and Paste a Single Note}
 
@@ -830,97 +1398,6 @@ Success Guarantees &
 \begin{itemize}
   \item The note will transform into its selected dotted version 
 \end{itemize} \\
-\hline
-\end{tabularx}
-
-
-\subsubsection{Use Case 4: Transpose a Single Note}
-
-\begin{tabularx}{\textwidth}{|X|X|}
-\hline
-Trigger & 
-The user wants to transpose a note to change its pitch \\
-\hline
-Primary Actor & 
-Composer \\
-\hline
-Supporting Actors & 
-\begin{itemize}
-\item Listener
-\item Instrumentalist
-\item Producer
-\item Flow
-\end{itemize} \\
-\hline
-Precondition & 
-\begin{itemize}
-\item The user has a composition open in Flow
-\item The transposition is valid based on the set musical rules
-\end{itemize} \\
-\hline
-Process Steps & 
-\begin{enumerate}
-\item The user selects a note
-\item The user performs a gestures to transpose the note
-\end{enumerate} \\
-\hline
-Minimal Guarantees & 
-None \\
-\hline
-Success Guarantees & 
-A note will be transposed \\
-\hline
-Quality Requirements & 
-\begin{itemize}
-\item The note is correctly transposed based on the gesture of the user
-\end{itemize} \\ 
-\hline
-\end{tabularx}
-
-
-
-
-\subsubsection{Use Case 5: Add a Single Rest}
-
-\begin{tabularx}{\textwidth}{|X|X|}
-\hline
-Trigger &
-The composer needs to add a rest \\
-\hline
-Primary Actor &
-Composer \\
-\hline
-Supporting Actors & 
-\begin{itemize}
-\item Listener
-\item Instrumentalist
-\item Producer
-\end{itemize} \\
-\hline
-Precondition & 
-\begin{itemize}
-\item The user has a composition environment open in Flow
-\item The addition is valid based on musical rules
-\end{itemize} \\
-\hline
-Process Steps & 
-\begin{enumerate}
-\item User positions the indicator to a desired location along the musical staff
-\item User taps on the toggle button on the side menu to open the selection of rests
-\item User taps on the desired rest to add in the indicated location from the side menu
-\end{enumerate} \\
-\hline
-Minimal Guarantees & 
-A rest will be added \\
-\hline
-Success Guarantees & 
-The desired rest is added to the indicated location \\
-\hline
-Quality Requirements & 
-\begin{itemize}
-\item Rest should be in the valid position
-\item The addition of the rest should be valid according to the musical rules
-\end{itemize} \\ 
 \hline
 \end{tabularx}
 
@@ -1007,92 +1484,6 @@ Quality Requirements &
 \begin{itemize}
 \item The information displayed about the group of notes or rests should be correct
 \item The toggle button icon should be correct 
-\end{itemize} \\ 
-\hline
-\end{tabularx}
-
-\subsubsection{Use Case 9: Listen to the Whole Composition}
-
-\begin{tabularx}{\textwidth}{|X|X|}
-\hline
-Trigger & 
-The user wants to listen to the whole composition \\
-\hline
-Primary Actor & 
-Composer \\
-\hline
-Supporting Actors & 
-\begin{itemize}
-\item Listener
-\item Instrumentalist
-\item Producer
-\end{itemize} \\
-\hline
-Precondition & 
-\begin{itemize}
-\item The user has a composition environment open in Flow
-\item The composition is not empty
-\end{itemize} \\
-\hline
-Process Steps & 
-\begin{enumerate}
-\item The user taps on the play button
-\end{enumerate} \\
-\hline
-Minimal Guarantees & 
-A note will be played \\
-\hline
-Success Guarantees & 
-The whole composition will be played correctly \\
-\hline
-Quality Requirements & 
-\begin{itemize}
-\item There should be no incorrect notes or rest played
-\item The playing should only conclude after the last note or rest is played
-\end{itemize} \\ 
-\hline
-\end{tabularx}
-
-\subsubsection{Use Case 10: Listen to a Highlighted Section of the Composition}
-
-\begin{tabularx}{\textwidth}{|X|X|}
-\hline
-Trigger & 
-The user only wants to hear a section of the composition \\
-\hline
-Primary Actor & 
-Composer \\
-\hline
-Supporting Actors & 
-\begin{itemize}
-\item Listener
-\item Instrumentalist
-\item Producer
-\end{itemize} \\
-\hline
-Precondition & 
-\begin{itemize}
-\item The user has a composition environment open in Flow
-\item The composition is not empty
-\item The highlighted section contains at least one note or rest
-\end{itemize} \\
-\hline
-Process Steps & 
-\begin{enumerate}
-\item The user highlights a section of the composition
-\item The user taps the play button
-\end{enumerate} \\
-\hline
-Minimal Guarantees & 
-A note will be played \\
-\hline
-Success Guarantees & 
-The highlighted section will be played correctly \\
-\hline
-Quality Requirements & 
-\begin{itemize}
-\item There should be no incorrect note or rest played
-\item The playing should only conclude after the last note or rest in the highlighted section is played
 \end{itemize} \\ 
 \hline
 \end{tabularx}
