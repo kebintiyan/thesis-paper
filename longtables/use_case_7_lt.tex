@@ -1,0 +1,40 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & User wants to find a series of notes compatible to his/her current composition \\
+\hline
+Primary Actor & Composer\\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Composer
+\item Instrumentalist
+\item Producer
+\item
+\end{itemize}\\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item An initial set of notes have already been placed
+\item The user's gesture is valid
+\end{itemize}\\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user performs a swipe gesture across a valid space on the composition sheet or in the gesture space in Flow
+\item Flow displays a set of notes in the composition with options to edit or discard the set of notes
+\end{enumerate} \\
+\hline
+Minimal Guarantees &
+\begin{itemize}
+	\item None
+\end{itemize} \\
+\hline
+Success Guarantees &
+\begin{itemize}
+	\item A series of notes matching the form of the existing set of notes in the composition will be presented to the user 
+	\item The series of notes should be editable by the user
+	\item The series of notes can be discarded by the user
+\end{itemize} \\
+\hline
+\end{longtable}
