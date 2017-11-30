@@ -1233,7 +1233,7 @@ Success Guarantees &
 \begin{tabularx}{\textwidth}{|X|X|}
 \hline
 Trigger & 
-The user wants to listen to a single note \\
+The user needs to listen to a single note \\
 \hline
 Primary Actor & 
 Composer \\
@@ -1275,7 +1275,7 @@ Success Guarantees &
 \begin{tabularx}{\textwidth}{|X|X|}
 \hline
 Trigger & 
-The user only wants to hear a section of the composition \\
+The user only needs to hear a section of the composition \\
 \hline
 Primary Actor & 
 Composer \\
@@ -1290,7 +1290,7 @@ Supporting Actors &
 \hline
 Precondition & 
 \begin{itemize}
-\item The user has a composition environment open in Flow
+\item The user has a composition open in Flow
 \item The composition is not empty
 \item The highlighted section contains at least one note or rest
 \end{itemize} \\
@@ -1319,7 +1319,7 @@ Success Guarantees &
 \begin{tabularx}{\textwidth}{|X|X|}
 \hline
 Trigger & 
-The user wants to listen to the whole composition \\
+The user needs to listen to the whole composition \\
 \hline
 Primary Actor & 
 Composer \\
@@ -1334,7 +1334,7 @@ Supporting Actors &
 \hline
 Precondition & 
 \begin{itemize}
-\item The user has a composition environment open in Flow
+\item The user has a composition open in Flow
 \item The composition is not empty
 \item The user has no notes selected or highlighted
 \end{itemize} \\
@@ -1357,12 +1357,102 @@ Success Guarantees &
 \hline
 \end{tabularx}
 
-\subsubsection{Use Case 27: Copy and Paste a Single Note}
+\subsubsection{Use Case 23: View the Details of a Single Note or Rest}
 
 \begin{tabularx}{\textwidth}{|X|X|}
 \hline
 Trigger & 
-The user wants to copy and paste a note \\
+The user needs to know the details of a single note or rest\\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The note or rest is in the composition
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user selects a note or rest
+\item The user taps on the toggle details option
+\item Flow will display the details of the note or rest
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The toggle button graphic will change
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The toggle button graphic will change
+  \item The details of the selected note or rest will be displayed 
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+
+\subsubsection{Use Case 24: View the Details of a Highlighted Group of Notes or Rests}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The user needs to view the details of a group of notes \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The group of notes or rests are in the composition
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user highlights a group of notes or rests
+\item The user taps on the toggle details option 
+\item Flow will display the details of the group of notes or rests
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The toggle button graphic will change
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The toggle button graphic will change
+  \item The details of the selected group of notes or rests will be displayed  
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+
+\subsubsection{Use Case 25: Copy and Paste a Single Note or Rest}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The user wants to copy and paste a note or rest\\
 \hline
 Primary Actor & 
 Composer \\
@@ -1378,79 +1468,40 @@ Supporting Actors &
 Precondition & 
 \begin{itemize}
 \item The user has a composition environment open in Flow
-\item The copy and paste of the selected note does not violate the set musical rules
-\end{itemize} \\
-\hline
-Process Steps & 
-\begin{enumerate}
-\item The user tap and holds on a note
-\item The user moves his/her finger on the selected dotted version while his/her finger is still in contact with the device screen
-\item The user lifts his/her finger from the device screen
-\item Flow transforms the note into the selected dotted version
-\end{enumerate} \\
-\hline
-Minimal Guarantees & 
-\begin{itemize}
-  \item The pop-up menu for dotted versions of the notes will close
-\end{itemize} \\
-\hline
-Success Guarantees & 
-\begin{itemize}
-  \item The note will transform into its selected dotted version 
-\end{itemize} \\
-\hline
-\end{tabularx}
-
-\subsubsection{Use Case 7: View the Details of a Single Note or Rest}
-
-\begin{tabularx}{\textwidth}{|X|X|}
-\hline
-Trigger & 
-The user wants to know the details of a particular note or rest\\
-\hline
-Primary Actor & 
-Composer \\
-\hline
-Supporting Actors & 
-\begin{itemize}
-\item Listener
-\item Instrumentalist
-\item Producer
-\end{itemize} \\
-\hline
-Precondition & 
-\begin{itemize}
-\item The user has a composition environment open in Flow
-\item The note or rest exists within the composition
+\item The copy and paste of the selected note or rest does not violate the set musical rules
+\item The location to paste the copied note or rest on is valid
 \end{itemize} \\
 \hline
 Process Steps & 
 \begin{enumerate}
 \item The user selects a note or rest
-\item The user taps on the toggle details option
+\item The user taps on the copy button in the top menu
+\item Flow copies the selected note or rest onto the clipboard
+\item The user positions the indicator and line/space selector to a desired location along the musical staff
+\item The user taps on the paste button in the top menu
+\item Flow adds a copy of the selected note or rest on the indicated location in the composition
 \end{enumerate} \\
 \hline
 Minimal Guarantees & 
-The toggle button graphic will change\\
+\begin{itemize}
+  \item The copy button will provide feedback
+  \item The paste button will provide feedback
+\end{itemize} \\
 \hline
 Success Guarantees & 
-The toggle button graphic will change and details of the selected note or rest will be displayed \\
-\hline
-Quality Requirements & 
 \begin{itemize}
-\item The details displayed about the selected note or rest should be correct
-\item The toggle button icon should be correct
-\end{itemize} \\ 
+  \item The selected note or rest will be copied
+  \item The selected note or rest will be pasted on to the indicated location in the composition
+\end{itemize} \\
 \hline
 \end{tabularx}
 
-
-\subsubsection{Use Case 8: View the Details of a Highlighted Group of Notes or Rests}
+\subsubsection{Use Case 26: Cut and Paste a Single Note or Rest}
 
 \begin{tabularx}{\textwidth}{|X|X|}
 \hline
 Trigger & 
-The user needs to view the details of a group of notes \\
+The user wants to cut and paste a note or rest\\
 \hline
 Primary Actor & 
 Composer \\
@@ -1460,41 +1511,149 @@ Supporting Actors &
 \item Listener
 \item Instrumentalist
 \item Producer
+\item Flow
 \end{itemize} \\
 \hline
 Precondition & 
 \begin{itemize}
 \item The user has a composition environment open in Flow
-\item The group of notes or rests exists
+\item The cut and paste of the selected note or rest does not violate the set musical rules
+\item The location to paste the cut note or rest on is valid
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user selects a note or rest
+\item The user taps on the cut button in the top menu
+\item Flow stores the selected note or rest into the clipboard
+\item Flow cuts the selected note or rest out of the composition
+\item The user positions the indicator and line/space selector to a desired location along the musical staff
+\item The user taps on the paste button in the top menu
+\item Flow adds a cut note or rest on the indicated location in the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The cut button will provide feedback
+  \item The paste button will provide feedback
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The selected note or rest will be cut from the composition 
+  \item The space occupied by the cut note or rest will be freed
+  \item The selected note or rest will be pasted on to the indicated location in the composition
+\end{itemize} \\
+\hline
+\end{tabularx}
+
+\subsubsection{Use Case 27: Copy and Paste a Group of Notes or Rests}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The user wants to copy and paste a group of notes or rests\\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition environment open in Flow
+\item The copy and paste of the highlighted group of notes or rests does not violate the set musical rules
+\item The location to paste the copied group of notes or rests on is valid
 \end{itemize} \\
 \hline
 Process Steps & 
 \begin{enumerate}
 \item The user highlights a group of notes or rests
-\item The user taps on the toggle details option 
+\item The user taps on the copy button in the top menu
+\item Flow copies the group of notes or rests onto the clipboard
+\item The user positions the indicator and line/space selector to a desired location along the musical staff
+\item The user taps on the paste button in the top menu
+\item Flow adds a copy of the group of notes or rests on the indicated location in the composition
 \end{enumerate} \\
 \hline
 Minimal Guarantees & 
-The toggle button graphic will change \\
+\begin{itemize}
+  \item The copy button will provide feedback
+  \item The paste button will provide feedback
+\end{itemize} \\
 \hline
 Success Guarantees & 
-The toggle button graphic will change and the details of the group of notes or rests will be displayed\\
-\hline
-Quality Requirements & 
 \begin{itemize}
-\item The information displayed about the group of notes or rests should be correct
-\item The toggle button icon should be correct 
-\end{itemize} \\ 
+  \item The highlighted group of notes or rests will be copied
+  \item The highlighted group of notes or rests will be pasted onto the indicated location in the composition
+\end{itemize} \\
 \hline
 \end{tabularx}
 
-%Sprint 1
-\subsubsection{Use Case 11: Create Blank Composition}
+\subsubsection{Use Case 28: Cut and Paste a Group of Notes or Rests}
 
-\LTXtable{\textwidth}{longtables/use_case_11_lt}
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Trigger & 
+The user wants to cut and paste a group of notes or rests\\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition environment open in Flow
+\item The cut and paste of the highlighted group of notes or rests does not violate the set musical rules
+\item The location to paste the cut group of notes or rests on is valid
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user highlights a group of notes or rests
+\item The user taps on the cut button in the top menu
+\item Flow stores the group of notes or rests onto the clipboard
+\item Flow removes the group of notes or rests from the composition
+\item The user positions the indicator and line/space selector to a desired location along the musical staff
+\item The user taps on the paste button in the top menu
+\item Flow adds the cut group of notes or rests on the indicated location in the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The cut button will provide feedback
+  \item The paste button will provide feedback
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The highlighted group of notes or rests will be cut from the composition
+  \item The highlighted group of notes or rests will be pasted onto the indicated location in the composition
+\end{itemize} \\
+\hline
+\end{tabularx}
+
 
 %Sprint 1
-\subsubsection{Use Case 12: View Existing Composition}
+\subsubsection{Use Case 29: Create Blank Composition}
+
+\LTXtable{\textwidth}{longtables/use_case_29_lt}
+
+%Sprint 1
+\subsubsection{Use Case 30: View Existing Composition}
 
 \begin{tabularx}{\textwidth}{|X|X|}
 \hline
@@ -1509,34 +1668,36 @@ Supporting Actors &
 \item Listener
 \item Instrumentalist
 \item Producer
+\item Flow
 \end{itemize} \\
 \hline
 Precondition & 
 \begin{itemize}
 \item The user is in the main menu screen
-\item The composition is in storage and is not corrupted
+\item The composition is in storage
+\item The composition is not corrupted
 \end{itemize} \\
 \hline
 Process Steps & 
 \begin{enumerate}
-\item User edit composition option from the main menu
+\item The user taps on the composition from the main menu
+\item Flow opens the selected composition
 \end{enumerate} \\
 \hline
 Minimal Guarantees & 
-A composition will open \\
+\begin{itemize}
+  \item None
+\end{itemize} \\
 \hline
 Success Guarantees & 
-The selected composition will open \\
-\hline
-Quality Requirements &
 \begin{itemize}
-\item The opened composition should have all the previous elements placed before in the correct position
-\end{itemize} \\ 
+  \item The selected composition will open
+\end{itemize} \\
 \hline
 \end{tabularx}
 
 %Sprint 1
-\subsubsection{Use Case 13: Delete Existing Composition}
+\subsubsection{Use Case 31: Delete Existing Composition}
 
 \begin{tabularx}{\textwidth}{|X|X|}
 \hline
@@ -1551,31 +1712,32 @@ Supporting Actors &
 \item Listener
 \item Instrumentalist
 \item Producer
+\item Flow
 \end{itemize} \\
 \hline
 Precondition & 
 \begin{itemize}
 \item The user is in the main menu screen
-\item The composition is in storage and is not corrupted
+\item The composition is in storage
 \end{itemize} \\
 \hline
 Process Steps & 
 \begin{enumerate}
-\item User taps delete composition option from the main menu
-\item User taps confirm
+\item The user taps on the delete composition button from the main menu
+\item The user taps confirm
+\item Flow deletes the selected composition
 \end{enumerate} \\
 \hline
 Minimal Guarantees & 
-A composition will be deleted \\
+\begin{itemize}
+  \item None
+\end{itemize} \\
 \hline
 Success Guarantees & 
-The correct composition will be deleted and will not remain in the system memory \\
-\hline
-Quality Requirements &
 \begin{itemize}
-\item Composition should absolutely be gone from the system memory
-\item Composition name will be made available for future compositions
-\end{itemize} \\ 
+  \item The selected composition will be deleted
+  \item Memory taken by the deleted composition will be freed
+\end{itemize} \\
 \hline
 \end{tabularx}
 
