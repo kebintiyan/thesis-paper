@@ -1,0 +1,40 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & The composer needs to add a chord \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Preconditions & 
+\begin{itemize}
+\item The user has a composition open in Flow 
+\item The addition of the chord is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user positions the indicator and line/space selector to a desired location along the musical staff
+\item The user toggles notes to chords in the side menu
+\item The user taps on the desired chord to add on the indicated location from the side menu
+\item Flow adds the desired chord on the indicated location in the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The side menu will return to being transparent
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+\item The desired chord is added on the indicated location
+\end{itemize} \\
+\hline
+\end{longtable}

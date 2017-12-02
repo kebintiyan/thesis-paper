@@ -1,0 +1,41 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The composer needs to change a note \\
+\hline
+Primary Actor & 
+Composer\\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow  
+\item The change of the selected note is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user selects the note to be changed 
+\item The user taps the desired note from the side menu to replace the selected note
+\item Flow replaces the note selected with the desired note in the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item A note will be replaced
+  \item The side menu will return to being transparent
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The selected note will be replaced with the desired note
+\end{itemize} \\
+\hline
+\end{longtable}

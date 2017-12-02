@@ -1,0 +1,42 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The user needs to delete a group of notes or rests \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The batch deletion is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user highlights a group of notes or rests
+\item The user taps the delete option in the side menu
+\item Flow removes the highlighted group of notes from the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item A group of notes will be deleted
+  \item The side menu will return to being transparent
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The highlighted group of notes will be deleted 
+  \item The space occupied by the highlighted group of notes will be freed
+\end{itemize} \\
+\hline
+\end{longtable}

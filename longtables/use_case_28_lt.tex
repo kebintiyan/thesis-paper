@@ -1,0 +1,47 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The user wants to cut and paste a group of notes or rests\\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition environment open in Flow
+\item The cut and paste of the highlighted group of notes or rests does not violate the set musical rules
+\item The location to paste the cut group of notes or rests on is valid
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user highlights a group of notes or rests
+\item The user taps on the cut button in the top menu
+\item Flow stores the group of notes or rests onto the clipboard
+\item Flow removes the group of notes or rests from the composition
+\item The user positions the indicator and line/space selector to a desired location along the musical staff
+\item The user taps on the paste button in the top menu
+\item Flow adds the cut group of notes or rests on the indicated location in the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The cut button will provide feedback
+  \item The paste button will provide feedback
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The highlighted group of notes or rests will be cut from the composition
+  \item The highlighted group of notes or rests will be pasted onto the indicated location in the composition
+\end{itemize} \\
+\hline
+\end{longtable}

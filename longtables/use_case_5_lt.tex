@@ -1,0 +1,49 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The user wants to add an accidental to the next note \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The addition of the desired note with selected accidental mark is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user taps on an accidental mark from the top menu
+\item The user positions the indicator and line/space selector to a desired location along the musical staff
+\item The user taps on the desired note to add on the indicated location from the side menu
+\item Flow adds the desired note with the toggled accidental mark on the indicated location in the composition
+\item Flow plays the sound of the added note
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The icon of the toggled accidental will change
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The note with the toggled accidental will be added
+  \item The sound of the added note will be played
+\end{itemize} \\
+\hline
+Quality Requirements & 
+\begin{itemize}
+\item The note will be added with the toggled accidentals
+\item The note with the accidentals will be placed on the desired location along the musical staff
+\end{itemize} \\ 
+\hline
+\end{longtable}

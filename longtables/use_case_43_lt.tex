@@ -1,0 +1,43 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The user needs to change a clef in the composition \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition environment open in Flow
+\item The change does not violate set the musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user taps on a clef in the composition
+\item Flow highlights the selected clef
+\item Flow opens the clef menu
+\item The user selects the new desired clef
+\item The user taps confirm
+\item Flow sets the new clef in the cpomosition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The pop-up for inputting the new clef closes
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The selected clef is changed into the desired clef
+\end{itemize} \\
+\hline
+\end{longtable}

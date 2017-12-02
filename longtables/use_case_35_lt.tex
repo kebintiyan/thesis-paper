@@ -1,0 +1,41 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The user needs to highlight a group of notes or rests \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The section to be highlighted contains at least one note or rest
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user taps and holds the head of the section to be highlighted
+\item The user swipes horizontally over the notes or rests he/she wants to highlight
+\item Flow displays the highlighted section
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item None
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item A section of the composition will be highlighted based on the gesture of the user 
+  \item Actions can be performed on the highlighted section
+\end{itemize} \\
+\hline
+\end{longtable}
