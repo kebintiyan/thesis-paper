@@ -1,0 +1,42 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The composer needs to change a rest \\
+\hline
+Primary Actor & 
+Composer\\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow  
+\item The change of the selected rest is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user selects the rest to be changed 
+\item The user toggles notes to rests in the side menu
+\item The user taps the desired rest from the side menu to replace the selected rest
+\item Flow replaces the rest selected with the desired rest in the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item A rest will be replaced
+  \item The side menu will return to being transparent
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The selected rest will be replaced with the desired rest
+\end{itemize} \\
+\hline
+\end{longtable}

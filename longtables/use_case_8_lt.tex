@@ -1,7 +1,7 @@
 \begin{longtable}{|X|X|}
 \hline
 Trigger & 
-The user needs to view the details of a group of notes \\
+The user needs to delete a group of notes or rests \\
 \hline
 Primary Actor & 
 Composer \\
@@ -17,25 +17,26 @@ Supporting Actors &
 Precondition & 
 \begin{itemize}
 \item The user has a composition open in Flow
-\item The group of notes or rests are in the composition
+\item The batch deletion is valid based on the set musical rules
 \end{itemize} \\
 \hline
 Process Steps & 
 \begin{enumerate}
 \item The user highlights a group of notes or rests
-\item The user taps on the toggle details option 
-\item Flow will display the details of the group of notes or rests
+\item The user taps the delete option in the side menu
+\item Flow removes the highlighted group of notes from the composition
 \end{enumerate} \\
 \hline
 Minimal Guarantees & 
 \begin{itemize}
-  \item The toggle button graphic will change
+  \item A group of notes will be deleted
+  \item The side menu will return to being transparent
 \end{itemize} \\
 \hline
 Success Guarantees & 
 \begin{itemize}
-  \item The toggle button graphic will change
-  \item The details of the selected group of notes or rests will be displayed  
+  \item The highlighted group of notes will be deleted 
+  \item The space occupied by the highlighted group of notes will be freed
 \end{itemize} \\
 \hline
 \end{longtable}

@@ -1,0 +1,45 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The user needs to view the available notes, rests, and chords to choose from in the side menu \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The side menu is currently displaying the available notes
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user taps the toggle button in the side menu
+\item Flow displays the available rests in the side menu
+\item The user taps the toggle button in the side menu
+\item Flow displays the available chords in the side menu
+\item The user taps the toggle button in the side menu
+\item Flow displays the available notes in the side menu
+\end{enumerate} \\
+\hline
+Minimal Guarantees &
+\begin{itemize}
+  \item The toggle button will give feedback
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The available rests will be displayed when the toggle button is tapped while Flow is displaying the available notes
+  \item The available chords will be displayed when the toggle button is tapped while Flow is displaying the available rests
+  \item The available notes will be displayed when the toggle button is tapped while Flow is displaying the available chords
+\end{itemize} \\
+\hline
+\end{longtable}

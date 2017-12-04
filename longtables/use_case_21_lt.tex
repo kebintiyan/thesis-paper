@@ -1,0 +1,41 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The user only needs to hear a section of the composition \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The composition is not empty
+\item The highlighted section contains at least one note or rest
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user highlights a section of the composition
+\item The user taps the play button
+\item Flow plays the sound of each note or rest in the highlighted section
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The icon for the play button will become a pause symbol then return to a play symbol once the composition is done playing
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The highlighted section will be played correctly until the last note or rest
+\end{itemize} \\
+\hline
+\end{longtable}

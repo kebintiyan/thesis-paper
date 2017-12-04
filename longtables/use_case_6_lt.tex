@@ -1,0 +1,43 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The user wants to change a note to its dotted version \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The transformation of the selected note into its dotted version does not violate the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user tap and holds on a note
+\item The user moves his/her finger on the selected dotted version while his/her finger is still in contact with the device screen
+\item The user lifts his/her finger from the device screen
+\item Flow transforms the note into the selected dotted version
+\item Flow plays the sound of the selected dotted version of the note
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The pop-up menu for dotted versions of the notes will close
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The note will transform into its selected dotted version
+  \item The sound of the dotted version of the note will be played 
+\end{itemize} \\
+\hline
+\end{longtable}

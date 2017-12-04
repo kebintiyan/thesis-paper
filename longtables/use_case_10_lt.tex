@@ -1,0 +1,46 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The user needs to replace a group of notes or rests with a single rest \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The batch replacement is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user highlights a group of notes or rests
+\item The user positions the line/space selector to a desired location
+\item The user toggles notes to rests in the side menu
+\item The user taps on the desired rest from the side menu
+\item Flow replaces the highlighted group of notes or rests with the desired rest in the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item A group of notes or rests will be deleted
+  \item The side menu will return to being transparent
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The highlighted group of notes or rests will be discarded
+  \item The desired rest will be added to the composition
+  \item The position of the added rest will be the head of the highlighted group of notes or rests and wherever the line/space selector is positioned 
+  \item The space occupied by the highlighted group of notes or rests will be freed
+\end{itemize} \\
+\hline
+\end{longtable}

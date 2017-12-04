@@ -1,0 +1,42 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & The composer needs to add a note \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Preconditions & 
+\begin{itemize}
+\item The user has a composition open in Flow 
+\item The addition of the desired note is valid based on the set musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user positions the indicator and line/space selector to a desired location along the musical staff
+\item The user taps on the desired note to add on the indicated location from the side menu
+\item Flow adds the desired note on the indicated location in the composition
+\item Flow plays the sound of the added note
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item A note will be added
+  \item The side menu will return to being transparent
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+\item The desired note is added on the indicated location
+\item The sound of the added note is played
+\end{itemize} \\
+\hline
+\end{longtable}

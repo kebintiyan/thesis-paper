@@ -1,0 +1,44 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The user needs to change the time signature of the composition \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The input for the new time signature follows set the musical rules
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user taps on the time signature
+\item Flow opens the time signature input menu
+\item The user inputs the desired new time signature
+\item The user taps confirm
+\item Flow saves the new time signature in the new composition
+\item Flow makes the adjustments in the composition to match the new time signature
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The pop-up for the input of the new time signature closes
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The new time signature is applied to the composition
+  \item The correct adjustments are made on the composition for the new time signature
+\end{itemize} \\
+\hline
+\end{longtable}

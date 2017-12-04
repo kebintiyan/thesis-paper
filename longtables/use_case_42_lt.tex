@@ -1,7 +1,7 @@
 \begin{longtable}{|X|X|}
 \hline
 Trigger & 
-The user needs to view the details of a group of notes \\
+The user needs to change the key signature of the composition \\
 \hline
 Primary Actor & 
 Composer \\
@@ -17,25 +17,26 @@ Supporting Actors &
 Precondition & 
 \begin{itemize}
 \item The user has a composition open in Flow
-\item The group of notes or rests are in the composition
+\item The input for the new key signature follows set the musical rules
 \end{itemize} \\
 \hline
 Process Steps & 
 \begin{enumerate}
-\item The user highlights a group of notes or rests
-\item The user taps on the toggle details option 
-\item Flow will display the details of the group of notes or rests
+\item The user taps on the key signature
+\item Flow opens the key signature setup menu
+\item The user inputs the desired new key signature
+\item The user taps confirm
+\item Flow sets the new key signature on the composition
 \end{enumerate} \\
 \hline
 Minimal Guarantees & 
 \begin{itemize}
-  \item The toggle button graphic will change
+  \item The pop-up for the input of the new key signature closes
 \end{itemize} \\
 \hline
 Success Guarantees & 
 \begin{itemize}
-  \item The toggle button graphic will change
-  \item The details of the selected group of notes or rests will be displayed  
+  \item The new key signature is applied to the composition
 \end{itemize} \\
 \hline
 \end{longtable}

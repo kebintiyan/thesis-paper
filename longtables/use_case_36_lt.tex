@@ -1,0 +1,43 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The user needs to change the name of the composition \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user has a composition open in Flow
+\item The new name does not violate any restrictions or limits set in Flow
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user taps on the name of the composition
+\item Flow highlights the name of the composition
+\item The user inputs the new name of the composition
+\item The user taps confirm
+\item Flow changes the name of the composition
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+  \item The pop-up for the input of the new name closes
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+  \item The new name is set on the composition
+  \item The new name will stay the same even after Flow reboots or the composition is closed
+\end{itemize} \\
+\hline
+\end{longtable}
