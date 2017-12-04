@@ -1,0 +1,46 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The user needs to create a new composition \\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user is in the main menu screen
+\item Device memory is not full
+\item Name of the new composition is not taken
+\item Name of the new composition does not exceed the maximum number of characters
+\item Name of the new composition does not contain any invalid characters
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user taps new composition option from the main menu
+\item The user writes the name for new composition
+\item The user taps confirm
+\item Flow creates a new composition
+\item Flow opens the composition screen
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+	\item The create a new composition menu will close
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+	\item A new blank composition will be created with preliminary musical elements in place
+	\item The blank composition will be named according to the user input
+\end{itemize} \\
+\hline
+\end{longtable}

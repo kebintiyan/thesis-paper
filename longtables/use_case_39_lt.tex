@@ -1,0 +1,49 @@
+\begin{longtable}{|X|X|}
+\hline
+Trigger & 
+The user needs to export the composition to MusicXML\\
+\hline
+Primary Actor & 
+Composer \\
+\hline
+Supporting Actors & 
+\begin{itemize}
+\item Listener
+\item Instrumentalist
+\item Producer
+\item Flow
+\end{itemize} \\
+\hline
+Precondition & 
+\begin{itemize}
+\item The user in the main menu of Flow
+\item The composition exists
+\end{itemize} \\
+\hline
+Process Steps & 
+\begin{enumerate}
+\item The user taps on the settings
+\item Flow opens the settings menu
+\item The user taps on the export to MusicXML button
+\item Flow opens the existing compositions menu
+\item The user select one of the existing compositions to export
+\item Flow highlights the selected composition
+\item The user taps confirm
+\item Flow exports the selected composition into the local storage of the device
+\item Flow returns the user to the main menu
+\end{enumerate} \\
+\hline
+Minimal Guarantees & 
+\begin{itemize}
+	\item The settings menu pop-up will close 
+	\item The existing compositions menu will close
+\end{itemize} \\
+\hline
+Success Guarantees & 
+\begin{itemize}
+	\item The composition is exported to MusicXML and stored within device storage
+	\item The composition stored within the device storage is in MusicXML format and can be opened by PDF Readers
+	\item The selected composition is not corrupted while exporting
+\end{itemize} \\
+\hline
+\end{longtable}
