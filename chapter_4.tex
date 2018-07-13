@@ -313,7 +313,7 @@ Swipe right, up, or down on the gesture space to generate notes starting from th
 
 \section{Experiment Design}
 
-This chapter will describe the user stories and use cases that will be highlighted in the testing of the application. The intended users for the application will be expert composers who have at least 7 years of experience with composing music and amateur composers who have less than a year of experience with composing music. These users should also have a basic knowledge on musical terms. The details on the testing to be conducted on these users will also be discussed in this chapter.
+This chapter will describe the user stories and use cases that will be highlighted in the testing of the application. The intended users for the application will be expert composers who have at least 7 years of experience with composing music and amateur composers who have less than 7 years of experience composing music. These users should also have a basic knowledge of musical terms and are able to read and write musical notation. The details on the testing to be conducted on these users will also be discussed in this chapter.
 
 \subsection{User Stories}
 The user stories of the system will be focused on the main functions of the application and will highlight each specific need that the user has for the system. These user stories came from the users, representing the tasks that they need to perform on musical composition applications. These are created with the context that the system will run on a mobile platform with the mode of interaction mainly being touch gestures. 
@@ -1185,13 +1185,68 @@ The tests will be conducted in an environment where a tester would not be influe
 
 Before starting the test, testers will be given a consent form. If they agree with the terms and continue with the testing, the tasks indicated in Section \ref{sec:tasks} will be done for each test setup (indicated in Section \ref{sec:test-setups}) that is appropriate. Before the test setup where the tester uses the proposed system, they will be given a brief description along with the objectives of the system. 
 
-The researchers will be collecting 3 kinds of data: time, cognitive load, and quality. There will be tasks that the testers will be asked to accomplish, and during and after those tasks, data will be collected. The time it takes to finish each task will be recorded. The cognitive load will be measured by using CogTool to receive a predicted cognitive load, and identifying moments of confusion for the users. After the testing, testers are then asked to answer a questionnaire to evaluate the quality of the application.
+The researchers will be collecting quantitative and qualitative data. There will be tasks that the testers will be asked to accomplish, and during and after those tasks, data will be collected. The time it takes to finish each task will be recorded. After the testing, testers are then asked to answer a questionnaire to evaluate the quality of the application.
 
-\subsubsection{Tasks}
+During the first two (2) iterations, five (5) subjects of both genders aged 18-40 were recruited through snowball sampling method to take part in the data collection and testing. These subjects were categorized into two (2) user groups based on musical composition experience: amateur, and experienced. For the third iteration, fifteen (15) subjects of the same demographics took part in the testing. In the last iteration, ten (10) subjects took part. 
+
+\subsection{Test Setups}
+\label{sec:test-setups}
+
+The setups between the preliminary testing and the subsequent testing were different. This was made so because the main goal of the preliminary testing was to gather feedback on the interaction design and help improve the system while it was still being developed. Other applications did not matter as much and were only used to gain insight on their interactions and how they could be used to improve the system. Although the goal of the subsequent tests were still to gather feedback and improve the system, they were also made to compare the system against similar musical composition applications. 
+
+\subsubsection{Preliminary Testing Setups}
+
+The test setups are meant to observe how existing methods of composition work and how their interactions could be used in Flow. The tasks enumerated in Section \ref{sec:preliminary-tasks} will be used in each test setup whenever possible since some tasks can only be accomplished within a specific setup. 
+
+There will be 3 different test setups to be used during user testing namely:
+
+\begin{enumerate}
+\item Tester composing using music sheets
+\item Tester composing using komp
+\item Tester composing using Flow
+\end{enumerate}
+
+The first setup simulates the traditional way of musical composition. This is through music sheets and a writing instrument. Traditional music sheets will be provided by the researchers as well as a choice of using a pen or pencil for writing musical elements. The composers are free to use as much music sheets as they want for drafting and experimenting with their composition as long as the time and resources provided by the researchers allow them.
+
+The second setup will be through an existing mobile application for iOS platforms, komp. Since the method of input in komp is similar to writing in music sheets, this setup will mainly be done to see how the interaction for traditional musical composition will work when applied to mobile devices. The researchers expect this setup to have similar results with the first setup and any data collected in this setup will be used to evaluate Flow.
+
+The third setup will be focused on the composer using the developed system, Flow. During the early periods of testing, a mid-fidelity InVision prototype will be used as a substitute. Using this prototype, the only task that the composer will be able to do is to explore the application. The main goal of this is to develop and improve the interaction design of the application. One a high-fidelity prototype has been developed, all tasks will be performed in the testing.
+
+\subsubsection{Subsequent Testing Setups}
+
+In the subsequent tests, Flow was compared against other musical notation applications. For each setup, the users had to go through the use cases listed in \ref{sec:use-cases} and perform the tasks outlined in \ref{sec:subsequent-tasks}. Note that these setups were given in random order and that the application developed by the researchers was not disclosed to prevent bias.
+
+\begin{enumerate}
+\item Tester composing using Notion
+\item Tester composing using komp
+\item Tester composing using Flow
+\end{enumerate}
+
+The first setup makes use of what is said to be the most popular musical notation application for mobile. For the second setup, komp is retained from the preliminary testing so that users can experience a traditional method of notation while on the iPad. The last setup makes use of the system developed by the researchers.
+
+\subsubsection{Use Cases}
+\label{sec:use-cases}
+
+For the subsequent test setups, the testers had to go perform use cases. These use cases were an attempt to simulate different musical composition scenarios. 
+
+\begin{enumerate}
+    \item Compose a familiar song (Twinkle Twinkle Little Star/Happy Birthday)
+    \item Compose from scratch
+    \item Modify a composition (Ode to Joy/Amazing Grace)
+\end{enumerate}
+
+
+\subsection{Tasks}
 \label{sec:tasks}
+
+Similar to the test setups, the tasks differed greatly between the preliminary testing and subsequent testing. Tasks were generalized in the subsequent testing to make it easier for the testers to compare the different applications.
+
+\subsubsection{Preliminary Testing Tasks}
+\label{sec:preliminary-tasks}
 
 Some tasks may be omitted in different test setups when a crucial function to carry out the task is unavailable. During the final task, testers are encouraged to speak aloud their concerns and opinions regarding the application.
 
+% TODO update this list
 \begin{enumerate}
 \item Add a note in the composition
 \item Add a series of notes
@@ -1201,21 +1256,18 @@ Some tasks may be omitted in different test setups when a crucial function to ca
 \item Free roam the application for 3-5 minutes
 \end{enumerate}
 
-\subsubsection{Test Setups}
-\label{sec:test-setups}
+\subsubsection{Subsequent Testing Tasks}
+\label{sec:subsequent-tasks}
 
-The test setups are meant to compare existing methods of composition with composition using Flow. The tasks enumerated in Section \ref{sec:tasks} will be used in each test setup whenever possible since some tasks can only be accomplished within a specific setup. 
-
-There will be 3 different test setups to be used during user testing namely:
+Since one of the goals of the subsequent tests was to compare how the interaction was against similar applications, the tasks were greatly simplified and generalized. Testers were also allowed to perform the tasks in any order they wanted and as much repititions it took for them to get acquainted with the specific task or action. These tasks were repeated for each of the use cases mentioned in \ref{sec:use-cases}.
 
 \begin{enumerate}
-\item Tester composing using music sheets
-\item Tester composing using Flow
-\item Tester composing using komp
+  \item Select/highlight notes/chords
+  \item Add notes/chords
+  \item Edit notes/chords
+  \item Delete notes/chords
+  \item Cut, copy, or paste notes/chords
+  \item Undo/redo an action
+  \item Play the composition
 \end{enumerate}
 
-The first setup simulates the traditional way of musical composition. This is through music sheets and a writing instrument. Traditional music sheets will be provided by the researchers as well as a choice of using a pen or pencil for writing musical elements. The composers are free to use as much music sheets as they want for drafting and experimenting with their composition as long as the time and resources provided by the researchers allow them.
-
-The second setup will be focused on the composer using the developed system, Flow. During the early periods of testing, a mid-fidelity InVision prototype will be used as a substitute. Using this prototype, the only task that the composer will be able to do is to explore the application. The main goal of this is to develop and improve the interaction design of the application. One a high-fidelity prototype has been developed, all tasks will be performed in the testing.
-
-The third setup will be through an existing mobile application for iOS platforms, komp. This setup will be done mainly to compare the performance of the user when performing certain tasks that are also available in Flow. The researchers expect this setup to have similar results with the first setup and any data collected in this setup will be used to evaluate Flow.
