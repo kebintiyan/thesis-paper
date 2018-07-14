@@ -19,7 +19,7 @@ This chapter discusses the features of the proposed solution, the system objecti
     \label{fig:researchframework}
 \end{figure}
 
-This study was designed to be repetitive and iterative, to allow for continuous improvement of the system. User research and observation are important steps to understanding the behavior of users and figuring out their pain points. This is followed by interviews with composers to confirm and distill the information gathered from the research and observations. The points that were given by the composers would then be used in the brainstorming phase to determine a suitable solution. The team will then consult with the researchers about the proposed solution to gather their insights about it. The brainstorming would then be repeated to improve on the solution followed by another consultation. This would be repeated until the team is satisfied with the solution.
+This study was designed to be repetitive and iterative, to allow for continuous improvement of the system. User research and observation are important steps to understanding the behavior of users and figuring out their pain points. This is followed by interviews with composers to confirm and process the information gathered from user tests and interviews. The points that were given by the composers would then be used in the brainstorming phase to determine a suitable solution. The team will then consult with the researchers about the proposed solution to gather their insights about it. The brainstorming would then be repeated to improve on the solution followed by another consultation. This would be repeated until the team is satisfied with the solution.
 
 The next phase would involve designing the interaction of the proposed solution. This would be followed by the prototype phase where a prototype would be built, tested, and improved repeatedly. Usability tests would be performed with different prototypes to create a good user experience. This phase would be repeated multiple times until the researchers are satisfied with the results of the tests.
 
@@ -28,31 +28,38 @@ The next phase would involve designing the interaction of the proposed solution.
 
 \subsection{System Overview}
 
-The system will integrate music theory and user experience in an interface for musical composition. The composition process of composers will be observed and analyzed so that the system can be built to fit this process. It will be built for the iOS, but will be optimized for the iPad. It will provide users an interface to create/edit, and view compositions. The user can interact with the system through a set of gestures that have been defined. Some gestures are intended for adding/editing/deleting notes while others are for musical metacreation. Finally, the system will allow users to save their composition, which would be saved using a MusicXML file unknown to the users.
+The system will integrate music theory and user experience in an interface for musical composition. The composition process of composers will be observed and analyzed so that the system can be built to fit this process. The system will undergo multiple revisions based on the results of user testing. It will be built for the iOS, but will be optimized for the iPad. It will provide users an interface to create/edit, and view compositions. The user can make use of the system through an interface containing compositional activities like adding, editing, and deleting notes. Finally, the system will allow users to save their composition, which can be imported to a MusicXML format.
 
 \subsection{System Objectives}
 
 	\subsubsection{General Objective}
 		
-        To provide an interface that allows composers to perform basic and advanced musical composition tasks via gesture interactions.
+        To provide an interface that allows composers to perform basic and advanced musical composition tasks via gesture interactions on a mobile platform.
 
 	\subsubsection{Specific Objectives}
     
     	Specifically, the system will allow users to do the following: 
           \begin{enumerate}
               \item View, create, edit, and delete their own compositions
-              \item Play their compositions
-              \item Set the clef, key signature, and time signature of their compositions
-              \item Add, edit, and delete notes through tap and hold gestures
-              \item Highlight a set of notes
-              \item Play the highlighted set of notes
-              \item View information on the pitch and octave of the notes
-              \item Make a horizontal gesture to the right to generate a sequence of notes based on previous notes and coded rules
-              \item Make a gesture to the right that goes up to generate a sequence of notes with an increasing pitch
-              \item Make a gesture to the right that goes down to generate a sequence of notes with an decreasing pitch
-              \item Make a swirling gesture to the right to generate a repeating sequence of notes
-              \item While gesturing, decrease the generated gestures by going to the left
-              \item Choose to confirm or cancel a sequence of notes generated by a gesture
+              \item Move cursor through tap gesture or cursor movement interface
+              \item Pan or zoom around the interface
+              \item Move note menu and cursor movement interface
+              \item Hide bottom menu
+              \item Hear their compositions
+              \item Set the key and time signature of their compositions
+              \item Add, edit, and delete notes/rests through the note menu
+              \item Add polyphonic notes/chords
+              \item Transposing a note or group of notes
+              \item Highlighting a single note or group of notes
+              \item Add, remove, or change an accidental/ottava on a note or group of notes
+              \item Add ties/slurs to notes
+              \item Transpose/Retrograde a note or a group of notes
+              \item Cut, copy, and paste a note/rest or a group of notes/rests
+              \item Add or remove dots on a note or group of notes
+              \item Undo/redo action
+              \item Change composition tempo
+              \item Input notes through the keyboard interface
+              \item Playback composition
               \item Save the composition to be stored in local storage    
 
           \end{enumerate}
@@ -73,7 +80,7 @@ Composers will also need to save their compositions in cases where they could no
 
 Gesture interactions are the main method of interaction within the system. Some gestures like tapping on the line need to be accurate and precise. To improve this precision, bigger screens will be needed. The iPad will be the best for this due to it having a large screen, yet still being portable. The testing will also be done on the iPad only.
 
-Finally, the system's musical metacreation will need to have a model for generating the succeeding notes. To make it lightweight, the system will make use of a rule-based model similar to that of Computoser \citep{bozhanov2014computoser} and SuperWillow \citep{schulze2011music}. The model will take into account music theory for its rules.
+Finally, the system's potential musical metacreation feature will need to have a model for generating the succeeding notes. To make it lightweight, the system will make use of a rule-based model similar to that of Computoser \citep{bozhanov2014computoser} and SuperWillow \citep{schulze2011music}. The model will take into account music theory for its rules.
 
 \subsection{Data Design}
 
