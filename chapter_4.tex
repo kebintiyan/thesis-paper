@@ -19,7 +19,7 @@ This chapter discusses the features of the proposed solution, the system objecti
     \label{fig:researchframework}
 \end{figure}
 
-This study was designed to be repetitive and iterative, to allow for continuous improvement of the system. User research and observation are important steps to understanding the behavior of users and figuring out their pain points. This is followed by interviews with composers to confirm and distill the information gathered from the research and observations. The points that were given by the composers would then be used in the brainstorming phase to determine a suitable solution. The team will then consult with the researchers about the proposed solution to gather their insights about it. The brainstorming would then be repeated to improve on the solution followed by another consultation. This would be repeated until the team is satisfied with the solution.
+This study was designed to be repetitive and iterative, to allow for continuous improvement of the system. User research and observation are important steps to understanding the behavior of users and figuring out their pain points. This is followed by interviews with composers to confirm and process the information gathered from user tests and interviews. The points that were given by the composers would then be used in the brainstorming phase to determine a suitable solution. The team will then consult with the researchers about the proposed solution to gather their insights about it. The brainstorming would then be repeated to improve on the solution followed by another consultation. This would be repeated until the team is satisfied with the solution.
 
 The next phase would involve designing the interaction of the proposed solution. This would be followed by the prototype phase where a prototype would be built, tested, and improved repeatedly. Usability tests would be performed with different prototypes to create a good user experience. This phase would be repeated multiple times until the researchers are satisfied with the results of the tests.
 
@@ -28,31 +28,38 @@ The next phase would involve designing the interaction of the proposed solution.
 
 \subsection{System Overview}
 
-The system will integrate music theory and user experience in an interface for musical composition. The composition process of composers will be observed and analyzed so that the system can be built to fit this process. It will be built for the iOS, but will be optimized for the iPad. It will provide users an interface to create/edit, and view compositions. The user can interact with the system through a set of gestures that have been defined. Some gestures are intended for adding/editing/deleting notes while others are for musical metacreation. Finally, the system will allow users to save their composition, which would be saved using a MusicXML file unknown to the users.
+The system will integrate music theory and user experience in an interface for musical composition. The composition process of composers will be observed and analyzed so that the system can be built to fit this process. The system will undergo multiple revisions based on the results of user testing. It will be built for the iOS, but will be optimized for the iPad. It will provide users an interface to create/edit, and view compositions. The user can make use of the system through an interface containing compositional activities like adding, editing, and deleting notes. Finally, the system will allow users to save their composition, which can be imported to a MusicXML format.
 
 \subsection{System Objectives}
 
 	\subsubsection{General Objective}
 		
-        To provide an interface that allows composers to perform basic and advanced musical composition tasks via gesture interactions.
+        To provide an interface that allows composers to perform basic and advanced musical composition tasks via gesture interactions on a mobile platform.
 
 	\subsubsection{Specific Objectives}
     
     	Specifically, the system will allow users to do the following: 
           \begin{enumerate}
               \item View, create, edit, and delete their own compositions
-              \item Play their compositions
-              \item Set the clef, key signature, and time signature of their compositions
-              \item Add, edit, and delete notes through tap and hold gestures
-              \item Highlight a set of notes
-              \item Play the highlighted set of notes
-              \item View information on the pitch and octave of the notes
-              \item Make a horizontal gesture to the right to generate a sequence of notes based on previous notes and coded rules
-              \item Make a gesture to the right that goes up to generate a sequence of notes with an increasing pitch
-              \item Make a gesture to the right that goes down to generate a sequence of notes with an decreasing pitch
-              \item Make a swirling gesture to the right to generate a repeating sequence of notes
-              \item While gesturing, decrease the generated gestures by going to the left
-              \item Choose to confirm or cancel a sequence of notes generated by a gesture
+              \item Move cursor through tap gesture or cursor movement interface
+              \item Pan or zoom around the interface
+              \item Move note menu and cursor movement interface
+              \item Hide bottom menu
+              \item Hear their compositions
+              \item Set the key and time signature of their compositions
+              \item Add, edit, and delete notes/rests through the note menu
+              \item Add polyphonic notes/chords
+              \item Transposing a note or group of notes
+              \item Highlighting a single note or group of notes
+              \item Add, remove, or change an accidental/ottava on a note or group of notes
+              \item Add ties/slurs to notes
+              \item Transpose/Retrograde a note or a group of notes
+              \item Cut, copy, and paste a note/rest or a group of notes/rests
+              \item Add or remove dots on a note or group of notes
+              \item Undo/redo action
+              \item Change composition tempo
+              \item Input notes through the keyboard interface
+              \item Playback composition
               \item Save the composition to be stored in local storage    
 
           \end{enumerate}
@@ -73,7 +80,7 @@ Composers will also need to save their compositions in cases where they could no
 
 Gesture interactions are the main method of interaction within the system. Some gestures like tapping on the line need to be accurate and precise. To improve this precision, bigger screens will be needed. The iPad will be the best for this due to it having a large screen, yet still being portable. The testing will also be done on the iPad only.
 
-Finally, the system's musical metacreation will need to have a model for generating the succeeding notes. To make it lightweight, the system will make use of a rule-based model similar to that of Computoser \citep{bozhanov2014computoser} and SuperWillow \citep{schulze2011music}. The model will take into account music theory for its rules.
+Finally, the system's potential musical metacreation feature will need to have a model for generating the succeeding notes. To make it lightweight, the system will make use of a rule-based model similar to that of Computoser \citep{bozhanov2014computoser} and SuperWillow \citep{schulze2011music}. The model will take into account music theory for its rules.
 
 \subsection{Data Design}
 
@@ -1380,13 +1387,13 @@ Success Guarantees &
 
 \subsection{User Test Plan}
 
-The objective of the tests will be to determine if the interaction and design of the system does not hinder the productivity of the target user. The functionality of the system will also be tested to see if there are problems that will occur while performing tasks.
+The objective of the tests will be to determine if the interaction and design of the system augments the user experience of the composer while interacting with Flow. The functionality will also be closely monitored to see if there are glitches or bugs that require additional fixes in the development side. These bugs or glitches will warrant an intervention from the researchers during the testing.
 
-The tests will be conducted in an environment where a tester would not be influenced by the researchers to ensure that their interaction with the application is as close as to a natural setting as possible. The prototypes for testing will be a mid-fidelity prototype created through the use of the InVision application, a prototyping tool, and the actual high-fidelity system developed using Swift. These prototypes will be in a tablet device. 
+The tests will be conducted in an environment where audio and visual disturbances are at a minimum. This is to ensure that the researchers are able to analyze clear audio and video data from the recording devices used during the testing. This is also to ensure that the tester is not disutbred during the testing. The setups used accross all the user tests are 4 kinds of Flow system prototpyes, 1 created using a prototyping tool called InVision, and 3 coded in Swift; 2 kinds of commercially available notation applications in the App Storem, Notion and Komp; and the traditional form of composition which is using music sheets and writing materials. Notation softwares and the Flow prototypes will be launched on a mobile platform, namely an IPad tablet.
 
-Before starting the test, testers will be given a consent form. If they agree with the terms and continue with the testing, the tasks indicated in Section \ref{sec:tasks} will be done for each test setup (indicated in Section \ref{sec:test-setups}) that is appropriate. Before the test setup where the tester uses the proposed system, they will be given a brief description along with the objectives of the system. 
+Before starting the test, testers will be given a consent form. If they agree with the terms and continue with the testing, the tasks indicated in Section \ref{sec:tasks} will be done for each test setup (indicated in Section \ref{sec:test-setups}) that is appropriate. Before the start of the test where the tester start to accomplish tasks or use cases for the test setup, they will be given a brief description of the objectives of the study along with overview of the tasks or use cases. 
 
-The researchers will be collecting quantitative and qualitative data. There will be tasks that the testers will be asked to accomplish, and during and after those tasks, data will be collected. The time it takes to finish each task will be recorded. After the testing, testers are then asked to answer a questionnaire to evaluate the quality of the application.
+The researchers will be collecting quantitative and qualitative data. There will be tasks that the testers will be asked to accomplish, during iteration 1 and 2, after those tasks, data will be collected through an online form open after testing. During iteration 3 and 4, data will be collected during each use case through an online form. There will be video recording of the testers face and hand movements to be analyzed by the researchers during the testing. After the testing, for iteration 1 and 2, testers are then asked to answer a questionnaire to evaluate the quality of the application, and for iteration 3 and 4, testers are given a brief interview about their thoughts on each of the setups and the application.
 
 During the first two (2) iterations, five (5) subjects of both genders aged 18-40 were recruited through snowball sampling method to take part in the data collection and testing. These subjects were categorized into two (2) user groups based on musical composition experience: amateur, and experienced. For the third iteration, fifteen (15) subjects of the same demographics took part in the testing. In the last iteration, ten (10) subjects took part. 
 
@@ -1403,9 +1410,39 @@ There will be 3 different test setups to be used during user testing namely:
 
 \begin{enumerate}
 \item Tester composing using music sheets
-\item Tester composing using komp
+\item Tester composing using Komp
 \item Tester composing using Flow
 \end{enumerate}
+
+For the first iteration, there will be 4 tasks for each of these setups with 1 special task for the setup using Flow:
+
+\begin{enumerate}
+\item Add a Note
+\item Add a Series of Notes
+\item Change a Note
+\item Special Task - Delete a Series of Notes
+\item Compose for 3 Minutes
+\end{enumerate}
+
+For the second iteration, there will be 7 tasks for each of these setups and 3 additional special tasks for the setup using Flow:
+
+\begin{enumerate}
+\item Add notes to fill 2 measures
+\item Change Time Signature to 3/4
+\item Special Task - Empty one measure
+\item Special Task - Empty composition
+\item Add enough notes to fill 2 measures in 2 staffs
+\item Add an accidental to 2 notes
+\item Remove placed accidentals 
+\item Change Key Signature
+\item Special Task - Replace a group of notes with a single note
+\item Create or recreate a composition (Exactly 4 measures)
+\subitem Twinkle Twinkle Little Star
+\subitem Canon in D
+\subitem Ode to Joy 
+\end{enumerate}
+
+
 
 The first setup simulates the traditional way of musical composition. This is through music sheets and a writing instrument. Traditional music sheets will be provided by the researchers as well as a choice of using a pen or pencil for writing musical elements. The composers are free to use as much music sheets as they want for drafting and experimenting with their composition as long as the time and resources provided by the researchers allow them.
 
