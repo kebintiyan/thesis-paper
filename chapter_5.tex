@@ -131,7 +131,7 @@
 
 			Since a lot of the testers from iteration 2 expressed their opinion that the menu felt a bit cramped and the buttons a bit small, a separate menu was created and placed at the bottom of the screen. This menu contained modifiers like the accidentals and dots. This menu's visibility could be toggled using show/hide buttons. However, one issue that was observed was that the show button was not that obvious. Because of this, some users were not able to access the other modifiers because they were not able to see the menu. This was solved for the next iteration by revising the show button. 
 
-			Another issue with the bottom menu was that it split the focus of the users. Since there was now a menu at the top and a menu at the bottom, some users had a harder time finding specific functions. Their initial instinct was to first look at the bottom menu so it added extra load just to find the top menu functions like cut, copy, or paste. For the next iteration, the top menu was moved to the bottom so users would only have to look in one segment (see Figure \ref{fig:before-after-menu}). 
+			However, notice that testers 1 and 7 rated the \textit{Cut, copy, or paste notes/chords} feature quite low at 1.0 and 1.5 respectively. When asked why, they said that they could not figure out how to do it immediately because they were not able to find the icons easily. This relates to another issue with the bottom menu was that it split the focus of the users. Since there was now a menu at the top and a menu at the bottom, some users had a harder time finding specific functions. Their initial instinct was to first look at the bottom menu so it added extra load just to find the top menu functions like cut, copy, or paste. For the next iteration, the top menu was moved to the bottom so users would only have to look in one segment (see Figure \ref{fig:before-after-menu}). 
 
 			\begin{figure}[h]
 				\centering
@@ -146,12 +146,12 @@
 
 			\begin{figure}[h]
 				\centering
-				\includegraphics[scale=0.25]{figures/before-after-pianobtn.png}
+				\includegraphics[scale=0.273]{figures/before-after-pianobtn.png}
 			    \caption{The show/hide piano button before and after changes were made due to the user testing. The piano button was moved beside the notations menu to make it easier to find.}
 			    \label{fig:before-after-pianobtn}
 			\end{figure}
 
-			From the quantitative results, it can be seen that the music playback scored the lowest. This happened because of two reasons: (1) the playback always started from the first measure, and (2) the playback did not show the current note/rest that was playing. Observations made during the tests showed that the composers would usually place the cursor at the measure where they wanted to start playing from. They would be surprised to find out that the playback always started from the first measure, regardless of the cursor placement. This feature was incorporated in iteration 4 to reduce the tediousness when writing a long composition. Another issue related to the playback was that it only showed the current measure that was playing and not the current note/rest. This was also added for iteration 4 to reduce confusion and to make it easier to find the notes/rests they need to change in case they want to modify the melody (see Figure \ref{fig:before-after-playback}). 
+			From the quantitative results, it can be seen that the \textit{Music Playback} scored the lowest. Note that tester 1 gave the feature a score of only 1.0. This happened because of two reasons: (1) the playback always started from the first measure, and (2) the playback did not show the current note/rest that was playing. Observations made during the tests showed that the composers would usually place the cursor at the measure where they wanted to start playing from. They would be surprised to find out that the playback always started from the first measure, regardless of the cursor placement. This feature was incorporated in iteration 4 to reduce the tediousness when writing a long composition. Another issue related to the playback was that it only showed the current measure that was playing and not the current note/rest. This was also added for iteration 4 to reduce confusion and to make it easier to find the notes/rests they need to change in case they want to modify the melody (see Figure \ref{fig:before-after-playback}). 
 
 			\begin{figure}[h]
 				\centering
@@ -184,10 +184,13 @@
 
 			In iteration 4, majority of the testers were experts, hence the somewhat low scores. A lot of them felt that Flow was a bit lacking in terms of features and modifiers, which was understandable given that not all musical notation modifiers were implemented to give focus to the interaction. However, some did enjoy the method of interaction, specifically the presence of the cursor, and commented that it was straightforward and easy to understand immediately. 
 
+			It can be seen, however, that tester 1 rated the \textit{Select or highlight notes/chords} and \textit{Cut, copy, or paste notes/chords} features quite low. The reason why these two are low are actually connected. The said tester was not actually able to figure out how to perform the highlight gesture. Because of that, they were also not able to fully perform cut/copy/paste actions because they could not highlight any notes/rests. However, they also mentioned that they were not really accustomed to using mobile applications which most likely caused the unfamiliarity with the gesture. 
+
+			It can also be noticed that tester 9 rated the \textit{Music playback} feature very low at 1.0. This was caused by a bug in the application that would play the tempo of the composition slower than it should be. This only happened when the user would play the composition repeatedly. An inefficient piece of code caused a variable to be instantiated repeatedly, causing the playback to slow down after multiple playback attempts. 
 		
 		% subsection iteration_4 (end)
 
-	\section{Comparative Analysis} % (fold)
+	\section{Comparative Analysis Between Iterations} % (fold)
 	\label{sec:comparative_analysis}
 
 		The five (5) testers present in iteration 1 and 2 were also present in iteration 3. This was done to allow an analysis of common samples and see if there was an improvement in the user experience for these testers. Tables \ref{tab:common-samples-it1}, \ref{tab:common-samples-it2}, and \ref{tab:common-samples-it3} show the scores given by these testers for similar features from iteration 1, 2, and 3 respectively. Note that for iteration 1 and 2, since the features were more specific, similar features were grouped into a more general description of the feature to match that of iteration 3. The average of the scores from the similar features was the score used for the general feature.
@@ -197,7 +200,7 @@
 		  \captionof{table}{Common Samples Feature Scores for Iteration 1} \label{tab:common-samples-it1}
 		  \begin{tabular}{|p{3cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.8cm}|R{.8cm}|R{.8cm}|R{.8cm}|}
 		  	\hline
-		  	\textbf{Feature} & \textbf{T1} & \textbf{T2} & \textbf{T3} & \textbf{T4} & \textbf{T5} & \begin{math}\bm{\mu}\end{math} & \textbf{Min} & \textbf{Max} & \begin{math}\bm{\sigma}\end{math} \\ \hline
+		  	\textbf{Feature} & \textbf{T1} & \textbf{T2} & \textbf{T3} & \textbf{T4} & \textbf{T5} & \begin{math}\bm{\mu}\end{math} & \textbf{min} & \textbf{max} & \begin{math}\bm{\sigma}\end{math} \\ \hline
 
 		  	Select or highlight notes/chords 	& 3.0 & 3.1 & 3.1 & 3.5 & 2.9 & 3.1 & 2.9 & 3.5 & 0.2 \\ \hline
 			Add notes/chords 						& 3.0 & 2.5 & 3.0 & 3.3 & 2.3 & 2.8 & 2.3 & 3.3 & 0.4 \\ \hline
@@ -213,7 +216,7 @@
 		  \captionof{table}{Common Samples Feature Scores for Iteration 2} \label{tab:common-samples-it2}
 		  \begin{tabular}{|p{3cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.8cm}|R{.8cm}|R{.8cm}|R{.8cm}|}
 		  	\hline
-		  	\textbf{Feature} & \textbf{T1} & \textbf{T2} & \textbf{T3} & \textbf{T4} & \textbf{T5} & \begin{math}\bm{\mu}\end{math} & \textbf{Min} & \textbf{Max} & \begin{math}\bm{\sigma}\end{math} \\ \hline
+		  	\textbf{Feature} & \textbf{T1} & \textbf{T2} & \textbf{T3} & \textbf{T4} & \textbf{T5} & \begin{math}\bm{\mu}\end{math} & \textbf{min} & \textbf{max} & \begin{math}\bm{\sigma}\end{math} \\ \hline
 
 		  	Select or highlight notes/chords 	& 3.8 & 3.9 & 3.6 & 3.3 & 3.2 & 3.6 & 3.2 & 3.9 & 0.3 \\ \hline
 			Add notes/chords 						& 3.3 & 3.8 & 3.5 & 4.0 & 3.0 & 3.5 & 3.0 & 4.0 & 0.4 \\ \hline
@@ -229,7 +232,7 @@
 		  \captionof{table}{Common Samples Feature Scores for Iteration 3} \label{tab:common-samples-it3}
 		  \begin{tabular}{|p{3cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.8cm}|R{.8cm}|R{.8cm}|R{.8cm}|}
 		  	\hline
-		  	\textbf{Feature} & \textbf{T1} & \textbf{T2} & \textbf{T3} & \textbf{T4} & \textbf{T5} & \begin{math}\bm{\mu}\end{math} & \textbf{Min} & \textbf{Max} & \begin{math}\bm{\sigma}\end{math} \\ \hline
+		  	\textbf{Feature} & \textbf{T1} & \textbf{T2} & \textbf{T3} & \textbf{T4} & \textbf{T5} & \begin{math}\bm{\mu}\end{math} & \textbf{min} & \textbf{max} & \begin{math}\bm{\sigma}\end{math} \\ \hline
 
 		  	Select or highlight notes/chords 	& 3.5 & 4.0 & 3.5 & 4.0 & 4.0 & 3.8 & 3.5 & 4.0 & 0.3 \\ \hline
 			Add notes/chords 						& 3.5 & 4.0 & 4.0 & 4.0 & 4.0 & 3.9 & 3.5 & 4.0 & 0.2 \\ \hline
@@ -239,7 +242,7 @@
 		  \end{tabular}
 		\end{table}
 
-		Shown in Table \ref{tab:summarized-common-samples} and Figure \ref{fig:common-samples-line} are the per feature summarized scores from the common samples. It can be observed that each feature increases in its average rating per iteration. This can imply an increase in the user experience for the common samples. The greatest increase however, comes from iteration 1 to iteration 2, with a total increase of 3.6 and an average increase of 0.9. For iteration 2 to iteration 3, it was only a 1.4 total increase and an average increase of 0.4 but is still an improvement. 
+		Shown in Table \ref{tab:summarized-common-samples} and Figures \ref{fig:select-line}, \ref{fig:add-line}, \ref{fig:edit-line}, and \ref{fig:delete-line} are the per feature summarized scores from the common samples. It can be observed that each feature increases in its average rating per iteration. This can imply an increase in the user experience for the common samples. The greatest increase however, comes from iteration 1 to iteration 2, with a total increase of 3.6 and an average increase of 0.9. For iteration 2 to iteration 3, it was only a 1.4 total increase and an average increase of 0.4 but is still an improvement. 
 
 		\begin{table}[H]
 		  \centering
@@ -258,11 +261,33 @@
 
 		\begin{figure}[H]
 			\centering
-			\frame{\includegraphics[scale=0.7]{figures/line-chart}}
-		    \caption{Line chart showing the summarized common samples feature scores from iteration 1 to iteration 3.}
-		    \label{fig:common-samples-line}
+			\frame{\includegraphics[scale=0.7]{figures/select-line.png}}
+		    \caption{Line chart showing the summarized common samples feature scores of the \textit{Select or highlight notes/chords} feature from iteration 1 to iteration 3.}
+		    \label{fig:select-line}
 		\end{figure} 
 
+		\begin{figure}[H]
+			\centering
+			\frame{\includegraphics[scale=0.7]{figures/add-line.png}}
+		    \caption{Line chart showing the summarized common samples feature scores of the \textit{Add notes/chords} feature from iteration 1 to iteration 3.}
+		    \label{fig:add-line}
+		\end{figure} 
+
+		\begin{figure}[H]
+			\centering
+			\frame{\includegraphics[scale=0.7]{figures/edit-line.png}}
+		    \caption{Line chart showing the summarized common samples feature scores of the \textit{Edit notes/chords} feature from iteration 1 to iteration 3.}
+		    \label{fig:edit-line}
+		\end{figure} 
+
+
+		\begin{figure}[H]
+			\centering
+			\frame{\includegraphics[scale=0.7]{figures/delete-line.png}}
+		    \caption{Line chart showing the summarized common samples feature scores of the \textit{Delete notes/chords} feature from iteration 1 to iteration 3.}
+		    \label{fig:delete-line}
+		\end{figure} 
+		
 		The feature with the greatest increase from iteration 1 to iteration 3 is the delete function. It started as one of the features with the lowest score in iteration 1 at only 2.2 and ended up as the feature with the highest score in iteration 3 at a perfect 4.0, having a total increase of 1.8 points. This can be attributed to the several improvements made to the interaction of the delete feature. In iteration 1, users would have to use the highlight feature to delete, even if it was just a single note/rest. With the changes made to the highlight interaction and allowing users to delete when the cursor is pointed on the note/rest, the experience of deleting and even editing improved for the users. The delete feature was still further improved for iteration 3 by allowing users to delete even when the cursor is not exactly pointed on the note/rest, as long as the cursor is on the same x-coordinate and staff as the note. 
 
 		% Compare the alpha level you chose (i.e. 0.05) to the p-value in the output. If the p-value in the output is smaller than the alpha level you chose, reject the null hypothesis.
