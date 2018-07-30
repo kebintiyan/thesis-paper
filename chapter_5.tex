@@ -201,6 +201,23 @@
 	\section{Comparative Analysis Between Iterations} % (fold)
 	\label{sec:comparative_analysis}
 
+		Shown in Table \ref{tab:summarized-all} and Figures \ref{fig:select-bar}, \ref{fig:add-bar}, \ref{fig:edit-bar}, and \ref{fig:delete-bar} are the per feature summarized scores across all iterations. It can be observed that each feature increases in its average rating from iteration 1 to iteration 3. This can imply an improvement in the user experience. Scores went down a bit in iteration 4, but this could probably be attributed to the demographics of the testers since all but one (1) have never used the application before and most were experts. The greatest increase however, comes from iteration 1 to iteration 2, with a total increase of 3.6 and an average increase of 0.9. 
+
+		\begin{table}[H]
+		  \centering
+		  \captionof{table}{Summarized Feature Scores from Iteration 1 - 4} \label{tab:summarized-all}
+		  \begin{tabular}{|p{2.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.5cm}|R{1.4cm}|R{1.4cm}|R{1.4cm}|}
+		  	\hline
+		  	\textbf{Feature} & \textbf{I1} & \textbf{I2} & \textbf{I3} & \textbf{I4} & \begin{math}\bm{\mu}\end{math} & \textbf{I2 - I1} & \textbf{I3 - I2} & \textbf{I4 - I3} \\ \hline
+
+		  	Select or highlight notes/chords 	& 3.1 & 3.6 & 3.7 & 3.4 & 3.4 & 0.5 & 0.1 & -0.3 \\ \hline
+			Add notes/chords 						& 2.8 & 3.5 & 3.7 & 3.2 & 3.3 & 0.7 & 0.2 & -0.5 \\ \hline
+			Edit notes/chords 						& 2.2 & 3.2 & 3.3 & 3.0 & 2.9 & 1.0 & 0.1 & -0.3 \\ \hline
+			Delete notes/chords 					& 2.2 & 3.6 & 3.7 & 3.4 & 3.2 & 1.4 & 0.1 & -0.3 \\ \hline
+
+		  \end{tabular}
+		\end{table}
+
 		\begin{figure}[H]
 			\centering
 			\frame{\includegraphics[scale=0.7]{figures/results-select-bar.png}}
@@ -211,14 +228,14 @@
 		\begin{figure}[H]
 			\centering
 			\frame{\includegraphics[scale=0.7]{figures/results-add-bar.png}}
-		    \caption{Line chart showing the summarized feature scores of the \textit{Add notes/chords} feature from iteration 1 to iteration 4.}
+		    \caption{Bar chart showing the summarized feature scores of the \textit{Add notes/chords} feature from iteration 1 to iteration 4.}
 		    \label{fig:add-bar}
 		\end{figure} 
 
 		\begin{figure}[H]
 			\centering
 			\frame{\includegraphics[scale=0.7]{figures/results-edit-bar.png}}
-		    \caption{Line chart showing the summarized feature scores of the \textit{Edit notes/chords} feature from iteration 1 to iteration 4.}
+		    \caption{Bar chart showing the summarized feature scores of the \textit{Edit notes/chords} feature from iteration 1 to iteration 4.}
 		    \label{fig:edit-bar}
 		\end{figure} 
 
@@ -226,10 +243,13 @@
 		\begin{figure}[H]
 			\centering
 			\frame{\includegraphics[scale=0.7]{figures/results-delete-bar.png}}
-		    \caption{Line chart showing the summarized feature scores of the \textit{Delete notes/chords} feature from iteration 1 to iteration 4.}
+		    \caption{Bar chart showing the summarized feature scores of the \textit{Delete notes/chords} feature from iteration 1 to iteration 4.}
 		    \label{fig:delete-bar}
 		\end{figure} 
 
+		The feature with the greatest increase is the delete function. It started as one of the features with the lowest score in iteration 1 at only 2.2 and ended up as the feature with one of the highest scores in iteration 4 at 3.4. This is because of the several improvements made to the interaction of the delete feature. In iteration 1, users would have to use the highlight feature to delete, even if it was just a single note/rest. With the changes made to the highlight interaction and allowing users to delete when the cursor is pointed on the note/rest, the experience of deleting and even editing improved for the users. The delete feature was still further improved for iteration 3 by allowing users to delete even when the cursor is not exactly pointed on the note/rest, as long as the cursor is on the same x-coordinate and staff as the note. 
+
+		\begin{comment}
 		The five (5) testers present in iteration 1 and 2 were also present in iteration 3. This was done to allow an analysis of common samples and see if there was an improvement in the user experience for these testers. Tables \ref{tab:common-samples-it1}, \ref{tab:common-samples-it2}, and \ref{tab:common-samples-it3} show the scores given by these testers for similar features from iteration 1, 2, and 3 respectively. Note that for iteration 1 and 2, since the features were more specific, similar features were grouped into a more general description of the feature to match that of iteration 3. The average of the scores from the similar features was the score used for the general feature.
 
 		\begin{table}[!htpb]
@@ -327,8 +347,11 @@
 		
 		The feature with the greatest increase from iteration 1 to iteration 3 is the delete function. It started as one of the features with the lowest score in iteration 1 at only 2.2 and ended up as the feature with the highest score in iteration 3 at a perfect 4.0, having a total increase of 1.8 points. This can be attributed to the several improvements made to the interaction of the delete feature. In iteration 1, users would have to use the highlight feature to delete, even if it was just a single note/rest. With the changes made to the highlight interaction and allowing users to delete when the cursor is pointed on the note/rest, the experience of deleting and even editing improved for the users. The delete feature was still further improved for iteration 3 by allowing users to delete even when the cursor is not exactly pointed on the note/rest, as long as the cursor is on the same x-coordinate and staff as the note. 
 
+		\end{comment}
+
 		% Compare the alpha level you chose (i.e. 0.05) to the p-value in the output. If the p-value in the output is smaller than the alpha level you chose, reject the null hypothesis.
 
+		\begin{comment}
 		Since there were also some new testers introduced in iteration 3, it would also be possible to compare these ``isolates'' with the common samples. Tables \ref{tab:compare-cs-is} and \ref{tab:compare-i3-is} show the comparison of the scores from the common samples (across all iterations and iteration 3 only) versus the isolates. A two-way t-test was also performed with the null hypothesis being the two having a mean of zero (0) or having no significant difference, and with the alpha set to 0.05.
 
 		Notice that in Table \ref{tab:compare-cs-is}, the case where the average scores across all iterations were used in comparison to the scores given by the isolates, the isolates had higher scores in all features. This is mainly because of the lower scores from the previous two iterations. A lot of improvements were needed, hence they pulled down the scores for the common samples across all iterations. However, the opposite is true when only the scores from iteration 3 are compared with the scores from the isolates. This was likely to happen since the common samples already had experience using the application beforehand and knew what to expect while the isolates were entirely new to the application. In both cases, the p-value is less than the alpha, which means that the null hypothesis is rejected and that there is a significant difference. 
@@ -417,8 +440,13 @@
 		  	\textbf{p-value} 									& \multicolumn{2}{r|}{0.00} \\ \hline
 		  \end{tabular}
 		\end{table}
+		\end{comment}
 
-		Lastly, the testers were also asked to rate the usability of the three (3) applications they used through a scale of 1 - 4 with 4 being the highest. The scores were to be expected as a lot of people commented that Notion was the application they liked using the most because of its completeness. They said that they felt like Notion would be able to create a full piece hence they would almost always rate it the highest. However, when it came to the input method, a lot mentioned that they found Flow to be the easiest. They would often say that the only problem they had with Flow was that it lacked features to become a full musical composition application, but in terms of interaction, it was very good. Komp was last mainly because of its input. Although a lot of them liked its concept of writing as you would on a physical music sheet, it did not work too well and would often cause frustration for its users. 
+	\section{Comparative Analysis Between Applications}
+
+		The testers were also asked to rate the usability of the three (3) applications they used through a scale of 1 - 4 with 4 being the highest. Table \ref{tab:app-usability-scores} lists the results from the survey. Notion ends up as the highest with an average score of 3.6, followed by Flow at 3.0, with Komp being the last at 1.9.
+
+		The scores were to be expected as a lot of people commented that Notion was the application they liked using the most because of its completeness. They said that they felt like Notion would be able to create a full piece hence they would almost always rate it the highest. However, when it came to the input method, a lot mentioned that they found Flow to be the easiest. They would often say that the only problem they had with Flow was that it lacked features to become a full musical composition application, but in terms of interaction, it was very good. Komp was last mainly because of its input. Although a lot of them liked its concept of writing as you would on a physical music sheet, it did not work too well and would often cause frustration for its users. 
 
 
 		\begin{table}[!htpb]
