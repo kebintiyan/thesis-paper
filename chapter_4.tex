@@ -9,20 +9,218 @@
 
 \chapter{Research Framework}
 
-This chapter discusses the features of the proposed solution, the system objectives, frameworks used and specifications. The research experiment design, user stories, and use cases are also described in this section. 
+	This chapter discusses the features of the proposed solution, the system objectives, frameworks used and specifications. The research experiment design, user stories, and use cases are also described in this section. 
 
-%insert diagram here of the research framework
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.25]{Research_Framework}
-    \caption{The research framework for Flow.}
-    \label{fig:researchframework}
-\end{figure}
+	%insert diagram here of the research framework
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.42]{figures/research_framework_sectioned.png}
+	    \caption{The research framework for Flow.}
+	    \label{fig:research_framework}
+	\end{figure}
 
-This study was designed to be repetitive and iterative, to allow for continuous improvement of the system. User research and observation are important steps to understanding the behavior of users and figuring out their pain points. This is followed by interviews with composers to confirm and process the information gathered from user tests and interviews. The points that were given by the composers would then be used in the brainstorming phase to determine a suitable solution. The team will then consult with the researchers about the proposed solution to gather their insights about it. The brainstorming would then be repeated to improve on the solution followed by another consultation. This would be repeated until the team is satisfied with the solution.
+	The methodology for this study can be divided into three (3) main phases. The goal of the first phase (see Figure \ref{fig:research_framework} E1), is to understand the composers and identify their needs and problems. Using the gathered insights from the first phase, the second phase (see Figure \ref{fig:research_framework} E2)  will involve designing the interaction of the proposed solution. The last phase (see Figure \ref{fig:research_framework} E3) would then be an iterative process of testing and developing the proposed solution.
 
-The next phase would involve designing the interaction of the proposed solution. This would be followed by the prototype phase where a prototype would be built, tested, and improved repeatedly. Usability tests would be performed with different prototypes to create a good user experience. This phase would be repeated multiple times until the researchers are satisfied with the results of the tests.
 
+	\begin{comment}
+	The goal of the first phase, \textit{understanding composer needs}, is to get to know more about the user and figure out their needs and pain points. User research and observation are key activities in this phase and is followed by interviews with composers to confirm and process the information as well as gather more insights. The points that were given by the composers would then be used in the brainstorming phase to determine a suitable solution. Consultations with composers will then be done to gather their insights on the proposed solution. This process will be repeated until the team is satisfied with the proposed solution.
+
+	The next phase, \textit{design and implementation of interaction}, 
+	\end{comment}
+
+	\begin{comment}
+	This study was designed to be repetitive and iterative, to allow for continuous improvement of the system. User research and observation are important steps to understanding the behavior of users and figuring out their pain points. This is followed by interviews with composers to confirm and process the information gathered from user tests and interviews. The points that were given by the composers would then be used in the brainstorming phase to determine a suitable solution. The team will then consult with the researchers about the proposed solution to gather their insights about it. The brainstorming would then be repeated to improve on the solution followed by another consultation. This would be repeated until the team is satisfied with the solution.
+
+	The next phase would involve designing the interaction of the proposed solution. This would be followed by the prototype phase where a prototype would be built, tested, and improved repeatedly. Usability tests would be performed with different prototypes to create a good user experience. This phase would be repeated multiple times until the researchers are satisfied with the results of the tests.
+	\end{comment}
+
+	\begin{comment}
+		Why/goal of the activity
+		How we did it
+	\end{comment}
+
+	\section{Observation of Composers}
+
+		Observations of the composers while they are composing music are necessary to understand the underlying thoughts and processes behind it. By doing this, the researchers should be able to understand the thought-process and actions that composers undergo when composing music. The goal of this activity is to gather initial findings on the needs or pain points that the composers might have while composing. 
+
+		This activity will mainly be done in the studio of the composers or any place where they normally compose. The presence of instruments or any other tools will depend on the composer as long as it simulates their natural composition process. 
+
+
+	\section{Interview of Composers}
+
+		Interviews will be done to confirm and process the information and insights gathered from the observations made in the previous activity. Aside from this, further questions will be asked about their process of musical composition, the tools, and the techniques they use. The main purpose of this activity is to get further context on the composition process and identify aspects that might not have been covered by the observations. 
+
+		The main questions to be asked in the interview are: 
+		\begin{enumerate}
+			\item What is your process of musical composition? What do you usually do?
+			\item What techniques do you use during musical composition?
+			\item What tools do you use when composing?
+			\item What features do you like or often use in the tools you use?
+			\item What are the difficulties you encounter when composing music? 
+		\end{enumerate}
+
+		Note that these are only the main questions and not all of the questions. Different questions may come up depending on how the composer would answer a question to gather more insights. 
+
+	\section{Brainstorm with Collated Data}
+
+		After the observations and interviews, it is necessary to filter and process the gathered data to identify the needs and pain points of the target users. These needs and problems would then be the main focus when thinking of proposed solutions. 
+
+		This study will employ an affinity diagram for brainstorming. The affinity diagram is simply a tool that groups data or findings based on their relationships. This is done by identifying key points, observations, or ideas from composers that stand out and writing them on sticky notes. These may be behaviors, activities, things they said, or problems they encountered while composing and the workarounds they did to fix the problem. After writing them out, the items are grouped based on their relationships to identify similar or recurring ideas or problems. The affinity diagram will help identify the problem statement to focus on.
+
+		With the problem statement in mind, the researchers can then ideate possible solutions. Ideation sessions put no limit on the amount of ideas that were generated; the more ideas the better. The researchers will then vote on the ideas they like and also provide suggestions on how to improve it. 
+
+	\section{Consult with Composer}
+
+		When a possible solution is thought of in the brainstorming activity, this will then be consulted with the composers, the people who would actually use the it. Feedback and suggestions will also be gathered to help improve the proposed solution solution. This, along with the previous activity, will be repeated until both the composers and researchers are satisfied.
+
+		\subsection{System Features}
+
+			From the feedback and insights gathered from the interviews and brainstorming sessions, it was found that the application should at least have the following features: 
+			\begin{itemize}
+    			\item View, create, edit, and delete their own compositions
+    			\item Set the key and time signature of their compositions
+    			\item Highlight/select a note or a group of notes
+             	\item Add, edit, and delete notes/rests 
+              	\item Add, edit, and delete polyphonic notes (chords)
+           		\item Transpose a note or group of notes
+        		\item Add ties/slurs to notes
+              	\item Add, remove, or change an accidental on a note or group of notes
+              	\item Add or remove dots on a note or group of notes
+              	\item Apply retrograde/inversion on a note or group of notes
+              	\item Cut, copy, and paste a note/rest or a group of notes/rests
+              	\item Undo/redo an action
+              	\item Zoom in our zoom out of the interface
+              	\item Change the tempo
+              	\item Listen to or play their composition
+          	\end{itemize}				
+
+	\section{Interaction Design}
+
+
+
+
+
+	\section{Build Prototype}
+
+		The initial, mid-fidelity prototype was built using InVision, a prototyping tool. Note that this was nowhere near an actual application and only consisted of screenshots or ``screens'' where users can interact with using the limited gestures in InVision. Despite the limited interactions available, doing this was quicker than actually developing the application, making it better for the earlier stages of testing the interaction design. The mid-fidelity prototype allowed the researchers to test out initial interaction design decisions and easily make the necessary changes. 
+
+		Once the initial interaction design became clearer and more defined, it needed to be tested on a better platform since InVision was only limited to images and could never capture the complete interaction of the actual application. A high-fidelity prototype was then built for iOS and the iPad using Swift 4. This prototype went through four (4) versions, having changes in the interaction and the user interface. 
+
+	\section{Usability Test}
+
+		The objective of the tests will be to determine if the interaction and design of the system augments the user experience of the composer when interacting with the application, Flow. The researchers will be collecting quantitative and qualitative data. The quantitative data will mainly come from a survey  about the usability of the features that the testers will have to answer. The qualitative data will come from the video and audio recording of the testers as well as the interviews done after the tests. The functionality will also be closely monitored to see if there are glitches or bugs that require additional fixes in the development side. These bugs or glitches will warrant an intervention from the researchers during the testing. 
+
+		The tests will be conducted in an environment where audio and visual disturbances are at a minimum. This is to ensure that the researchers are able to analyze clear audio and video data from the recording devices used during the testing. This is also to ensure that the tester is not disturbed during the testing. 
+
+		%The setups used across all the user tests are 4 kinds of Flow system prototypes, 1 created using a prototyping tool called InVision, and 3 coded in Swift; 2 kinds of commercially available notation applications in the App Store, Notion and Komp; and the traditional form of composition which is using music sheets and writing materials. Notation softwares and the Flow prototypes will be launched on a mobile platform, namely an IPad tablet.
+
+		Before starting the test, testers will be given a consent form. If they agree with the terms and continue with the testing, the tasks indicated in Section \ref{sec:tasks} will be done for each test setup (indicated in Section \ref{sec:test-setups}) that is appropriate. Before the start of the test where the tester start to accomplish tasks or use cases for the test setup, they will be given a brief description of the objectives of the study along with overview of the tasks or use cases. 
+
+		During the first two (2) iterations, five (5) subjects of both genders aged 18-40 were recruited through snowball sampling method to take part in the data collection and testing. These subjects were categorized into two (2) user groups based on musical composition experience: amateur, and experienced. For the third iteration, fifteen (15) subjects of the same demographics took part in the testing. In the last iteration, eleven (11) subjects took part. 
+
+		% TODO describe demographics
+
+		\subsection{Test Setups}
+		\label{sec:test-setups}
+
+			The setups between the preliminary testing and the subsequent testing were different. This was made so because the main goal of the preliminary testing was to gather feedback on the interaction design and help improve the system while it was still being developed. Other applications did not matter as much and were only used to gain insight on their interactions and how they could be used to improve the system. Although the goal of the subsequent tests were still to gather feedback and improve the system, they were also made to compare the system against similar musical composition applications. 
+
+			\subsubsection{Preliminary Testing Setups}
+
+				The test setups are meant to observe how existing methods of composition work and how their interactions could be used in Flow. The tasks enumerated in Section \ref{sec:preliminary-tasks} will be used in each test setup whenever possible since some tasks can only be accomplished within a specific setup. 
+
+				There will be 3 different test setups to be used during user testing namely:
+
+				\begin{itemize}
+					\item Tester composing using music sheets
+					\item Tester composing using Komp
+					\item Tester composing using Flow
+				\end{itemize}
+
+				The first setup simulates the traditional way of musical composition. This is through music sheets and a writing instrument. Traditional music sheets will be provided by the researchers as well as a choice of using a pen or pencil for writing musical elements. The composers are free to use as much music sheets as they want for drafting and experimenting with their composition as long as the time and resources provided by the researchers allow them.
+
+				The second setup will be through an existing mobile application for iOS platforms, komp. Since the method of input in komp is similar to writing in music sheets, this setup will mainly be done to see how the interaction for traditional musical composition will work when applied to mobile devices. The researchers expect this setup to have similar results with the first setup and any data collected in this setup will be used to evaluate Flow.
+
+				The third setup will be focused on the composer using the developed system, Flow. During the early periods of testing, a mid-fidelity InVision prototype will be used as a substitute. Using this prototype, the only task that the composer will be able to do is to explore the application. The main goal of this is to develop and improve the interaction design of the application. One a high-fidelity prototype has been developed, all tasks will be performed in the testing.
+
+			\subsubsection{Subsequent Testing Setups}
+
+				In the subsequent tests, Flow was compared against other musical notation applications. For each setup, the users had to go through the use cases listed in \ref{sec:use-cases} and perform the tasks outlined in \ref{sec:subsequent-tasks}. Note that these setups were given in random order and that the application developed by the researchers was not disclosed to prevent bias.
+
+				\begin{itemize}
+					\item Tester composing using Notion
+					\item Tester composing using komp
+					\item Tester composing using Flow
+				\end{itemize}
+
+				The first setup makes use of what is said to be the most popular musical notation application for mobile. For the second setup, komp is retained from the preliminary testing so that users can experience a traditional method of notation while on the iPad. The last setup makes use of the system developed by the researchers.
+
+			\subsubsection{Use Cases}
+			\label{sec:use-cases}
+
+				For the subsequent test setups, the testers had to go perform use cases. These use cases were an attempt to simulate different musical composition scenarios. 
+
+				\begin{itemize}
+				    \item Compose a familiar song (Twinkle Twinkle Little Star/Happy Birthday)
+				    \item Compose from scratch
+				    \item Modify a composition (Ode to Joy/Amazing Grace)
+				\end{itemize}
+
+		\subsection{Tasks}
+		\label{sec:tasks}
+
+			Similar to the test setups, the tasks differed greatly between the preliminary testing and subsequent testing. Tasks were generalized in the subsequent testing to make it easier for the testers to compare the different applications.
+
+			\subsubsection{Preliminary Testing Tasks}
+			\label{sec:preliminary-tasks}
+
+				Some tasks may be omitted in different test setups when a crucial function to carry out the task is unavailable. During the final task, testers are encouraged to speak aloud their concerns and opinions regarding the application.
+
+				For the first iteration, there will be 4 tasks for each of the setups:
+				\begin{itemize}
+					\item Add a note
+					\item Add a series of notes
+					\item Change a note
+					\item Delete/remove a series of Notes
+					\item Compose for 3 minutes
+				\end{itemize}
+
+				For the second iteration, there will be 7 tasks for each of the setups:
+				\begin{outline}
+					\1 Add notes to fill 2 measures
+					\1 Change the time signature to 3/4
+					\1 Empty one measure
+					\1 Empty the composition
+					\1 Add enough notes to fill 2 measures in 2 staffs
+					\1 Add an accidental to 2 notes
+					\1 Remove placed accidentals 
+					\1 Change key signature
+					\1 Replace a group of notes with a single note
+					\1 Create or recreate a composition (Exactly 4 measures)
+						\2 Twinkle Twinkle Little Star
+						\2 Canon in D
+						\2 Ode to Joy
+				\end{outline}
+
+			\subsubsection{Subsequent Testing Tasks}
+			\label{sec:subsequent-tasks}
+
+				Since one of the goals of the subsequent tests was to compare how the interaction was against similar applications, the tasks were greatly simplified and generalized. Testers were also allowed to perform the tasks in any order they wanted and as much repititions it took for them to get acquainted with the specific task or action. These tasks were repeated for each of the use cases mentioned in \ref{sec:use-cases}.
+
+				\begin{itemize}
+					\item Select/highlight notes/chords
+				  	\item Add notes/chords
+				  	\item Edit notes/chords
+				  	\item Delete notes/chords
+				  	\item Cut, copy, or paste notes/chords
+				  	\item Undo/redo an action
+				  	\item Play the composition
+				\end{itemize}
+
+
+	\section{Feedback}
+
+\begin{comment}
 % \section{System Architecture and Framework}
 \section{System Description}
 
@@ -36,32 +234,25 @@ The system will integrate music theory and user experience in an interface for m
 		
         To provide an interface that allows composers to perform basic and advanced musical composition tasks via gesture interactions on a mobile platform.
 
-	\subsubsection{Specific Objectives}
+	\subsubsection{System Features}
     
     	Specifically, the system will allow users to do the following: 
-          \begin{enumerate}
-              \item View, create, edit, and delete their own compositions
-              \item Move cursor through tap gesture or cursor movement interface
-              \item Pan or zoom around the interface
-              \item Move note menu and cursor movement interface
-              \item Hide bottom menu
-              \item Hear their compositions
-              \item Set the key and time signature of their compositions
-              \item Add, edit, and delete notes/rests through the note menu
-              \item Add polyphonic notes/chords
-              \item Transposing a note or group of notes
-              \item Highlighting a single note or group of notes
-              \item Add, remove, or change an accidental/ottava on a note or group of notes
-              \item Add ties/slurs to notes
-              \item Transpose/Retrograde a note or a group of notes
-              \item Cut, copy, and paste a note/rest or a group of notes/rests
-              \item Add or remove dots on a note or group of notes
-              \item Undo/redo action
-              \item Change composition tempo
-              \item Input notes through the keyboard interface
-              \item Playback composition
-              \item Save the composition to be stored in local storage    
-
+    		\begin{enumerate}
+    			\item View, create, edit, and delete their own compositions
+    			\item Set the key and time signature of their compositions
+    			\item Highlight/select a note or a group of notes
+             	\item Add, edit, and delete notes/rests 
+              	\item Add, edit, and delete polyphonic notes (chords)
+           		\item Transpose a note or group of notes
+        		\item Add ties/slurs to notes
+              	\item Add, remove, or change an accidental on a note or group of notes
+              	\item Add or remove dots on a note or group of notes
+              	\item Apply retrograde/inversion on a note or group of notes
+              	\item Cut, copy, and paste a note/rest or a group of notes/rests
+              	\item Undo/redo an action
+              	\item Zoom in our zoom out of the interface
+              	\item Change the tempo
+              	\item Listen to or play their composition
           \end{enumerate}
     
 \subsection{Scope and Limitations of the System}
@@ -687,4 +878,4 @@ Since one of the goals of the subsequent tests was to compare how the interactio
   \item Undo/redo an action
   \item Play the composition
 \end{enumerate}
-
+\end{comment}
