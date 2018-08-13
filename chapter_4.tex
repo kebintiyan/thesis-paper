@@ -39,14 +39,13 @@
 
 	\section{Observation of Composers}
 
-		Observations of the composers while they are composing music are necessary to understand the underlying thoughts and processes behind it. By doing this, the researchers were able to understand the thought-process and actions that composers undergo when composing music. The goal of this activity was to gather initial findings on the needs or pain points that the composers might have while composing. 
+		Observations of the composers while they are composing music are necessary to understand the underlying thoughts and processes behind it. By doing this, the researchers were able to understand the thought-process and actions that composers undergo when composing music. The goal of this activity is to gather initial findings on the needs or pain points that the composers might have while composing. 
 
 		This activity was mainly done in the studio of the composers or any place where they normally compose. The presence of instruments or any other tools depends on the composer as long as it simulates their natural composition process. 
 
-
 	\section{Interview of Composers}
 
-		Interviews were done to confirm and process the information and insights gathered from the observations made in the previous activity. Aside from this, further questions were asked about their process of musical composition, the tools, and the techniques they use. The main purpose of this activity was to get further context on the composition process and identify aspects that might not have been covered by the observations. 
+		Interviews were done to confirm and process the information and insights gathered from the observations made in the previous activity. Aside from this, further questions were asked about their process of musical composition, the tools, and the techniques they use. The main purpose of this activity is to get further context on the composition process and identify aspects that might not have been covered by the observations. 
 
 		The main questions asked in the interviews are: 
 		\begin{enumerate}
@@ -57,25 +56,23 @@
 			\item What are the difficulties you encounter when composing music? 
 		\end{enumerate}
 
-		Note that these are only the main questions and not all of the questions. Different questions may have come up depending on how the composer would answer a question to gather more insights. 
+		The questions above are non-exhaustive and may lead to more follow up questions. Different questions may have come up depending on how the composer would answer a question to gather more insights. 
 
-	\section{Brainstorm with Collated Data}
+	\section{Brainstorming on the Collated Data}
 
 		After the observations and interviews, it is necessary to filter and process the gathered data to identify the needs and pain points of the target users. These needs and problems would then be the main focus when thinking of proposed solutions. 
 
-		This study employed an affinity diagram for brainstorming. The affinity diagram is simply a tool that groups data or findings based on their relationships. This is done by identifying key points, observations, or ideas from composers that stand out and writing them on sticky notes. These may be behaviors, activities, things they said, or problems they encountered while composing and the workarounds they did to fix the problem. After writing them out, the items are grouped based on their relationships to identify similar or recurring ideas or problems. The affinity diagram will help identify the problem statement to focus on.
+		This study employed an affinity diagram for brainstorming. The affinity diagram is simply a tool that groups data or findings based on their relationships \citep{beyer1999contextual}. This is done by identifying key points, observations, or ideas from composers that stand out and writing them on sticky notes. These may be behaviors, activities, things they said, or problems they encountered while composing and the workarounds they did to fix the problem. After writing them out, the items are grouped based on their relationships to identify similar or recurring ideas or problems. The affinity diagram will help identify the problem statement to focus on.
 
-		With the problem statement in mind, the researchers can then ideate possible solutions. Ideation sessions put no limit on the amount of ideas that were generated; the more ideas the better. The researchers then voted on the ideas they liked and also provided suggestions on how to improve it. 
+		With the problem statement in mind, the researchers can then ideate possible solutions. Ideation sessions put no limit on the amount of ideas that were generated; the more ideas the better. The researchers then voted on the ideas they felt would work. There were also some cases where suggestions were provided from the gathered user feedback to fit the ideas with user needs. The resulting list of features for the solution were then consulted with the composer to see if a prototype would be possible.  
 
-	\section{Consult with Composer}
+	\section{Consulting with Composers}
 
-		When a possible solution was thought of in the brainstorming activity, this was then consulted with the composers, the people who would actually use the it. Feedback and suggestions were also be gathered from the consultations to help improve the proposed solution. This, along with the previous activity, were be repeated until both the composers and researchers were satisfied.
-
-		The identified needs and problems of the composers resulted in the list of user stories shown in Appendix \ref{sec:user_stories}.
+		Upon ideation of potential solutions during the brainstorming, it is ideal that the group proceeds to consult with the composers, the people who would actually benefit from the solutions. Feedback and suggestions were also gathered from the series of consultation sessions in order to improve the features in the proposed solution. This, along with the previous activity, were repeated until both the composers and researchers were satisfied.
 
 		\subsection{System Features}
 
-			From the feedback and insights gathered from the interviews and brainstorming sessions, it was found that the application should at least have the following features: 
+			The consolidated feedback and insights were collated and translated into the following features: 
 			\begin{itemize}
     			\item View, create, edit, and delete their own compositions
     			\item Set the key and time signature of their compositions
@@ -90,9 +87,16 @@
               	\item Cut, copy, and paste a note/rest or a group of notes/rests
               	\item Undo/redo an action
               	\item Zoom in our zoom out of the interface
+              	\item Scroll through the composition
               	\item Change the tempo
-              	\item Listen to or play their composition
-          	\end{itemize}				
+              	\item Music playback
+          	\end{itemize}		
+
+          	%Please include something that says “The consolidated feedback and insights were collated and translated into these features. Did you design prototypes/mocksups? Did you watch products? did you base certain features from model apps? or did you harvest from the bad pain points? paki elaborate. i want to see the step by step procedure on how we did this? Can you give one example on how we did this transformation? Like when they said “view create and edit…” was this from certain phrases? 
+
+          	These features were taken into account and integrated in the prototypes described in Section \ref{sec:design}. Note that some features were also taken from other mobile musical notation applications because they were deemed important for the medium. Examples of this were zooming in and out of the interface, and scrolling. However, most of the features came from the identified needs and pain points of the composers. 
+
+          	For example, the music playback feature came from the needs of the composers that did not have ``perfect pitch''. These were composers that could not identify the pitch of a note without hearing it. It was observed that these kinds of composers had to constantly rely on an instrument while they were writing to test their composition. One said, "I need to play or listen to my composition to test it." From this observed need, the researchers had to identify how it could be solved on a digital medium. Music playback then became the proposed solution for the problem. 
 
 	\section{Interaction Design}
 
@@ -104,11 +108,11 @@
 
 	\section{Build Prototype}
 
-		The initial, mid-fidelity prototype was built using InVision, a prototyping tool. Note that this was nowhere near an actual application and only consisted of screenshots or ``screens'' where users can interact with using the limited gestures in InVision. Despite the limited interactions available, doing this was quicker than actually developing the application, making it better for the earlier stages of testing the interaction design. The mid-fidelity prototype allowed the researchers to test out initial interaction design decisions and easily make the necessary changes. 
+		The initial, mid-fidelity prototype was built using InVision, a prototyping tool. Note that this was nowhere near an actual application and only consisted of screenshots or ``screens'' where users can interact with using the limited gestures in InVision. Despite the limited interactions available, doing this was quicker than actually developing the application. This helped the composers and musicians have a clearer idea of the product that is being developed. The mid-fidelity prototypes allowed the researchers to test out initial interaction design decisions and easily make the necessary changes. 
 
 		Once the initial interaction design became clearer and more defined, it needed to be tested on a better platform since InVision was only limited to images and could never capture the complete interaction of the actual application. A high-fidelity prototype was then built for iOS and the iPad using Swift 4. This prototype went through four (4) versions, having changes in the interaction and the user interface. 
 
-	\section{Usability Test}
+	\section{Usability Tests}
 
 		The objective of the tests were to determine if the interaction and design of the system augments the user experience of the composer when interacting with the application, Flow.  Quantitative and qualitative data were collected from the tests. The quantitative data mainly came from a survey about the usability of the features that the testers will have to answer. The qualitative data came from the video and audio recording of the testers as well as the interviews done after the tests. %The functionality was also closely monitored to see if there were glitches or bugs that required additional fixes in the development side. These bugs or glitches will warrant an intervention from the researchers during the testing. 
 
@@ -118,7 +122,7 @@
 
 		Before starting the test, testers were given a consent form. If they agreed with the terms and continued with the testing, they were given a brief description of the objectives of the study along with overview of the tasks or use cases. The testers were asked to perform the tasks indicated in Section \ref{sec:tasks} for each test setup (indicated in Section \ref{sec:test-setups}) that is appropriate. 
 		
-		Composers of both genders aged 18-40 were recruited through snowball sampling method to take part in the data collection and testing. These subjects were categorized into two (2) user groups based on musical composition experience: amateur, and experienced. Iteration 1 and 2 had the same five (5) testers, made up of four (4) amateurs and one (1) expert. Iteration 3 had the most number of testers, having nine (9) amateurs and six (6) experts, for a total of fifteen (15) testers. Iteration 4 had three (3) amateurs and eight (8) experts totaling to eleven (11) testers, making it the iteration with the most number of experts. 
+		Composers of both genders aged 18-40 were recruited through snowball sampling method to take part in the data collection and testing (see Section \ref{sec:demographics} for a more detailed description). These subjects were categorized into two (2) user groups based on musical composition experience: amateur, and experienced. Iteration 1 and 2 had the same five (5) testers, made up of four (4) amateurs and one (1) expert. Iteration 3 had the most number of testers, having nine (9) amateurs and six (6) experts, for a total of fifteen (15) testers. Iteration 4 had three (3) amateurs and eight (8) experts totaling to eleven (11) testers, making it the iteration with the most number of experts. 
 
 		\subsection{Test Setups}
 		\label{sec:test-setups}
@@ -158,7 +162,7 @@
 			\subsubsection{Use Cases}
 			\label{sec:use-cases}
 
-				For the subsequent test setups, the testers had to go perform use cases. These use cases were an attempt to simulate different musical composition scenarios. 
+				For the subsequent test setups, the testers had to perform specific use cases. These use cases were an attempt to simulate different musical composition scenarios. 
 
 				\begin{itemize}
 				    \item Compose a familiar song (Twinkle Twinkle Little Star/Happy Birthday)
@@ -225,10 +229,90 @@
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.23]{figures/test_setup.png}
-		    \caption{The standard setup for user tests.}
+		    \caption{The physical map describing the setup for user tests.}
 		    \label{fig:test_setup}
 		\end{figure} 
 
+		A typical interview would have the following format:
+		\begin{longtable}{|p{13cm}|}
+			\caption{Interview Questions} \label{tab:interview-questions} \\ 
+		  	\hline
+		  	Which of the three applications did you like using the most? \\ 
+		  	So why did you like \textit{$<$application$>$} the most? \\ 
+		  	What did you feel while you were using \textit{$<$application$>$}? \\ 
+		  	What did you like most about \textit{$<$application$>$}? (Can be a feature, or the interface, or any part about it.) \\ 
+		  	What did you least like about \textit{$<$application$>$}? \\ 
+		  	\textit{For each feature with a low score in the questionnaire:} \\ 
+		  	\hspace{6mm}We noticed that you rated the \textit{$<$feature$>$} a bit low. Why is that? \\ 
+		  	\\
+		  	Which of the three did you least like using? \\ 
+		  	So why did you least like \textit{$<$application$>$}? \\ 
+		  	What did you feel while you were using \textit{$<$application$>$}? \\ 
+		  	What did you like most about \textit{$<$application$>$}? (Can be a feature, or the interface, or any part about it.) \\ 
+		  	What did you least like about \textit{$<$application$>$}? \\ 
+		  	\textit{For each feature with a low score in the questionnaire:} \\ 
+		  	\hspace{6mm}We noticed that you rated the \textit{$<$feature$>$} a bit low. Why is that? \\ 
+		  	\\
+		  	For the one in the middle\ldots \\ 
+		  	Why is \textit{$<$application$>$} not the one you most liked or least liked? \\
+		  	What did you feel while you were using \textit{$<$application$>$}? \\ 
+		  	What did you like most about \textit{$<$application$>$}? (Can be a feature, or the interface, or any part about it.) \\ 
+		  	What did you least like about \textit{$<$application$>$}? \\ 
+		  	\textit{For each feature with a low score in the questionnaire:} \\ 
+		  	\hspace{6mm}We noticed that you rated the \textit{$<$feature$>$} a bit low. Why is that? \\ 
+		  	\\
+			Of the three applications, which one did you find the easiest to use? \\ 
+			Why? \\ 
+			On a scale of 1-4, with 4 being the highest, how usable is \textit{$<$application$>$}? \\ 
+			\\
+			Which one did you find the hardest to use? \\ 
+			Why? \\ 
+			On a scale of 1-4, with 4 being the highest, how usable is \textit{$<$application$>$}? \\
+			\\
+			And then lastly, the one in the middle\ldots \\ 
+			Why? \\ 
+			On a scale of 1-4, with 4 being the highest, how usable is \textit{$<$application$>$}? \\ \hline
+		\end{longtable}
+
+		\begin{comment}
+		\begin{outline}
+			\1 Which of the three applications did you like using the most?
+				\2 So why did you like \textit{$<$application$>$}?
+				\2 What did you feel while you were using \textit{$<$application$>$}? 
+				\2 What did you like most about \textit{$<$application$>$}? (Can be a feature, or the interface, or any part about it.)
+				\2 What did you least like about \textit{$<$application$>$}?
+				\newline \newline \textit{If tester scored any features low in the questionnaire:}
+					\3 We noticed that you rated the \textit{$<$feature/s with low scores$>$} a bit low. Why is that?
+
+			\1 Which of the three did you least like using?
+				\2 So why did you least like \textit{$<$application$>$}?
+				\2 What did you feel while you were using \textit{$<$application$>$}? 
+				\2 What did you like most about \textit{$<$application$>$}? (Can be a feature, or the interface, or any part about it.)
+				\2 What did you least like about \textit{$<$application$>$}?
+				\newline \newline \textit{If tester scored any features low in the questionnaire:}
+					\3 We noticed that you rated the \textit{$<$feature/s with low scores$>$} a bit low. Why is that?
+
+			\1 For the one in the middle\ldots
+				\2 Why is \textit{$<$application$>$} not the one you most liked or least liked?
+				\2 What did you feel while you were using \textit{$<$application$>$}? 
+				\2 What did you like most about \textit{$<$application$>$}? (Can be a feature, or the interface, or any part about it.)
+				\2 What did you least like about \textit{$<$application$>$}?
+				\newline \newline \textit{If tester scored any features low in the questionnaire:}
+					\3 We noticed that you rated the \textit{$<$feature/s with low scores$>$} a bit low. Why is that?
+
+		\1 Of the three applications, which one did you find the easiest to use?
+			\2 Why?
+			\2 On a scale of 1-4, with 4 being the highest, how usable is \textit{$<$application$>$}?
+		\1 Which one did you find the hardest to use?
+			\2 Why?
+			\2 On a scale of 1-4, with 4 being the highest, how usable is \textit{$<$application$>$}?
+		\1 And then lastly, the one in the middle\ldots
+			\2 Why?
+			\2 On a scale of 1-4, with 4 being the highest, how usable is \textit{$<$application$>$}?
+		\end{outline}
+		\end{comment}
+
+		\begin{comment}
 		For each of the applications that were tested, the following questions were asked to understand more about the overall user experience and usability of the application and find any problematic features: 
 		\begin{itemize}
 			\item So why did you like/dislike \textit{$<$application$>$}?
@@ -260,6 +344,7 @@
 			\2 Why?
 			\2 On a scale of 1-4, with 4 being the highest, how usable is \textit{$<$application$>$}?
 		\end{outline}
+		\end{comment}
 		
 		On the other hand, quantitative data was collected through questionnaires. They were used to gather usability data on the different features of the applications, and easily identify problematic features. Note that iteration 1 and 2 used a different set of questions versus that of Iteration 3 and 4, because the main goal of iteration 1 and 2 was to improve the developed application while the main goal of iteration 3 and 4 was to compare applications. Answers to the questions were on a scale of 1 - 4, 1 (Never, Strongly Disagree, or Very Difficult) being the lowest, and 4 (Frequently, Strongly Agree, or Very Easy) being the highest. 
 
@@ -291,7 +376,11 @@
 		With the exception of the music playback feature, which asked:
 			\begin{outline}
 				\1 How would you rate the music playback? 
-			\end{outline}	
+			\end{outline}
+
+		Overall, the quantitative and qualitative feedback from the user tests were key factors in improving the prototype. The quantitative feedback mainly helped identify the most problematic features. The qualitative feedback provided more context on why the features were problematic.
+
+
 \begin{comment}
 % \section{System Architecture and Framework}
 \section{System Description}
