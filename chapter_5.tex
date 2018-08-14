@@ -192,16 +192,18 @@
 
 				Iteration 3 added a new bottom menu containing modifiers like accidentals, dots, and ottavas. This was done so that the top menu would not be crowded. A keyboard, which can be shown using the show/hide keyboard button, was also added to allow users to test out melodies on the keyboard while composing. 
 
-				This version improved on the time and key signature menu (see Figure \ref{fig:before-after-tsmenu}). In the previous version, users had a hard time with the menu because of the sliders. The sliders made selecting inaccurate and tedious. For iteration 3, buttons for common time signatures were added, but users could also type the time signatures they wanted using the keyboard. The key signature menu was redesigned to be a circular menu that follows the circle of fifths. 
+				This version improved on the time and key signature menu (see Figure \ref{fig:before-after-tsmenu}). In the previous version, users had a hard time with the menu because of the sliders. For the quantitative feedback, the \textit{Change Time Signature} feature received a score of 3.2 while the \textit{Change Key Signature} scored a 3.5 (see Table \ref{tab:results-features-it2} items 10 and 11 respectively). Although they were not very low, the qualitative data shows that the sliders made selecting inaccurate and tedious (see Figures \ref{fig:video_timesig} and \ref{fig:video_keysig}). For iteration 3, buttons for common time signatures were added, but users could also type the time signatures they wanted using the keyboard. The key signature menu was redesigned to be a circular menu that follows the circle of fifths. 
 
 				\begin{figure}[H]
 					\centering
 					\includegraphics[scale=0.28]{figures/before-after-tsmenu}
-				    \caption{The time and key signature menu before and after changes were made due to the user testing. The revised time signature menu adds buttons for the common time signatures and also allows users to input any valid time signature they want. The revised key signature menu is now circular and follows the circle of fifths.}
+				    \caption{The time and key signature menu before and after changes were made due to the user testing. Sliders in the previous iteration made selecting inaccurate and tedious (see Figures \ref{fig:video_timesig} and \ref{fig:video_keysig}). The revised time signature menu adds buttons for the common time signatures and also allows users to input any valid time signature they want. The revised key signature menu is now circular and follows the circle of fifths.}
 				    \label{fig:before-after-tsmenu}
 				\end{figure} 
 
 				The transpose interaction was also revised, giving it a totally new menu that shows when a group of notes are highlighted (see Figure \ref{fig:before-after-transpose}). This was done to make the transpose interaction more obvious to the users.
+
+				% TRANSPOSE IMAGE REFERENCE
 
 				\begin{figure}[h]
 					\centering
@@ -219,30 +221,32 @@
 				    \label{fig:flow_it4}
 				\end{figure} 
 
-				It was observed from the tests that having two menus on opposite sides of the screen split the focus of the users. So for iteration 4, the top menu was moved to the bottom allowing users to focus on only one part of the screen when looking for features (see Figure \ref{fig:before-after-menu}). 
+				It was observed from the tests that having two menus on opposite sides of the screen split the focus of the users. They would first try to search for features at the bottom menu and would sometimes forget that there was also a menu at the top (see Figure \ref{fig:video_menu}). So for iteration 4, the top menu was moved to the bottom allowing users to focus on only one part of the screen when looking for features (see Figure \ref{fig:before-after-menu}). 
 
 				\begin{figure}[h]
 					\centering
 					\includegraphics[scale=0.28]{figures/before-after-menu}
-				    \caption{The menus before and after changes were made due to the user testing. The top menu was moved to the bottom as well so users would only have to look in one area of the screen.}
+				    \caption{The menus before and after changes were made due to the user testing. In the previous iteration, having the menus separated split the focus of the users (see Figure \ref{fig:video_menu}). The top menu was moved to the bottom as well so users would only have to look in one area of the screen.}
 				    \label{fig:before-after-menu}
 				\end{figure}
 
-				Inputting notes from the keyboard was implemented for this version. The piano button was also moved to the side of the notation menu to make it more obvious and imply that it is also a method of input (see Figure \ref{fig:before-after-pianobtn}). 
+				Putting in notes from the keyboard was implemented for this version. However, in the previous version, some of the testers were not able to use the keyboard simply because the show/hide piano button did not seem obvious to them. To resolve this, the piano button was moved to the side of the notation menu to make it more obvious and imply that it is also a method of input (see Figure \ref{fig:before-after-pianobtn}). 
 
 				\begin{figure}[h]
 					\centering
 					\includegraphics[scale=0.273]{figures/before-after-pianobtn.png}
-				    \caption{The show/hide piano button before and after changes were made due to the user testing. The piano button was moved beside the notations menu to make it easier to find.}
+				    \caption{The show/hide piano button before and after changes were made due to the user testing. In the previous iteration, testers mentioned that the button was not obvious which resulted in them not being able to use the keyboard. The piano button was moved beside the notations menu to make it easier to find.}
 				    \label{fig:before-after-pianobtn}
 				\end{figure}
+
+				The music playback was also improved since it was the feature with the lowest score in iteration 3, having only 3.1 (see Table \ref{tab:results-features-it3} item 7). The first improvement allowed starting the playback from the current measure the cursor is pointing to. In previous versions, the music playback always started at the first measure, but the testers said that it was quite tedious to have to always start from the first measure especially when they were focusing on editing just a specific part of the composition (see Figure \ref{fig:video_musicplayback}). 
 
 				The visualization of the music playback was also improved. In previous versions, only the current measure was shown which made it harder for composers to find specific notes or rests they felt was off or wanted to change. In this version, the playback was improved to also show the current note or rest that is playing (see Figure \ref{fig:before-after-playback}).
 
 				\begin{figure}[h]
 					\centering
 					\includegraphics[scale=0.075]{figures/before-after-playback.png}
-				    \caption{The music playback before and after changes were made due to the user testing. The playback was improved to also show the current note/rest that is playing.}
+				    \caption{The music playback before and after changes were made due to the user testing. Previous versions only showed the current measure, making it hard to find specific notes or rests that were off in a measure or melody. The playback was improved to also show the current note/rest that is playing.}
 				    \label{fig:before-after-playback}
 				\end{figure}
 
@@ -250,7 +254,7 @@
 		\subsection{Usability Testing Results}
 			This section provides an overview of the results across all iterations. Note that questions for iteration 3 and 4 were different from that of iteration 1 and 2. Despite having different questions, all answers are on a scale of 1 - 4, 1 (Never, Strongly Disagree, or Very Difficult) being the lowest, and 4 (Frequently, Strongly Agree, or Very Easy) being the highest. 
 
-			\subsubsection{Iteration 1} 
+			\subsubsection{Flow Iteration 1} 
 
 				\begin{table}[!htpb]
 				  \centering
@@ -282,7 +286,7 @@
 
 				Other than the note selection feature, respondents have expressed that most of the features worked well and felt comfortable to use. Although it was not like how they would regularly write music (i.e. pen and paper), Flow's method of composing was easy to learn and get used to. Majority liked the ease of using the cursor/indicator because they can simply tap on the location they want or use the arrow keys when they want to be accurate.
 
-			\subsubsection{Iteration 2}
+			\subsubsection{Flow Iteration 2}
 				\begin{longtable}{|p{5cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{1.5cm}|}
 				  \caption{Feature Scores per Tester for Iteration 2} \label{tab:results-features-it2} \\ 
 				  	\hline
@@ -331,11 +335,13 @@
 
 				Although not included in the questionnaire, the transposition interaction was also found to need improvement. In the prototype, users can tap on the up or down arrow keys to instantly transpose the selected notes to a higher or lower pitch respectively. It was observed that this was sometimes confusing and not easy to find. The confusion happened mainly because the users' assumption was that the arrow key was only used to move the cursor and not the notes. They would eventually be able to figure out after some messing around, but this still needed to be improved. Hence, in the succeeding iteration a menu was added containing the transpose arrow keys and other modifiers that would only appear when a user highlights a set of notes (see Figure \ref{fig:before-after-transpose}. This not only made it more obvious, but also saved space by only showing the necessary buttons when needed.
 
+				% TRANSPOSE IMAGE HERE
+
 				The \textit{Cut/Copy/Paste} interactions also received some quite low scores (see Table \ref{tab:results-features-it2} items 15 and 16). The main problem with the interaction was the lack of feedback when pressed. The buttons were a bit small and the users had a hard time knowing whether or not they already pressed the button because they could not see any feedback. For the next iteration, the buttons were made a bit bigger and given more space apart. Toast notifications were also added once they successfully executed a cut or copy. 
 
 				The feature that received the lowest score for this iteration was \textit{Remove an Accidental on a Highlighted/Selected Group of Notes}. A lot of the composers said they felt that the buttons were too small and hard to press. However, the main problem with the feature was that the buttons were set up to follow music theory. In music theory, when a sharp is added to a note, it needs to be naturalized to remove the sharp. This was also the logic behind the accidentals in the prototype. When a note has a sharp, the user would have to press the naturalize button to remove it. Unfortunately, this was not obvious to the amateur users. They expected it to be similar to making a text bold or italicized in word processors. What they commonly did was when a note had a sharp, they would press the sharp button again to remove it. Since the buttons were not set up to follow it, nothing would happen and they thought that the buttons did not work. Expert composers, however, did not have a problem using this feature. When asked why they were able to figure it out easily, they mentioned that they just followed music theory. To suit both types of users, the prototype in the succeeding iterations also allowed users to press the accidental button again to remove an already placed accidental aside from the original method of removing accidentals.
 
-			\subsubsection{Iteration 3} % (fold)
+			\subsubsection{Flow Iteration 3} % (fold)
 			\label{sub:iteration_3}
 			
 				\begin{landscape}				
@@ -405,7 +411,7 @@
 				\end{figure}
 			% subsection iteration_3 (end)
 
-			\subsubsection{Iteration 4} % (fold)
+			\subsubsection{Flow Iteration 4} % (fold)
 			\label{sub:iteration_4}
 
 				 \begin{landscape}				
