@@ -4,10 +4,12 @@
 
 	\section{Demographics of the Respondents}
 	\label{sec:demographics}
+		
+		Testers were recruited through snowball sampling. As a prerequisite, they needed to have at least three (3) years of experience with musical composition and notation by the time they participated. A total of twenty-five (25) different composers took part in the testing. All of them were aged between 18 - 40. Of the twenty-five (25) that took part, eighteen (18) were male and seven (7) were female. The composers were also segregated into two (2) different skill levels based on their years of experience. A composers with seven (7) or more years of experience was classified as an expert while those with years of experience less than that were classified as amateurs. From the testers, seventeen (17) were experts while eight (8) were amateurs. 
 
 	\section{Understanding Composer Needs}
 
-		From the interviews and observations of the composers, a few key points were observed:
+		From the interviews and observations of the composers, a few main key points were observed:
 		\begin{outline}
 			\1 When composing, composers usually start with the motif or emotion, which involves a lot of trial-and-error.
 			\1 Composers would often sketch out initial ideas on pen and paper (because they are easier to carry) then transfer it to an actual notation software. 
@@ -26,6 +28,80 @@
 		    \caption{The digital version of the affinity diagram taking into account key points from the observations and feedback from the composers. }
 		    \label{fig:affinity-diagram}
 		\end{figure} 
+
+		\begin{comment}
+		>> Observation: "Composers still add notes a few steps above a staff"
+		>> Clarification: We asked the composers if these notes mean they are a higher pitch and what are these called?
+		>> Verification: We were able to verify that this is called Octava
+		>> Translation: We added a feature in the Add Note module where we can add notes a few steps/lines above a staff
+
+		\textbf{Observation:} 	&  \\
+	  	\textbf{Clarification:} 	&  \\
+	  	\textbf{Verification:} 	&  \\
+	  	\textbf{Translation:} 	&  \\
+	  	\hline
+		\end{comment}
+
+		Table \ref{tab:feature-translations} shows how the identified needs and pain points were translated to features for the developed prototypes.
+
+		\begin{longtable}{|p{2.5cm} p{12.5cm}|}
+			\caption{Feature Translations} \label{tab:feature-translations} \\ 
+		  	\hline
+
+		  	\textbf{Observation:} 	& Composers would often just write lines as notes and rests on the music sheet. \\
+		  	\textbf{Clarification:} 	& Asked the composers why they drew notes and rests like that. \\
+		  	\textbf{Verification:} 	& Verified that it felt faster writing them like that. \\
+		  	\textbf{Translation:} 	& Added a feature that allowed adding notes and rests on the music sheet. \\
+		  	\hline
+
+		  	\textbf{Observation:} 	& Composers would scratch on multiple notes and rests. \\
+		  	\textbf{Clarification:} 	& Asked the composers why they did that. \\
+		  	\textbf{Verification:} 	& Verified that it was faster to remove notes and rests that way than erasing. \\
+		  	\textbf{Translation:} 	& Added a feature that allowed deleting multiple notes and rests on the music sheet. \\
+		  	\hline
+
+		  	\textbf{Observation:} 	& Composers would erase old notes/rests and write new notes/rests on top. \\
+		  	\textbf{Clarification:} 	& Asked the composers if that was how they would always edit notes/rests. \\
+		  	\textbf{Verification:} 	& Verified that they always did that even though it was tedious. \\
+		  	\textbf{Translation:} 	& Added a feature that allowed editing notes/rests in the music sheet. \\
+		  	\hline
+
+		  	\textbf{Observation:} 	& Composers would start compositions by writing the time signature. \\
+		  	\textbf{Clarification:} 	& Asked if they always started with the time signature. \\
+		  	\textbf{Verification:} 	& Verified that they would often decide on the time signature as well as the key signature at the start and would rarely change it. \\
+		  	\textbf{Translation:} 	& Added a feature that allowed changing the time and key signature. \\
+		  	\hline
+
+		  	\textbf{Observation:} 	& Composers played some of their compositions that seemed to repeat a certain melody. \\
+		  	\textbf{Clarification:} 	& Asked why it was like that and how they did that. \\
+		  	\textbf{Verification:} 	& Verified that they would sometimes compose whole compositions using just one melody or motif that was modified repeatedly using transposition, or retrograde/inversion. \\
+		  	\textbf{Translation:} 	& Added a feature that allowed transposition and retrograde/inversion. \\
+		  	\hline
+
+		  	\textbf{Observation:} 	& Composers wrote annotations or drew arrows on the music sheet that pointed to a specific set of notes/rests. \\
+		  	\textbf{Clarification:} 	& Asked why they did that and what it was for. \\
+		  	\textbf{Verification:} 	& Verified that they did that to denote repeating or ``copying'' the set of notes since it was faster than rewriting them. \\
+		  	\textbf{Translation:} 	& Added a feature that allowed cut, copy, or paste. \\
+		  	\hline
+
+		  	\textbf{Observation:} 	& Composers would use the piano or a guitar repeatedly while writing on a music sheet. \\
+		  	\textbf{Clarification:} 	& Asked why they did that. \\
+		  	\textbf{Verification:} 	& Verified that they did that since they did not have ``perfect pitch'' and could not test the pitch without actually hearing it. \\
+		  	\textbf{Translation:} 	& Added a music playback feature for playing the whole composition and when adding notes.  \\
+		  	\hline
+
+		  	\textbf{Observation:} 	& Composers would draw sharps on flats in the middle of their composition. \\
+		  	\textbf{Clarification:} 	& Asked what those were for and why they had to do that. \\
+		  	\textbf{Verification:} 	& Verified that they did that to modify the pitch quickly without having to change the whole key signature. \\
+		  	\textbf{Translation:} 	& Added a feature that allowed adding and removing accidentals.  \\
+		  	\hline
+
+		  	\textbf{Observation:} 	& Composers sometimes write an ``8va'' on top of notes. \\
+		  	\textbf{Clarification:} 	& Asked the composers what these do and what are they called. \\
+		  	\textbf{Verification:} 	& Verified that it was called ottava and they raise the pitch of the note to the next octave. \\
+		  	\textbf{Translation:} 	& Added a feature that allowed placing ottava and its counterpart, ottava bassa on notes. \\
+		  	\hline
+		\end{longtable}
 
 	\section{Design and Implementation of Interaction}
 	\label{sec:design}
@@ -90,7 +166,7 @@
 				    \label{fig:flow_it2}
 				\end{figure} 
 
-				The biggest change for iteration 2 came with the revised highlight interaction. From the user tests, it was found that the two-finger drag for highlight in the previous iteration was hard to figure out. Hence, the gestures for the highlight and scroll interactions were switched, resulting in the highlight using only a one-finger drag, while the scroll used a two-finger drag (see Figure \ref{fig:highlight}). 
+				The biggest change for iteration 2 came with the revised highlight interaction. From the user tests, it was found that the two-finger drag for highlight in the previous iteration was hard to figure out. This was evident from the quantitative data gathered which showed the \textit{Highlight/Select a Group of Notes} having a score of only 2.5 (see Table \ref{tab:results-features-it1} item 6). This also affected the scores of the \textit{Edit a Highlighted/Selected Group of Notes} and \textit{Delete a Highlighted/Selected Group of Notes} features, giving them both one of the lowest scores of 2.2 (see Table \ref{tab:results-features-it1} items 7 and 8 respectively). It was observed that they would try to use a one-finger drag to highlight (see Figure \ref{fig:video_highlight}). Hence, the gestures for the highlight and scroll interactions were switched, resulting in the highlight using only a one-finger drag, while the scroll used a two-finger drag (see Figure \ref{fig:highlight}). 
 
 				\begin{figure}[h]
 					\centering
@@ -99,7 +175,9 @@
 				    \label{fig:highlight}
 				\end{figure}
 
-				Other major changes for iteration 2 were with the menus. In iteration 1, the arrow keys and the notation menu were tied to each other. This meant that if the user moved the arrow keys, the notation menu would follow. However, the researchers soon realized from the user tests that not everyone held the iPad the same way. Some held it with both hands like they would hold a video game controller, making the setup of the two menus a bit unnatural for them. For the second version, the two menus were separated from each other making it possible to place them on the opposite ends of the screen. 
+				Other major changes for iteration 2 were with the menus. In iteration 1, the arrow keys and the notation menu were tied to each other. This meant that if the user moved the arrow keys, the notation menu would follow. However, the researchers soon realized from the user tests that not everyone held the iPad the same way. Some held it with both hands like they would hold a video game controller, making the setup of the two menus a bit unnatural for them. For the second version, the two menus were separated from each other making it possible to rearrange them. 
+
+				%Place image of anthony here
 
 				The delete button was also moved from the bottom of the notation menu to its side and changed to the color red. The change made the button easier to press and more obvious. 
 
