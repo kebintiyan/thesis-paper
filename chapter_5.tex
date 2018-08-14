@@ -14,10 +14,10 @@
 			\1 When composing, composers usually start with the motif or emotion, which involves a lot of trial-and-error (see Figures \ref{fig:motif-magsalin} and \ref{fig:motif-anthony}). 
 			\1 Composers would often sketch out initial ideas on pen and paper (because they are easier to carry) then transfer it to an actual notation software. 
 			\1 Experienced composers would often use retrograde, inversion, and transposition to to develop motifs. They also expect that notation software have these features to make composition easier (see Figures \ref{fig:handwritten-transpose-erase}, \ref{fig:handwritten-transpose-measure}, and \ref{fig:handwritten-retrograde}).
-			\1 There were some tasks were not easy to figure out how to do with common notation software so they had to search online which they found tedious. 
-			\1 There are some composers who have what they call ``perfect pitch'', which means they can identify a note and its pitch without the need to hear it. Those who do not have ``perfect pitch'' need to rely on instruments like the piano or music playback on applications. 
-			\1 Composers felt a lack of good notation software for mobile and tablet devices. They usually have to bring music notepads if ever they need to compose on the go. 
-			\1 Finale is the industry standard for musical notation. Composers especially like its ``speedy entry'' feature which allows them to compose quickly using the keyboard. This feature was used often when rewriting a composition from notepads or music sheets. 
+			\1 There were some tasks were not easy to figure out how to do with common notation software so they had to search online which they found tedious (see Table \ref{tab:composer-responses} item 10). 
+			\1 There are some composers who have what they call ``perfect pitch'', which means they can identify a note and its pitch without the need to hear it. Those who do not have ``perfect pitch'' need to rely on instruments like the piano or music playback on applications (see Table \ref{tab:composer-responses} item 8). 
+			\1 Composers expressed that they found a lack of good notation software for mobile and tablet devices. They usually have to bring music notepads if ever they need to compose on the go (see Table \ref{tab:composer-responses} item 7). 
+			\1 Composers mentioned that Finale is the industry standard for musical notation (see Table \ref{tab:composer-responses} item 9). They especially like its ``speedy entry'' feature which allows them to compose quickly using the keyboard. This feature was used often when rewriting a composition from notepads or music sheets. 
 		\end{outline}
 
 		\begin{figure}[H]
@@ -55,6 +55,33 @@
 		    \label{fig:handwritten-retrograde}
 		\end{figure}
 
+		Table \ref{tab:composer-responses} shows highlights from the responses of the composers from the interviews.
+
+		\begin{longtable}{|p{14cm}|}
+			\caption{Composer Responses from the Interviews} \label{tab:composer-responses} \\ 
+		  	\hline
+		  		``\textit{My process varies, and depends on the job that i need to do. Generally I start with an idea or try to develop a motif, and continue from there.}'' \\ 
+		  		\\
+		  		``\textit{Expert composers mostly use inversions, retrograde, sequence, as well as other techniques to develop a motif.}'' \\
+		  		\\
+		  		``\textit{In music composition, trial and error is evident. Don’t be attached to the first set of notes you’ve written.}'' \\
+		  		\\
+		  		``\textit{If you can't seem to compose, resort to music theory.}'' \\
+		  		\\
+		  		``\textit{Copying and pasting on physical music sheet is tedious, not like in notation software where it’s also easy to perform inversion, retrograde, and transposition.}'' \\
+		  		\\
+		  		``\textit{When you hit a creative block na di mo alam kung san mo dadalhin yung music, dun papasok yung theories na inversion, retrograde, transposing.}'' \\
+		  		\\
+		  		``\textit{I use an iPad Pro and there is definitely a lack of software. I bring a music notepad when I need to compose on the go.}'' \\
+		  		\\
+		  		``\textit{I'm not perfect pitch kasi eh so I have to rely on instruments to test my composition.}'' \\
+		  		\\
+		  		``\textit{Pag sa industry Finale talaga yung ginagamit.}'' \\
+		  		\\
+		  		``\textit{Sometimes may problem talaga sa software. I don’t know how to perform a task, so I get stuck and search online how to do it.}'' \\
+		  	\hline
+		\end{longtable}
+
 		From the identified key points, the researchers came up with the affinity diagram shown in Figure \ref{fig:affinity-diagram}. 
 
 		\begin{figure}[H]
@@ -77,7 +104,7 @@
 	  	\hline
 		\end{comment}
 
-		Table \ref{tab:feature-translations} shows how the identified needs and pain points were translated to features for the developed prototypes.
+		Table \ref{tab:feature-translations} shows how the identified needs and pain points were translated to features for the developed prototypes. These were the bases for the user stories shown in Appendix \ref{sec:user_stories}.
 
 		\begin{longtable}{|p{2.5cm} p{12.5cm}|}
 			\caption{Feature Translations} \label{tab:feature-translations} \\ 
@@ -140,6 +167,71 @@
 
 	\section{Design and Implementation of Interaction}
 	\label{sec:design}
+
+		\begin{comment}
+		Empathize: We observed users drawing notes and rests along the staff. 
+		Define: Users find it problematic if we just click notes and rests and they are placed in the staff. 
+		Ideate: Users find it easier if they draw as if they are drawing along the staff instead of tapping and putting based on the cursor
+		Build: We added the draw function in Swift so that users can draw anywhere in the staff
+		Test: During tests, they were concerned with the accuracy and positioning so we improved by adding a cursor that will help them know where exactly they can draw the note. 
+
+		\textbf{Empathize:} 	&  \\
+		  	\textbf{Define:} 		&  \\
+		  	\textbf{Ideate:} 		&  \\
+		  	\textbf{Build:} 			&  \\
+		  	\textbf{Test:} 			&  \\
+		  	\hline
+		\end{comment}
+
+		Table \ref{tab:design-thinking} how the important or core features evolved from the understanding the composers phase all the way to the interaction changes made during the tests. 
+
+		\begin{longtable}{|p{2.5cm} p{12.5cm}|}
+			\caption{Design Thinking Process for Features} \label{tab:design-thinking} \\ 
+		  	\hline
+
+		  	\textbf{Empathize:} 	& It was observed that composers drew notes and rests along the staff. \\
+		  	\textbf{Define:} 		& Users found it slow to have to write the notes and rests. \\
+		  	\textbf{Ideate:} 		& Users find it easier if they simply pressed buttons like in the ``speedy entry'' of Finale. \\
+		  	\textbf{Build:} 			& A notation menu was implemented where users can simply tap on the notes they wanted to add. \\
+		  	\textbf{Test:} 			& During the tests, the users enjoyed the simplicity of the interaction. \\
+		  	\hline
+
+		  	\textbf{Empathize:} 	& It was observed that composers erased notes/rests they wanted to remove or change. \\
+		  	\textbf{Define:} 		& Users found it tedious to erase notes/rests, especially when there were a lot. \\
+		  	\textbf{Ideate:} 		& Users find it easier to just highlight the notes/rests they want to remove or change then press on a key. \\
+		  	\textbf{Build:} 			& A highlight feature was implemented to allow them to select multiple notes/rests and delete or edit them in a single action.  \\
+		  	\textbf{Test:} 			& During the tests, users were not able to figure out the initial highlight interaction so it was changed to a one-finger drag. \\
+		  	\hline
+
+		  	\textbf{Empathize:} 	& It was observed that composers added and removed accidentals on notes to try out melodies. \\
+		  	\textbf{Define:} 		& Users found it tedious to write and erase the accidentals. \\
+		  	\textbf{Ideate:} 		& In common musical notation applications, accidentals can be added and removed using buttons. \\
+		  	\textbf{Build:} 			& Adding and removing accidentals was implemented through a set of menu buttons to make it easier for composers to manipulate notes. \\
+		  	\textbf{Test:} 			& During the tests, the users had a hard time removing accidentals because they had to naturalize the notes to remove them. So it was fixed to allow removing accidentals by pressing its button again. \\
+		  	\hline
+		  	
+		  	\textbf{Empathize:} 	& It was observed that composers transposed motifs or melodies to lengthen a composition. \\
+		  	\textbf{Define:} 		& Users found it tedious to have to rewrite the notes repeatedly. \\
+		  	\textbf{Ideate:} 		& Users find it easier to select the notes and press arrow keys like in Finale. \\
+		  	\textbf{Build:} 			& A transpose feature was implemented to allow them to easily transpose using the arrow keys. \\
+		  	\textbf{Test:} 			& During the tests, the users found the transpose interaction confusing because they also used the cursor's arrow keys. A separate set of arrow keys were added to make the transpose interaction more obvious. \\
+		  	\hline
+
+		  	\textbf{Empathize:} 	& It was observed that composers used retrograde/inversion to develop a motif. \\
+		  	\textbf{Define:} 		& Users found it tedious to have to rewrite the notes repeatedly. \\
+		  	\textbf{Ideate:} 		& Users find it easier to perform this on musical composition applications like Finale. \\
+		  	\textbf{Build:} 			& A retrograde/inversion feature was implemented so they could easily modify melodies. \\
+		  	\textbf{Test:} 			& During the tests, the users liked the feature because it made modifying melodies easier. \\
+		  	\hline
+
+		  	\textbf{Empathize:} 	& It was observed that composers played their composition on instruments to test it.  \\
+		  	\textbf{Define:} 		& Users found this process slow and tedious and were not able to do this without their instruments. \\
+		  	\textbf{Ideate:} 		& Users find it easier when writing on musical composition applications because of the music playback feature. \\
+		  	\textbf{Build:} 			& Music playback was implemented to allow users to easily listen to and test their compositions. \\
+		  	\textbf{Test:} 			& During the tests, the users found the playback a bit limited because it only showed the current measure that was playing so it was improved to also show the current note or rest that was playing. \\
+		  	\hline
+
+		\end{longtable}
 
 		\subsection{Initial Sketches}
 
@@ -206,11 +298,11 @@
 				\begin{figure}[h]
 					\centering
 					\includegraphics[scale=0.25]{figures/before-after-highlight.png}
-				    \caption{The highlight interaction before and after changes were made due to the user testing. The new interaction uses only one (1) finger.}
+				    \caption{The highlight interaction before and after changes were made due to the user testing. The old interaction used two (2) fingers which the users did not find intuitive. The new interaction uses only one (1) finger.}
 				    \label{fig:highlight}
 				\end{figure}
 
-				Other major changes for iteration 2 were with the menus. In iteration 1, the arrow keys and the notation menu were tied to each other. This meant that if the user moved the arrow keys, the notation menu would follow. However, the researchers soon realized from the user tests that not everyone held the iPad the same way. Some held it with both hands like they would hold a video game controller, making the setup of the two menus a bit unnatural for them. For the second version, the two menus were separated from each other making it possible to rearrange them. 
+				Other major changes for iteration 2 were with the menus. In iteration 1, the arrow keys and the notation menu were tied to each other. This meant that if the user moved the arrow keys, the notation menu would follow. However, the researchers soon realized from the user tests that not everyone held the iPad the same way. Some held it with both hands like they would hold a video game controller (see Figure \ref{fig:handheld_ipad}), making the setup of the two menus a bit unnatural for them. For the second version, the two menus were separated from each other making it possible to rearrange them. 
 
 				%Place image of anthony here
 
@@ -243,14 +335,14 @@
 				    \label{fig:before-after-tsmenu}
 				\end{figure} 
 
-				The transpose interaction was also revised, giving it a totally new menu that shows when a group of notes are highlighted (see Figure \ref{fig:before-after-transpose}). This was done to make the transpose interaction more obvious to the users.
+				The transpose interaction also needed revisions since testers were not able to figure out how to do it (see Figure \ref{fig:video_transpose}). It was given a totally new menu that shows when a group of notes are highlighted (see Figure \ref{fig:before-after-transpose}). This was done to make the transpose interaction more obvious to the users.
 
 				% TRANSPOSE VIDEO REFERENCE
 
 				\begin{figure}[h]
 					\centering
 					\includegraphics[scale=0.32]{figures/before-after-transpose}
-				    \caption{The transpose interaction before and after changes were made due to the user testing. The new transpose interaction adds a menu containing separate transpose arrow keys as well as additional modifiers.}
+				    \caption{The transpose interaction before and after changes were made due to the user testing. The old interaction made use of the cursor arrow keys which made it confusing for the users. The new transpose interaction adds a menu containing separate transpose arrow keys as well as additional modifiers.}
 				    \label{fig:before-after-transpose}
 				\end{figure}
 
