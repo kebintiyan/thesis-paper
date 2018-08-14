@@ -179,6 +179,13 @@
 
 				%Place image of anthony here
 
+				\begin{figure}[h]
+					\centering
+					\includegraphics[scale=0.3]{figures/anthony-handheld-ipad.png}
+				    \caption{A tester holding the iPad like a video game controller.}
+				    \label{fig:handheld_ipad}
+				\end{figure}
+
 				The delete button was also moved from the bottom of the notation menu to its side and changed to the color red. The change made the button easier to press and more obvious. 
 
 			\subsubsection{Iteration 3}
@@ -203,7 +210,7 @@
 
 				The transpose interaction was also revised, giving it a totally new menu that shows when a group of notes are highlighted (see Figure \ref{fig:before-after-transpose}). This was done to make the transpose interaction more obvious to the users.
 
-				% TRANSPOSE IMAGE REFERENCE
+				% TRANSPOSE VIDEO REFERENCE
 
 				\begin{figure}[h]
 					\centering
@@ -333,9 +340,14 @@
 				    \label{fig:video_keysig}
 				\end{figure}
 
-				Although not included in the questionnaire, the transposition interaction was also found to need improvement. In the prototype, users can tap on the up or down arrow keys to instantly transpose the selected notes to a higher or lower pitch respectively. It was observed that this was sometimes confusing and not easy to find. The confusion happened mainly because the users' assumption was that the arrow key was only used to move the cursor and not the notes. They would eventually be able to figure out after some messing around, but this still needed to be improved. Hence, in the succeeding iteration a menu was added containing the transpose arrow keys and other modifiers that would only appear when a user highlights a set of notes (see Figure \ref{fig:before-after-transpose}. This not only made it more obvious, but also saved space by only showing the necessary buttons when needed.
+				From the observed qualitative data, the transposition interaction was also found to need improvement. In the prototype, users can tap on the up or down arrow keys to instantly transpose the selected notes to a higher or lower pitch respectively. It was observed that this was sometimes confusing and not easy to find (see Figure \ref{fig:video_transpose}). The confusion happened mainly because the users' assumption was that the arrow key was only used to move the cursor and not the notes. They would eventually be able to figure out after some messing around, but this still needed to be improved. Hence, in the succeeding iteration a menu was added containing the transpose arrow keys and other modifiers that would only appear when a user highlights a set of notes (see Figure \ref{fig:before-after-transpose}. This not only made it more obvious, but also saved space by only showing the necessary buttons when needed.
 
-				% TRANSPOSE IMAGE HERE
+				\begin{figure}[h]
+					\centering
+					\includegraphics[scale=0.34]{figures/video-transpose.png}
+				    \caption{Segments from the user testing video of a tester trying to transpose a note. The tester was trying to drag to transpose and was not able to figure out that they had to use the arrow keys to transpose.}
+				    \label{fig:video_transpose}
+				\end{figure}
 
 				The \textit{Cut/Copy/Paste} interactions also received some quite low scores (see Table \ref{tab:results-features-it2} items 15 and 16). The main problem with the interaction was the lack of feedback when pressed. The buttons were a bit small and the users had a hard time knowing whether or not they already pressed the button because they could not see any feedback. For the next iteration, the buttons were made a bit bigger and given more space apart. Toast notifications were also added once they successfully executed a cut or copy. 
 
