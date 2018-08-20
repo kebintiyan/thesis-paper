@@ -147,77 +147,121 @@
 		\end{comment}
 		
 		\newpage
-		The identified needs and pain points from the composers were translated to features for the developed prototypes as shown in Tables \ref{tab:feature-translations-basic} and \ref{tab:feature-translations-advanced}. These were the bases for the user stories shown in Appendix \ref{sec:user_stories}.
+		The identified needs and pain points from the composers were translated to features for the developed prototypes as shown in Tables \ref{tab:feature-translations-basic} and \ref{tab:feature-translations-advanced}. These were the bases for the user stories, also shown in Appendix \ref{sec:user_stories}.
 
-		\begin{table} [H]
-			\caption{Basic Feature Translations. O = Observation, C = Clarification, V = Verification, T = Translation.} \label{tab:feature-translations-basic}
-			\vspace{0.20cm}   
-			\begin{tabular}{|p{.5cm} p{13.5cm}|}
-			  	\hline
+		\begin{longtable}{|p{.5cm} p{13.5cm}|}
+			\caption{Basic Feature Translations. O = Observation, C = Clarification, V = Verification, T = Translation, U = User Stories Derived.} \label{tab:feature-translations-basic} \\
+		  	\hline
 
-			  	\textbf{O:} 	& Composers would often just write lines as notes and rests on the music sheet. \\
-			  	\textbf{C:} 	& Asked the composers why they drew notes and rests like that. \\
-			  	\textbf{V:} 	& Verified that it felt faster writing them like that. \\
-			  	\textbf{T:} 	& Added a feature that allowed adding notes and rests on the music sheet. \\
-			  	\hline
+		  	\textbf{O:} 	& Composers would often just write lines as notes and rests on the music sheet. \\
+		  	\textbf{C:} 	& Asked the composers why they drew notes and rests like that. \\
+		  	\textbf{V:} 	& Verified that it felt faster writing them like that. \\
+		  	\textbf{T:} 	& Added a feature that allowed adding notes and rests on the music sheet. \\
+		  	\textbf{U:} 	& \begin{outline}
+		  								\1 As a user, I want to be able to place a note in my composition, so that I can create my composition.
+		  								\1 As a user, I want to be able to place a rest in my composition, so I can have pauses in my composition.
+		  							\end{outline} \\
+		  	\hline
 
-			  	\textbf{O:} 	& Composers would scratch on multiple notes and rests. \\
-			  	\textbf{C:} 	& Asked the composers why they did that. \\
-			  	\textbf{V:} 	& Verified that it was faster to remove notes and rests that way than erasing. \\
-			  	\textbf{T:} 	& Added a feature that allowed deleting multiple notes and rests on the music sheet. \\
-			  	\hline
+		  	\textbf{O:} 	& Composers would scratch on multiple notes and rests. \\
+		  	\textbf{C:} 	& Asked the composers why they did that. \\
+		  	\textbf{V:} 	& Verified that it was faster to remove notes and rests that way than erasing. \\
+		  	\textbf{T:} 	& Added a feature that allowed deleting single or multiple notes and rests on the music sheet. \\
+		  	\textbf{U:} 	& \begin{outline}
+		  								\1 As a user, I want to be able to select a note, so that I can perform actions on it.
+		  								\1 As a user, I want to be able to erase a note in my composition, so that I can make space for other notes in my composition.
+		  								\1 As a user, I want to be able to select a rest, so that I can perform actions on that rest.
+		  								\1 As a user, I want to be able to highlight a group of notes in my composition, so that I can perform actions on the group.
+		  								\1 As a user, I want to be able to erase a highlighted group of notes in my composition, so that I can make large changes faster.
+		  								\1 As a user, I want to be able to highlight a group of rests, so that I can perform actions on the group of rests.
+		  								\1 As a user, I want to be able to erase a highlighted group of rests in my composition, so that I can make large changes faster.
+		  							\end{outline} \\
+		  	\hline
 
-			  	\textbf{O:} 	& Composers would erase old notes/rests and write new notes/rests on top. \\
-			  	\textbf{C:} 	& Asked the composers if that was how they would always edit notes/rests. \\
-			  	\textbf{V:} 	& Verified that they always did that even though it was tedious. \\
-			  	\textbf{T:} 	& Added a feature that allowed editing notes/rests in the music sheet. \\
-			  	\hline
+		  	\textbf{O:} 	& Composers would erase old notes/rests and write new notes/rests on top. \\
+		  	\textbf{C:} 	& Asked the composers if that was how they would always edit notes/rests. \\
+		  	\textbf{V:} 	& Verified that they always did that even though it was tedious. \\
+		  	\textbf{T:} 	& Added a feature that allowed editing notes/rests in the music sheet. \\
+		  	\textbf{U:} 	& \begin{outline}
+		  								\1 As a user, I want to be able to select a note, so that I can perform actions on it.
+		  								\1 As a user, I want to be able to change the pitch of a note in my composition, so that I can make adjustments to my composition.
+		  								\1 As a user, I want to be able to change the type of a note in my composition, so that I can make the sound longer or shorter.
+		  								\1 As a user, I want to be able to select a rest, so that I can perform actions on that rest.
+		  								\1 As a user, I want to be able to change a rest in my composition, so that I can make adjustments to my composition.
+		  							\end{outline} \\
+		  	\hline
 
-			  	\textbf{O:} 	& Composers would start compositions by writing the time signature. \\
-			  	\textbf{C:} 	& Asked if they always started with the time signature. \\
-			  	\textbf{V:} 	& Verified that they would often decide on the time signature as well as the key signature at the start and would rarely change it. \\
-			  	\textbf{T:} 	& Added a feature that allowed changing the time and key signature. \\
-			  	\hline
-			\end{tabular}
-		\end{table}
+		  	\textbf{O:} 	& Composers would start compositions by writing the time signature. \\
+		  	\textbf{C:} 	& Asked if they always started with the time signature. \\
+		  	\textbf{V:} 	& Verified that they would often decide on the time signature as well as the key signature at the start and would rarely change it. \\
+		  	\textbf{T:} 	& Added a feature that allowed changing the time and key signature. \\
+		  	\textbf{U:} 	& \begin{outline}
+		  								\1 As a user, I want to be able to set the key signature of my composition.
+		  								\1 As a user, I want to be able to set the time signature of my composition.
+		  							\end{outline} \\
+		  	\hline
+		\end{longtable}
 
-		\begin{table} [H]
-			\caption{Advanced Feature Translations. O = Observation, C = Clarification, V = Verification, T = Translation.} \label{tab:feature-translations-advanced}
-			\vspace{0.20cm}   
-			\begin{tabular}{|p{.5cm} p{13.5cm}|}
-			  	\hline
+		\begin{longtable}{|p{.5cm} p{13.5cm}|}
+			\caption{Advanced Feature Translations. O = Observation, C = Clarification, V = Verification, T = Translation, U = User Stories Derived.} \label{tab:feature-translations-advanced} \\
+		  	\hline
 
-			  	\textbf{O:} 	& Composers played some of their compositions that seemed to repeat a certain melody. \\
-			  	\textbf{C:} 	& Asked why it was like that and how they did that. \\
-			  	\textbf{V:} 	& Verified that they would sometimes compose whole compositions using just one melody or motif that was modified repeatedly using transposition, or retrograde/inversion. \\
-			  	\textbf{T:} 	& Added a feature that allowed transposition and retrograde/inversion. \\
-			  	\hline
+		  	\textbf{O:} 	& Composers played some of their compositions that seemed to repeat a certain melody. \\
+		  	\textbf{C:} 	& Asked why it was like that and how they did that. \\
+		  	\textbf{V:} 	& Verified that they would sometimes compose whole compositions using just one melody or motif that was modified repeatedly using transposition, or retrograde/inversion. \\
+		  	\textbf{T:} 	& Added a feature that allowed transposition and retrograde/inversion. \\
+		  	\textbf{U:} 	& \begin{outline}
+		  								\1 As a user, I want to be able to highlight a group of notes in my composition, so that I can perform actions on the group.
+		  								\1 As a user, I want to be able to highlight a mixed group of notes and rests in my composition, so that I can perform actions on the group.
+	  									\1 As a user, I want to be able to transpose a highlighted group of notes, so that I do not need to individually change the pitch of each note.
+	  									\1 As a user, I want to be able to perform retrograde inversion on a group of notes, so that I do not need to invert each note individually.
+	  								\end{outline} \\
+		  	\hline
 
-			  	\textbf{O:} 	& Composers wrote annotations or drew arrows on the music sheet that pointed to a specific set of notes/rests. \\
-			  	\textbf{C:} 	& Asked why they did that and what it was for. \\
-			  	\textbf{V:} 	& Verified that they did that to denote repeating or ``copying'' the set of notes since it was faster than rewriting them. \\
-			  	\textbf{T:} 	& Added a feature that allowed cut, copy, or paste. \\
-			  	\hline
+		  	\textbf{O:} 	& Composers wrote annotations or drew arrows on the music sheet that pointed to a specific set of notes/rests. \\
+		  	\textbf{C:} 	& Asked why they did that and what it was for. \\
+		  	\textbf{V:} 	& Verified that they did that to denote repeating or ``copying'' the set of notes since it was faster than rewriting them. \\
+		  	\textbf{T:} 	& Added a feature that allowed cut, copy, or paste. \\
+		  	\textbf{U:} 	& \begin{outline}
+		  								\1 As a user, I want to be able to highlight a group of notes in my composition, so that I can perform actions on the group.
+		  								\1 As a user, I want to be able to highlight a group of rests, so that I can perform actions on the group of rests.
+		  								\1 As a user, I want to be able to highlight a mixed group of notes and rests in my composition, so that I can perform actions on the group.
+		  								\1 As a user, I want to be able to copy a highlighted group of notes and/or rests, so that I can copy a recurring segment in my composition.
+    									\1 As a user, I want to be able to cut a highlighted group of notes and/or rests, so that I can easily move a segment of my composition.
+    									\1 As a user, I want to be able to paste the copied or cut group of notes and/or rests onto my composition, so that I do not need to add a recurring segment in my composition manually all the time.
+		  							\end{outline} \\
+		  	\hline
 
-			  	\textbf{O:} 	& Composers would use the piano or a guitar repeatedly while writing on a music sheet. \\
-			  	\textbf{C:} 	& Asked why they did that. \\
-			  	\textbf{V:} 	& Verified that they did that since they did not have ``perfect pitch'' and could not test the pitch without actually hearing it. \\
-			  	\textbf{T:} 	& Added a music playback feature for playing the whole composition and when adding notes.  \\
-			  	\hline
+		  	\textbf{O:} 	& Composers would use the piano or a guitar repeatedly while writing on a music sheet. \\
+		  	\textbf{C:} 	& Asked why they did that. \\
+		  	\textbf{V:} 	& Verified that they did that since they did not have ``perfect pitch'' and could not test the pitch without actually hearing it. \\
+		  	\textbf{T:} 	& Added a music playback feature for playing the whole composition and when adding notes.  \\
+		  	\textbf{U:} 	& \begin{outline}
+		  								\1 As a user, I want to be able to hear the sound of the note I just added, so that I know I've added the correct sounding note.
+		  								\1 As a user, I want to be able to listen to my whole composition, so that I can hear it as a whole.
+		  							\end{outline} \\
+		  	\hline
 
-			  	\textbf{O:} 	& Composers would draw sharps on flats in the middle of their composition. \\
-			  	\textbf{C:} 	& Asked what those were for and why they had to do that. \\
-			  	\textbf{V:} 	& Verified that they did that to modify the pitch quickly without having to change the whole key signature. \\
-			  	\textbf{T:} 	& Added a feature that allowed adding and removing accidentals.  \\
-			  	\hline
+		  	\textbf{O:} 	& Composers would draw sharps on flats in the middle of their composition. \\
+		  	\textbf{C:} 	& Asked what those were for and why they had to do that. \\
+		  	\textbf{V:} 	& Verified that they did that to modify the pitch quickly without having to change the whole key signature. \\
+		  	\textbf{T:} 	& Added a feature that allowed adding and removing accidentals.  \\
+		  	\textbf{U:} 	& \begin{outline}
+		  								\1 As a user, I want to be able to add accidentals to my notes, so that I can control the pitch of my notes.
+		  								\1 As a user, I want to be able to remove accidentals from my notes, so that I can control the pitch of my notes.
+		  							\end{outline} \\
+		  	\hline
 
-			  	\textbf{O:} 	& Composers sometimes write an ``8va'' on top of notes. \\
-			  	\textbf{C:} 	& Asked the composers what these do and what are they called. \\
-			  	\textbf{V:} 	& Verified that it was called ottava and they raise the pitch of the note to the next octave. \\
-			  	\textbf{T:} 	& Added a feature that allowed placing ottava and its counterpart, ottava bassa on notes. \\
-			  	\hline
-			\end{tabular}
-		\end{table}
+		  	\textbf{O:} 	& Composers sometimes write an ``8va'' on top of notes. \\
+		  	\textbf{C:} 	& Asked the composers what these do and what are they called. \\
+		  	\textbf{V:} 	& Verified that it was called ottava and they raise the pitch of the note to the next octave. \\
+		  	\textbf{T:} 	& Added a feature that allowed placing ottava and its counterpart, ottava bassa on notes. \\
+		  	\textbf{U:} 	& \begin{outline}
+		  								\1 As a user, I want to be able to add ottavas and ottava bassas on my notes, so that I can easily change the octave of my notes
+  		 				 				\1 As a user, I want to be able to remove ottavas and ottava bassas on my notes, so that I can easily change the octave of my notes
+		  							\end{outline} \\
+		  	\hline
+		\end{longtable}
 
 	\section{Design and Implementation of Interaction}
 	\label{sec:design}
@@ -654,7 +698,7 @@
 					\end{longtable}
 				\end{landscape} 
 
-				It can be seen in Table \ref{tab:results-features-it4}, however, that tester 1 rated the \textit{Select or highlight notes/chords} and \textit{Cut, copy, or paste notes/chords} features quite low. The reason why these two are low are actually connected. The said tester was not actually able to figure out how to perform the highlight gesture. Because of that, they were also not able to fully perform cut/copy/paste actions because they could not highlight any notes/rests. However, they also mentioned that they were not really accustomed to using mobile applications which most likely caused the unfamiliarity with the gesture. 
+				It can be seen in Table \ref{tab:results-features-it4}, however, that tester 2 rated the \textit{Select or highlight notes/chords} and \textit{Cut, copy, or paste notes/chords} features quite low. The reason why these two are low are actually connected. The said tester was not actually able to figure out how to perform the highlight gesture. Because of that, they were also not able to fully perform cut/copy/paste actions because they could not highlight any notes/rests. However, they also mentioned that they were not really accustomed to using mobile applications which most likely caused the unfamiliarity with the gesture. 
 
 				It can also be noticed that tester 9 rated the \textit{Music playback} feature very low at 1.0. This was caused by a bug in the application that would play the tempo of the composition slower than it should be. This only happened when the user would play the composition repeatedly. An inefficient piece of code caused a variable to be instantiated repeatedly, causing the playback to slow down after multiple playback attempts. 
 			
@@ -663,53 +707,140 @@
 		\subsection{Comparative Analysis Between Iterations} % (fold)
 		\label{sec:comparative_analysis}
 
-			Shown in Table \ref{tab:summarized-all} and Figures \ref{fig:select-bar}, \ref{fig:add-bar}, \ref{fig:edit-bar}, and \ref{fig:delete-bar} are the per feature summarized scores across all iterations. It can be observed that each feature increases in its average rating from iteration 1 to iteration 3. This can imply an improvement in the user experience. Scores went down a bit in iteration 4, but this could probably be attributed to the demographics of the testers since all but one (1) have never used the application before and most were experts. The greatest increase however, comes from iteration 1 to iteration 2, with a total increase of 3.6 and an average increase of 0.9. 
+			\subsubsection{Analysis for All Testers Across Iterations}
+
+				Shown in Table \ref{tab:summarized-all} and Figures \ref{fig:select-bar}, \ref{fig:add-bar}, \ref{fig:edit-bar}, and \ref{fig:delete-bar} are the per feature summarized scores across all iterations. It can be observed that each feature increases in its average rating from iteration 1 to iteration 3. This can imply an improvement in the user experience. Scores went down a bit in iteration 4, but this could probably be attributed to the demographics of the testers since all but one (1) have never used the application before and most were experts. The greatest increase however, comes from iteration 1 to iteration 2, with a total increase of 3.6 and an average increase of 0.9. 
+
+				\begin{table}[H]
+				  \centering
+				  \captionof{table}{Summarized Feature Scores from Iteration 1 - 4} \label{tab:summarized-all}
+				  \begin{tabular}{|p{2.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.5cm}|R{1.4cm}|R{1.4cm}|R{1.4cm}|}
+				  	\hline
+				  	\textbf{Feature} & \textbf{I1} & \textbf{I2} & \textbf{I3} & \textbf{I4} & \begin{math}\bm{\mu}\end{math} & \textbf{I2 - I1} & \textbf{I3 - I2} & \textbf{I4 - I3} \\ \hline
+
+				  	Select or highlight notes/chords 	& 3.1 & 3.6 & 3.7 & 3.4 & 3.4 & 0.5 & 0.1 & -0.3 \\ \hline
+					Add notes/chords 						& 2.8 & 3.5 & 3.7 & 3.2 & 3.3 & 0.7 & 0.2 & -0.5 \\ \hline
+					Edit notes/chords 						& 2.2 & 3.2 & 3.3 & 3.0 & 2.9 & 1.0 & 0.1 & -0.3 \\ \hline
+					Delete notes/chords 					& 2.2 & 3.6 & 3.7 & 3.4 & 3.2 & 1.4 & 0.1 & -0.3 \\ \hline
+
+				  \end{tabular}
+				\end{table}
+
+				\begin{figure}[H]
+					\centering
+					\frame{\includegraphics[scale=0.7]{figures/results-select-bar.png}}
+				    \caption{Bar chart showing the summarized feature scores of the \textit{Select or highlight notes/chords} feature from iteration 1 to iteration 4.}
+				    \label{fig:select-bar}
+				\end{figure} 
+
+				\begin{figure}[H]
+					\centering
+					\frame{\includegraphics[scale=0.7]{figures/results-add-bar.png}}
+				    \caption{Bar chart showing the summarized feature scores of the \textit{Add notes/chords} feature from iteration 1 to iteration 4.}
+				    \label{fig:add-bar}
+				\end{figure} 
+
+				\begin{figure}[H]
+					\centering
+					\frame{\includegraphics[scale=0.7]{figures/results-edit-bar.png}}
+				    \caption{Bar chart showing the summarized feature scores of the \textit{Edit notes/chords} feature from iteration 1 to iteration 4.}
+				    \label{fig:edit-bar}
+				\end{figure} 
+
+
+				\begin{figure}[H]
+					\centering
+					\frame{\includegraphics[scale=0.7]{figures/results-delete-bar.png}}
+				    \caption{Bar chart showing the summarized feature scores of the \textit{Delete notes/chords} feature from iteration 1 to iteration 4.}
+				    \label{fig:delete-bar}
+				\end{figure} 
+
+				The feature with the greatest increase is the delete function. It started as one of the features with the lowest score in iteration 1 at only 2.2 and ended up as the feature with one of the highest scores in iteration 4 at 3.4. This is because of the several improvements made to the interaction of the delete feature. In iteration 1, users would have to use the highlight feature to delete, even if it was just a single note/rest. With the changes made to the highlight interaction and allowing users to delete when the cursor is pointed on the note/rest, the experience of deleting and even editing improved for the users. The delete feature was still further improved for iteration 3 by allowing users to delete even when the cursor is not exactly pointed on the note/rest, as long as the cursor is on the same x-coordinate and staff as the note. 
+
+
+			\subsubsection{Analysis for the Common Testers Across Iterations}
+				There was a common group of five (5) testers that were present from iteration 1 to 3. This was done to allow an analysis of common samples and see if there was an improvement in the user experience for these testers. Tables \ref{tab:common-samples-it1}, \ref{tab:common-samples-it2}, and \ref{tab:common-samples-it3} show the scores given by these testers for similar features from iteration 1, 2, and 3 respectively. Note that for iteration 1 and 2, since the features were more specific, similar features were grouped into a more general description of the feature to match that of iteration 3. The average of the scores from the similar features was the score used for the general feature.
+
+				\begin{table}[!htpb]
+				  \centering
+				  \captionof{table}{Common Testers Feature Scores for Iteration 1} \label{tab:common-samples-it1}
+				  \begin{tabular}{|p{3cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.8cm}|R{.8cm}|R{.8cm}|R{.8cm}|}
+				  	\hline
+				  	\textbf{Feature} & \textbf{T1} & \textbf{T2} & \textbf{T3} & \textbf{T4} & \textbf{T5} & \begin{math}\bm{\mu}\end{math} & \textbf{min} & \textbf{max} & \begin{math}\bm{\sigma}\end{math} \\ \hline
+
+				  	Select or highlight notes/chords 	& 3.0 & 3.1 & 3.1 & 3.5 & 2.9 & 3.1 & 2.9 & 3.5 & 0.2 \\ \hline
+					Add notes/chords 						& 3.0 & 2.5 & 3.0 & 3.3 & 2.3 & 2.8 & 2.3 & 3.3 & 0.4 \\ \hline
+					Edit notes/chords 						& 2.8 & 2.5 & 1.6 & 1.9 & 2.1 & 2.2 & 1.6 & 2.8 & 0.5 \\ \hline
+					Delete notes/chords 					& 2.9 & 2.8 & 1.3 & 1.5 & 2.8 & 2.2 & 1.3 & 2.9 & 0.8 \\ \hline
+					
+
+				  \end{tabular}
+				\end{table}
+
+				\begin{table}[!htpb]
+				  \centering
+				  \captionof{table}{Common Testers Feature Scores for Iteration 2} \label{tab:common-samples-it2}
+				  \begin{tabular}{|p{3cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.8cm}|R{.8cm}|R{.8cm}|R{.8cm}|}
+				  	\hline
+				  	\textbf{Feature} & \textbf{T1} & \textbf{T2} & \textbf{T3} & \textbf{T4} & \textbf{T5} & \begin{math}\bm{\mu}\end{math} & \textbf{min} & \textbf{max} & \begin{math}\bm{\sigma}\end{math} \\ \hline
+
+				  	Select or highlight notes/chords 	& 3.8 & 3.9 & 3.6 & 3.3 & 3.2 & 3.6 & 3.2 & 3.9 & 0.3 \\ \hline
+					Add notes/chords 						& 3.3 & 3.8 & 3.5 & 4.0 & 3.0 & 3.5 & 3.0 & 4.0 & 0.4 \\ \hline
+					Edit notes/chords 						& 4.0 & 3.8 & 2.6 & 2.7 & 3.1 & 3.2 & 2.6 & 4.0 & 0.6 \\ \hline
+					Delete notes/chords 					& 4.0 & 4.0 & 3.3 & 2.9 & 3.8 & 3.6 & 2.9 & 4.0 & 0.5 \\ \hline
+					
+
+				  \end{tabular}
+				\end{table}
+
+				\begin{table}[H]
+				  \centering
+				  \captionof{table}{Common Testers Feature Scores for Iteration 3} \label{tab:common-samples-it3}
+				  \begin{tabular}{|p{3cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.8cm}|R{.8cm}|R{.8cm}|R{.8cm}|}
+				  	\hline
+				  	\textbf{Feature} & \textbf{T1} & \textbf{T2} & \textbf{T3} & \textbf{T4} & \textbf{T5} & \begin{math}\bm{\mu}\end{math} & \textbf{min} & \textbf{max} & \begin{math}\bm{\sigma}\end{math} \\ \hline
+
+				  	Select or highlight notes/chords 	& 3.5 & 4.0 & 3.5 & 4.0 & 4.0 & 3.8 & 3.5 & 4.0 & 0.3 \\ \hline
+					Add notes/chords 						& 3.5 & 4.0 & 4.0 & 4.0 & 4.0 & 3.9 & 3.5 & 4.0 & 0.2 \\ \hline
+					Edit notes/chords 						& 3.0 & 4.0 & 3.0 & 4.0 & 4.0 & 3.6 & 3.0 & 4.0 & 0.5 \\ \hline
+					Delete notes/chords 					& 4.0 & 4.0 & 4.0 & 4.0 & 4.0 & 4.0 & 4.0 & 4.0 & 0.0 \\ \hline
+
+				  \end{tabular}
+				\end{table}
+
+				Shown in Table \ref{tab:summarized-common-samples} are the per feature summarized scores from the common testers. It can be observed that each feature increases in its average rating per iteration. This can imply an increase in the user experience for the common samples. The greatest increase however, comes from iteration 1 to iteration 2, with a total increase of 3.6 and an average increase of 0.9. For iteration 2 to iteration 3, it was only a 1.4 total increase and an average increase of 0.4 but is still an improvement. 
+
+				\begin{table}[H]
+				  \centering
+				  \captionof{table}{Summarized Common Testers Feature Scores from Iteration 1 - 3} \label{tab:summarized-common-samples}
+				  \begin{tabular}{|p{4cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{1.5cm}|R{1.5cm}|}
+				  	\hline
+				  	\textbf{Feature} & \textbf{I1} & \textbf{I2} & \textbf{I3} & \begin{math}\bm{\mu}\end{math} & \textbf{I2 - I1} & \textbf{I3 - I2} \\ \hline
+
+				  	Select or highlight notes/chords 	& 3.1 & 3.6 & 3.8 & 3.5 & 0.5 & 0.2 \\ \hline
+					Add notes/chords 						& 2.8 & 3.5 & 3.9 & 3.4 & 0.7 & 0.4 \\ \hline
+					Edit notes/chords 						& 2.2 & 3.2 & 3.6 & 3.0 & 1.1 & 0.4 \\ \hline
+					Delete notes/chords 					& 2.2 & 3.6 & 4.0 & 3.3 & 1.4 & 0.4 \\ \hline
+				  	
+				  \end{tabular}
+				\end{table}
+
+			From the group of common testers, there was only one (1) tester that was also present in iteration 4. Table \ref{tab:common-samples-all} shows the scores given by that tester across all the iterations. It can be observed that for this tester, the scores kept on increasing across all iterations, except for the delete feature in iteration 4. 
 
 			\begin{table}[H]
 			  \centering
-			  \captionof{table}{Summarized Feature Scores from Iteration 1 - 4} \label{tab:summarized-all}
+			  \captionof{table}{Common Tester Feature Scores from Iteration 1 - 4} \label{tab:common-samples-all}
 			  \begin{tabular}{|p{2.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.7cm}|R{.5cm}|R{1.4cm}|R{1.4cm}|R{1.4cm}|}
 			  	\hline
 			  	\textbf{Feature} & \textbf{I1} & \textbf{I2} & \textbf{I3} & \textbf{I4} & \begin{math}\bm{\mu}\end{math} & \textbf{I2 - I1} & \textbf{I3 - I2} & \textbf{I4 - I3} \\ \hline
 
-			  	Select or highlight notes/chords 	& 3.1 & 3.6 & 3.7 & 3.4 & 3.4 & 0.5 & 0.1 & -0.3 \\ \hline
-				Add notes/chords 						& 2.8 & 3.5 & 3.7 & 3.2 & 3.3 & 0.7 & 0.2 & -0.5 \\ \hline
-				Edit notes/chords 						& 2.2 & 3.2 & 3.3 & 3.0 & 2.9 & 1.0 & 0.1 & -0.3 \\ \hline
-				Delete notes/chords 					& 2.2 & 3.6 & 3.7 & 3.4 & 3.2 & 1.4 & 0.1 & -0.3 \\ \hline
+			  	Select or highlight notes/chords 	& 3.1 & 3.9 & 4.0 & 4.0 & 3.8 & 0.8 & 0.1 & 0.0 \\ \hline
+				Add notes/chords 						& 2.5 & 3.8 & 4.0 & 4.0 & 3.6 & 1.3 & 0.2 & 0.0 \\ \hline
+				Edit notes/chords 						& 2.5 & 3.8 & 4.0 & 4.0 & 3.6 & 1.3 & 0.2 & 0.0 \\ \hline
+				Delete notes/chords 					& 2.8 & 4.0 & 4.0 & 3.7 & 3.6 & 1.2 & 0.0 & -0.3 \\ \hline
 
 			  \end{tabular}
 			\end{table}
-
-			\begin{figure}[H]
-				\centering
-				\frame{\includegraphics[scale=0.7]{figures/results-select-bar.png}}
-			    \caption{Bar chart showing the summarized feature scores of the \textit{Select or highlight notes/chords} feature from iteration 1 to iteration 4.}
-			    \label{fig:select-bar}
-			\end{figure} 
-
-			\begin{figure}[H]
-				\centering
-				\frame{\includegraphics[scale=0.7]{figures/results-add-bar.png}}
-			    \caption{Bar chart showing the summarized feature scores of the \textit{Add notes/chords} feature from iteration 1 to iteration 4.}
-			    \label{fig:add-bar}
-			\end{figure} 
-
-			\begin{figure}[H]
-				\centering
-				\frame{\includegraphics[scale=0.7]{figures/results-edit-bar.png}}
-			    \caption{Bar chart showing the summarized feature scores of the \textit{Edit notes/chords} feature from iteration 1 to iteration 4.}
-			    \label{fig:edit-bar}
-			\end{figure} 
-
-
-			\begin{figure}[H]
-				\centering
-				\frame{\includegraphics[scale=0.7]{figures/results-delete-bar.png}}
-			    \caption{Bar chart showing the summarized feature scores of the \textit{Delete notes/chords} feature from iteration 1 to iteration 4.}
-			    \label{fig:delete-bar}
-			\end{figure} 
-
-			The feature with the greatest increase is the delete function. It started as one of the features with the lowest score in iteration 1 at only 2.2 and ended up as the feature with one of the highest scores in iteration 4 at 3.4. This is because of the several improvements made to the interaction of the delete feature. In iteration 1, users would have to use the highlight feature to delete, even if it was just a single note/rest. With the changes made to the highlight interaction and allowing users to delete when the cursor is pointed on the note/rest, the experience of deleting and even editing improved for the users. The delete feature was still further improved for iteration 3 by allowing users to delete even when the cursor is not exactly pointed on the note/rest, as long as the cursor is on the same x-coordinate and staff as the note. 
 
 			\begin{comment}
 			The five (5) testers present in iteration 1 and 2 were also present in iteration 3. This was done to allow an analysis of common samples and see if there was an improvement in the user experience for these testers. Tables \ref{tab:common-samples-it1}, \ref{tab:common-samples-it2}, and \ref{tab:common-samples-it3} show the scores given by these testers for similar features from iteration 1, 2, and 3 respectively. Note that for iteration 1 and 2, since the features were more specific, similar features were grouped into a more general description of the feature to match that of iteration 3. The average of the scores from the similar features was the score used for the general feature.
