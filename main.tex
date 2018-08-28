@@ -30,7 +30,7 @@
 %                               removed unnecessary packages, added new comments  based on Ethel Ongs slides
 % pogi si migo we're back boyx
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\providecommand{\pgfsyspdfmark}[3]{}
 \include{preamble}                %-- includes LaTeX source file for the preamble 
                                   %-- include packages, sets the margin sequence, and many more... 
 \usepackage{csquotes}
@@ -45,12 +45,25 @@
 \usepackage{pdflscape} % you need this for the landscape page 
 \usepackage[round]{natbib} % - added to accommodate citet
                                   %-- your job: check if the settings are suitable for your own printer
+\usepackage{eso-pic}
 
 \graphicspath{{figures/}}  %-- figures is the name of the folder containing images JPG or PN
 
+\newcommand\BackgroundPic{
+    \put(0,0){
+    \parbox[b][\paperheight]{\paperwidth}{%
+    \vfill
+    \centering
+    \includegraphics[width=\paperwidth,height=\paperheight]{figures/dlsu-thesis-paper-letterhead.pdf}
+    \vfill
+}}}
+
 \begin{document}
 
-\include{title_page}              
+\AddToShipoutPicture{\BackgroundPic}
+
+\include{title_page}
+\include{acknowledgement}              
 \include{abstract}               
 
 \pagenumbering{roman}             %-- this will number pages as i, ii, iii, etc...
